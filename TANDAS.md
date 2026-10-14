@@ -1,6 +1,6 @@
 # Ampliación en tandas de diez
 
-Corte: **14/10/2026**. Se revisaron **seis tandas de diez candidatos: 60 en total**. Se incorporaron **ocho** a los 12 iniciales y la lista queda en **20 preseleccionados**. Los otros 52 no se incorporan con el respaldo disponible; eso no significa que 52 negocios no tengan el problema. Algunos no cumplen el perfil y otros necesitan mejores fuentes.
+Corte: **14/10/2026**. Se revisaron **ocho tandas de diez candidatos: 80 en total**. Se incorporaron **trece** a los 12 iniciales y la lista queda en **25 preseleccionados**. Los otros 67 no se incorporan con el respaldo disponible; eso no significa que esos negocios no tengan el problema. Algunos no cumplen el perfil y otros necesitan mejores fuentes.
 
 Cada tanda reúne diez candidatos de búsqueda, no diez aceptados. Se hicieron búsquedas, lectura de fuentes y comprobación de sucursal cuando aparecía un argumento útil. La profundidad varía: una búsqueda sin resultados pertinentes no se presenta como auditoría completa. Hubo lecturas de seguimiento entre tandas; la tabla muestra el resultado al cerrar la ampliación.
 
@@ -22,8 +22,10 @@ Se distinguieron comentarios de los últimos 12 meses (14/10/2025–14/10/2026),
 | 4 | 10 | 1 | 17 |
 | 5 | 10 | 1 | 18 |
 | 6 | 10 | 2 | 20 |
+| 7 | 10 | 3 | 23 |
+| 8 | 10 | 2 | 25 |
 
-## Los ocho incorporados
+## Los trece incorporados
 
 Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columnas exactas del CSV y añaden por qué se elige cada caso, qué podría necesitar y qué preguntar.
 
@@ -37,8 +39,13 @@ Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columna
 | Pizzeria Delfina | Hay un puesto local fechado que combina llamadas y salón. El pedido telefónico comprobado es catering: el argumento comercial queda limitado a ese canal y a consultas. |
 | Golden Boy Pizza | Combina un canal telefónico oficial con una fila concreta de la misma sucursal, aunque el antecedente es antiguo y el encaje es menor. |
 | Home Run Inn | El empleador describe para Hillside una combinación explícita de pedidos por teléfono y atención del salón. |
+| HOTLIPS Pizza | Publica una derivación concreta de pedidos hacia el teléfono y horarios de mayor trabajo. |
+| Crushed Red | Un puesto local combina llamadas, cobro y atención de mesas. |
+| Billy G's | El aviso local permite identificar quién combina llamadas y atención de pedidos presenciales. |
+| Holland Farms Bakery & Deli | Hay un canal de pedidos de comida y un puesto de la misma sede que comparte teléfono y mostrador. |
+| Birria LES | El aviso identifica la sede y combina atención telefónica, presencial y preparación de entregas. |
 
-**No se confirmaron 20 pérdidas de llamadas.** Hay once casos con alguna señal aceptada de comunicación o presión —incluidos antecedentes antiguos— y nueve apoyados en tareas o reglas de funcionamiento. Golden Boy tiene encaje parcial: teléfono y ventanilla, sin salón. En Pizzeria Delfina el canal telefónico probado es catering, no pedidos individuales inmediatos. Estos límites también están en el CSV.
+**No se confirmaron 25 pérdidas de llamadas.** Hay doce casos con alguna señal aceptada de comunicación o presión —incluidos antecedentes antiguos— y trece apoyados en tareas o reglas de funcionamiento. Golden Boy tiene encaje parcial: teléfono y ventanilla, sin salón. En Pizzeria Delfina el canal telefónico probado es catering, no pedidos individuales inmediatos. Estos límites también están en el CSV.
 
 ## Decisión de cada candidato
 
@@ -132,6 +139,36 @@ Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columna
 | Roots Handmade Pizza | No se suma con el respaldo disponible | La descripción encontrada es de Old Town, pero la web actual solo publica West Town. No se comprobó el original del aviso ni se trasladaron sus tareas a otra sede. | [Fuente o pista](https://www.rootspizza.com/) |
 | Dimo’s Pizza | No se suma con el respaldo disponible | Hay pistas de llamadas bien atendidas y problemas de entrega. No se completó la lectura original con fecha y sucursal suficiente para aceptar una fila nueva. | [Fuente o pista](https://www.tripadvisor.com/Restaurant_Review-g35805-d7318170-Reviews-Dimo_s_Pizza-Chicago_Illinois.html) |
 
+### Tanda 7
+
+| Candidato | Decisión | Motivo | Fuente o pista revisada |
+| --- | --- | --- | --- |
+| Cobalt Smoke & Sea | No se suma con el respaldo disponible | Una sede publicada en Creve Coeur; no cumple el mínimo de dos, aunque el puesto combine teléfono y atención. | [Fuente o pista](https://staffedup.com/cobalt/) |
+| Billy G's | Se suma | Carryout Kirkwood combina teléfono, atención presencial, cobro y empaquetado. Dos sedes de la marca, sin sumar otros negocios del grupo. | [Fuente o pista](https://staffedup.com/billygskirkwood/) |
+| Stationhouse Grill | No se suma con el respaldo disponible | La web presenta las sedes como futuras aperturas. Un aviso laboral no demuestra que ya estén operando. | [Fuente o pista](https://stationhousegrill.com/) |
+| Holland Farms Bakery & Deli | Se suma | Manlius publica pedidos de deli por teléfono y un puesto local que comparte llamadas y mostrador; dos sedes. Encaje parcial como deli/panadería. | [Fuente o pista](https://staffedup.com/holland-farms-bakery-deli-manlius/) |
+| Clubhouse Lounge + Kitchen | No se suma con el respaldo disponible | Una sede identificada en Edwardsville; las tareas telefónicas no compensan el mínimo de tamaño. | [Fuente o pista](https://staffedup.com/clubhouse-sports-lounge/) |
+| Crushed Red | Se suma | El Wine Tender de Kirkwood toma pedidos telefónicos, cobra y lleva bebidas a mesas. Cinco fichas oficiales; sin puntos extra por tareas. | [Fuente o pista](https://staffedup.com/crushed-red-kirkwood/) |
+| Joe’s Pizza & Pasta Illinois | No se suma con el respaldo disponible | La marca publica cerca de dos docenas de locales: supera quince. No es Joe’s Kansas City seleccionado. | [Fuente o pista](https://staffedup.com/joes-pizza-and-pasta-edwardsville/) |
+| Fitz’s Root Beer | No se suma con el respaldo disponible | Se identificaron Delmar y South County, pero el formulario de empleo no aportó el segundo hecho operativo necesario. | [Fuente o pista](https://fitzsrootbeer.com/) |
+| Syberg’s | No se suma con el respaldo disponible | El portal original de empleo no permitió leer tareas; no se aceptan copias de Teal. El conteo también requiere resolver diferencias del directorio. | [Fuente o pista](https://www.sybergs.com/) |
+| Sauce on the Side | No se suma con el respaldo disponible | El aviso localizado no pudo comprobarse en su original. No se confunde la frase genérica sauce on the side de un menú con esta marca. | [Fuente o pista](https://www.sauceontheside.com/) |
+
+### Tanda 8
+
+| Candidato | Decisión | Motivo | Fuente o pista revisada |
+| --- | --- | --- | --- |
+| Gracious Plenty Kentucky | No se suma con el respaldo disponible | El perfil antiguo de empleo dice dos sedes, pero la web actual solo permitió identificar Prospect. No se da por activa La Grange sin confirmación. | [Fuente o pista](https://www.graciousplentycatering.com/) |
+| Birria LES | Se suma | Aviso original de Astoria del 01/06/2026: teléfono, atención presencial y empaquetado. Cinco fichas comerciales; conflicto de conteo y contacto de directorios aclarados. | [Fuente o pista](https://jobtoday.com/us/job/cashier-and-line-cooks-YRd2LY?locale=en-US) |
+| 1818 Chophouse | No se suma con el respaldo disponible | La pista laboral no resuelve dos sedes activas ni el encaje de comida casual para llevar. No se incorpora por el nombre de un puesto. | [Fuente o pista](https://staffedup.com/1818-chophouse/) |
+| Arzola’s Fajitas + Margaritas | No se suma con el respaldo disponible | Consultas telefónicas de un host no equivalen a pedidos de comida; tampoco quedó probado el mínimo de dos sedes. | [Fuente o pista](https://staffedup.com/arzolas-fajitas-margaritas/) |
+| Hi-Pointe Drive-In | No se suma con el respaldo disponible | La página de empleo consultada ofrece formulario por sede, sin las tareas necesarias para fundamentar la hipótesis. No se agrega Chicken Out como misma marca. | [Fuente o pista](https://hipointedrivein.com/) |
+| Chava’s Mexican Restaurant | No se suma con el respaldo disponible | Se localizaron Soulard y Edwardsville y pedidos para llevar; no se obtuvo una segunda señal local suficiente en esta pasada. | [Fuente o pista](https://chavasmexican.com/contact-us/) |
+| Pizza Man’s Pizza | No se suma con el respaldo disponible | Resultados de negocios homónimos en distintos estados: no quedó atribuido el aviso a una cadena y sucursal verificables. | Sin fuente pertinente recuperada |
+| Pizzicato Pizza | No se suma con el respaldo disponible | Nombre sugerido por conocimiento previo del modelo; la búsqueda no aportó una segunda señal pertinente. Se excluye una referencia de 2012 que correspondía a otro negocio. | [Fuente o pista](https://www.pizzicatopizza.com/) |
+| HOTLIPS Pizza | Se suma | Nombre sugerido por el modelo y luego verificado: dos sedes, derivación al teléfono al apagar online y picos publicados de noches y fines de semana. Límite posible de cocina. | [Fuente o pista](https://www.hotlipspizza.com/) |
+| N.H. Scheppers Distributing | No se suma con el respaldo disponible | Falso positivo de la búsqueda de empleo: distribuidor de bebidas, no restaurante. Se registra para explicar el descarte. | [Fuente o pista](https://staffedup.com/nhscheppers-columbia/) |
+
 ## Cómo interpretar las fuentes descartadas
 
 Un enlace de la tabla puede ser una pista que no abrió: el motivo lo dice y no se usa su contenido como prueba. Las páginas oficiales se priorizan para sedes, teléfonos y políticas; los avisos originales, para tareas del puesto; las reseñas originales con autor y fecha, para experiencias. Se usaron HTML y datos estructurados públicos cuando el lector web no mostraba el contenido completo, por ejemplo Paylocity y Craigslist. No se eludieron bloqueos de acceso.
@@ -142,4 +179,4 @@ Los comentarios recientes aceptados de Delfina hablan de comida. En Golden Boy, 
 
 ## Alcance de los conteos
 
-Los 60 son los candidatos evaluados en esta ampliación, incluidos diez retomados de la búsqueda anterior de 110. Los 37 del control detallado son los 29 anteriores más las ocho incorporaciones: 20 seleccionados y los mismos 17 secundarios. Son conjuntos de trabajo distintos; no se suman 60, 110 y 37 como si fueran empresas nuevas distintas. Se detuvo la ampliación al llegar a 20. No se contactó a los negocios.
+Los 80 son los resultados/candidatos evaluados en esta ampliación, incluidos diez retomados de la búsqueda anterior de 110. Los 42 del control detallado son los 29 anteriores más las trece incorporaciones: 25 seleccionados y los mismos 17 secundarios. Son conjuntos de trabajo distintos; no se suman 80, 110 y 42 como si fueran empresas nuevas distintas. Se detuvo la ampliación al llegar a 25. El conteo de 80 incluye un distribuidor descartado como falso positivo; no son 80 restaurantes con perfil verificado. En las últimas dos tandas se encontraron candidatos buscando tareas en avisos originales; HOTLIPS y Pizzicato se propusieron a partir del conocimiento previo del modelo y luego se buscaron fuentes. No se contactó a los negocios.

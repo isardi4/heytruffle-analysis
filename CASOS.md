@@ -1,8 +1,8 @@
 # Por qué elegimos o dejamos afuera cada caso
 
-Corte de la investigación: 14 de octubre de 2026. El control detallado reúne **37 candidatos**: **20 preseleccionados** y **17 en una lista secundaria para validar**. La ampliación evaluó otros grupos de candidatos; sus 60 decisiones están en [TANDAS.md](TANDAS.md). No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
+Corte de la investigación: 14 de octubre de 2026. El control detallado reúne **42 candidatos**: **25 preseleccionados** y **17 en una lista secundaria para validar**. La ampliación evaluó otros grupos de candidatos; sus 80 decisiones están en [TANDAS.md](TANDAS.md). No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
 
-La revisión de comentarios y fuentes nuevas de los 29 iniciales y las ocho incorporaciones está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
+La revisión de comentarios y fuentes nuevas de los 29 iniciales y las trece incorporaciones está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
 
 La elección se basa en hechos publicados y en una hipótesis explícita. La fuente puede respaldar el hecho sin demostrar la hipótesis. Los puntajes ayudan a revisar la evidencia, pero no deciden la selección.
 
@@ -415,6 +415,118 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 **Qué preguntar:** En Hillside, ¿la misma persona toma pedidos telefónicos y ubica o ayuda con las mesas? ¿Quién cubre las llamadas cuando sale del puesto?
 
 **Perfil publicado:** https://www.homeruninnpizza.com/restaurants/hillside/
+
+## Cinco incorporaciones siguientes
+
+### HOTLIPS Pizza
+
+**Sucursal y tamaño:** Pearl · 721 NW 9th Ave, Suite 150, Portland, OR; 2 sedes publicadas.
+
+**Hecho 1:** La web pide llamar cuando desactiva temporalmente pedidos online para controlar los tiempos. [Fuente](https://www.hotlipspizza.com/).
+
+**Hecho 2:** La página de empleo identifica noches y fines de semana como momentos de mayor actividad. [Fuente](https://www.hotlipspizza.com/jobs).
+
+**Por qué se elige:** Publica una derivación concreta de pedidos hacia el teléfono y horarios de mayor trabajo.
+
+**Hipótesis:** Las llamadas podrían coincidir con el servicio; también puede tratarse de un límite de cocina ya gestionado.
+
+**Puntaje:** 20 canal + 0 comunicación + 20 presión = 40.
+
+**Por qué ahora:** Sin novedad fechada. Confirmar cómo cubren las llamadas durante la política publicada de cierre temporal online.
+
+**Límites:** Dos páginas de la misma empresa, sin fecha de publicación comprobada. Pearl y Hawthorne son las dos sedes publicadas; no se cuentan tres cerradas ni la cocina central. Ya usan canales digitales y control de capacidad. Atender más llamadas no aumenta la producción. Grubhub bloqueó las reseñas por país: no se acepta el fragmento como prueba.
+
+**Qué preguntar:** Cuando desactivan pedidos online, ¿quién responde las llamadas? ¿Necesitan atender consultas o la cocina ya no puede aceptar pedidos?
+
+**Perfil:** [Contacto y sedes](https://www.hotlipspizza.com/pearl). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
+### Crushed Red
+
+**Sucursal y tamaño:** Kirkwood · 140 S Kirkwood Rd, Kirkwood, MO; 5 sedes publicadas.
+
+**Hecho 1:** El aviso de Wine Tender de Kirkwood incluye pedidos por teléfono y online. [Fuente](https://staffedup.com/crushed-red-kirkwood/).
+
+**Hecho 2:** El mismo puesto cobra pedidos presenciales y lleva bebidas a las mesas. [Fuente](https://staffedup.com/crushed-red-kirkwood/).
+
+**Por qué se elige:** Un puesto local combina llamadas, cobro y atención de mesas.
+
+**Hipótesis:** Esas tareas podrían competir por atención; falta conocer el reparto real por turno.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** Sin novedad operativa fechada. Confirmar que el reparto de tareas publicado siga vigente.
+
+**Límites:** Ambas señales salen del mismo puesto, no son pruebas independientes. Aviso sin fecha comprobada; no demuestra falta de empleados. Cinco fichas oficiales: Creve Coeur, Kirkwood, Chesterfield, Clayton y Overland Park. Photoshoot49 publicó el 03/06/2026 una opinión favorable sobre comida y atención de mostrador/mesa, sin dificultad telefónica; no agrega puntos.
+
+**Qué preguntar:** En Kirkwood, ¿quién cubre el teléfono cuando el Wine Tender lleva bebidas a las mesas?
+
+**Perfil:** [Contacto y sedes](https://crushed-red.com/locations/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
+### Billy G's
+
+**Sucursal y tamaño:** Kirkwood · 131 W Argonne Dr, Kirkwood, MO; 2 sedes publicadas.
+
+**Hecho 1:** El puesto Carryout de Kirkwood incluye tomar pedidos por teléfono. [Fuente](https://staffedup.com/billygskirkwood/).
+
+**Hecho 2:** El mismo puesto toma pedidos presenciales, cobra y coordina el empaquetado para llevar. [Fuente](https://staffedup.com/billygskirkwood/).
+
+**Por qué se elige:** El aviso local permite identificar quién combina llamadas y atención de pedidos presenciales.
+
+**Hipótesis:** Podría necesitar cobertura mientras caja atiende o entrega pedidos; no se comprobó una falla.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** Sin fecha comprobada del aviso. Revisar cómo funciona actualmente el puesto Carryout.
+
+**Límites:** Mismo aviso para las dos señales, sin puntos por presión ni contratación. Se cuentan Kirkwood y Chesterfield (https://billygs.com/chesterfield/), sin sumar otras marcas del grupo Gianino. La web también ofrece pedidos online; para agregar bebidas alcohólicas indica llamar. TripAdvisor no abrió: sus fragmentos no se aceptan como reseñas verificadas.
+
+**Qué preguntar:** En Kirkwood, ¿quién cubre las llamadas cuando Carryout cobra o entrega un pedido?
+
+**Perfil:** [Contacto y sedes](https://billygskirkwood.com/order/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
+### Holland Farms Bakery & Deli
+
+**Sucursal y tamaño:** Manlius · 343 Fayette St, Manlius, NY; 2 sedes publicadas.
+
+**Hecho 1:** La página de Manlius ofrece pedidos telefónicos de panadería, deli y comidas para retirar. [Fuente](https://hollandfarms.com/manlius/).
+
+**Hecho 2:** El puesto Bakery Clerk/Customer Service de Manlius combina pedidos telefónicos con atención presencial, cobro y reposición. [Fuente](https://staffedup.com/holland-farms-bakery-deli-manlius/).
+
+**Por qué se elige:** Hay un canal de pedidos de comida y un puesto de la misma sede que comparte teléfono y mostrador.
+
+**Hipótesis:** El teléfono podría competir con la atención presencial; primero conviene conocer el peso del deli frente a los encargos de pastelería.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** Sin novedad fechada. Confirmar vigencia del puesto y volumen de pedidos de comida por teléfono.
+
+**Límites:** Dos sedes publicadas: Yorkville y Manlius. Encaje como deli con panadería, no como restaurante tradicional de salón. No se suman puntos por reglas normales del retiro express ni por una vacante. Se excluyen reseñas de Yorkville y copias sin original de Google/Yelp; no se verificó comentario reciente de Manlius.
+
+**Qué preguntar:** En Manlius, ¿cuántas llamadas son por comidas del deli y quién atiende mientras el mostrador está ocupado?
+
+**Perfil:** [Contacto y sedes](https://hollandfarms.com/manlius/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
+### Birria LES
+
+**Sucursal y tamaño:** Astoria · 31-27 Ditmars Blvd, Astoria, NY; 5 sedes publicadas.
+
+**Hecho 1:** El aviso original de Astoria incluye tomar pedidos por teléfono y en persona. [Fuente](https://jobtoday.com/us/job/cashier-and-line-cooks-YRd2LY?locale=en-US).
+
+**Hecho 2:** El mismo puesto maneja caja y organiza y empaqueta pedidos de entrega. [Fuente](https://jobtoday.com/us/job/cashier-and-line-cooks-YRd2LY?locale=en-US).
+
+**Por qué se elige:** El aviso identifica la sede y combina atención telefónica, presencial y preparación de entregas.
+
+**Hipótesis:** Las tareas podrían coincidir; falta confirmar su reparto y si las llamadas generan un problema.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** El anuncio se publicó el 01/06/2026: permite preguntar por el funcionamiento del puesto, sin suponer falta de personal.
+
+**Límites:** Dos señales del mismo aviso. El aviso dice dos locales; se prefieren las cinco direcciones publicadas en DoorDash: Rivington, St Marks, Chelsea, Bedford y Astoria. Website es ficha comercial, no dominio oficial confirmado. Teléfono y dirección en https://www.restaurantji.com/ny/astoria/birria-les-astoria-/ y https://restaurantguru.com/Birria-LES-Astoria-New-York: se usan como directorios de contacto, no sus copias de reseñas. Confirmar teléfono y conteo al contactar. No se aceptan sitios de muestra de OrderSave ni comentarios de otras marcas de birria.
+
+**Qué preguntar:** En Astoria, ¿quién responde el teléfono cuando caja está cobrando o empaquetando entregas?
+
+**Perfil:** [Contacto y sedes](https://www.doordash.com/business/birria-les-13501665/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
 
 ## Los 17 de la lista secundaria
 

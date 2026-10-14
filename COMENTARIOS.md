@@ -368,7 +368,7 @@ Mismo corte: 14/10/2026; recientes desde el 14/10/2025. Se buscaron comentarios 
 
 Fuentes originales leídas: [DoorDash Palo Alto](https://www.doordash.com/store/pizzeria-delfina-palo-alto-919), [TripAdvisor North Beach](https://www.tripadvisor.com/Restaurant_Review-g60713-d353911-Reviews-Golden_Boy_Pizza-San_Francisco_California.html), [Uber Eats North Beach](https://www.ubereats.com/store/golden-boy-pizza-north-beach/u5funwcQVgSRWeEWjnSZXA). En el lector, algunas páginas mostraban fragmentos de 2026 junto con reseñas antiguas: no se trasladaron fechas de un elemento a otro.
 
-## Balance del control detallado de 37
+## Balance anterior del control detallado de 37
 
 | Comentarios sobre dificultad telefónica o presión de servicio | Casos |
 | --- | ---: |
@@ -379,3 +379,29 @@ Fuentes originales leídas: [DoorDash Palo Alto](https://www.doordash.com/store/
 | **Total del control detallado** | **37** |
 
 Hay **11 de 37 con algún comentario reciente aceptado**, pero solo los mismos **2 con dificultad o presión operativa reciente**: Pappy’s y Pequod’s. Un elogio genérico del servicio o entrega se conserva como contexto favorable, sin convertirlo en prueba de saturación. En los **20 seleccionados**, **7 tienen algún comentario reciente aceptado**. No se confirmaron llamadas perdidas. Los 17 secundarios originales siguen separados.
+
+## Revisión de las cinco incorporaciones siguientes
+
+Mismo corte: 14/10/2026; recientes desde el 14/10/2025. Se buscaron opiniones por nombre y sede; los resultados se conservaron como pistas hasta poder leer el original. No se revisaron todas las opiniones existentes.
+
+| Empresa y sede | Resultado | Decisión |
+| --- | --- | --- |
+| HOTLIPS, Pearl | Grubhub devuelve una restricción por país. Otros resultados eran copias o experiencias antiguas. | No se acepta el fragmento de demoras ni se declara un comentario reciente verificado. El argumento viene de políticas oficiales. |
+| Crushed Red, Kirkwood | Photoshoot49, publicación 03/06/2026, visita mayo de 2026: elogia comida y describe pedir en mostrador y recibir en mesa. | Algún comentario reciente: sí. No prueba presión ni llamadas perdidas; no agrega puntos. |
+| Billy G’s, Kirkwood | TripAdvisor no permitió leer el original. | Los fragmentos sobre buen servicio o ayuda con un retiro no se aceptan con fecha trasladada de otra reseña. |
+| Holland Farms, Manlius | Aparecieron copias de reseñas y opiniones de Yorkville. | No se trasladan sede ni fechas; sin comentario reciente original aceptado de Manlius. |
+| Birria LES, Astoria | La ficha individual de DoorDash no abrió; directorios reproducen opiniones sin original verificado. | Se usan directorios solo para contacto. No se aceptan comentarios de otros negocios de birria. El 01/06/2026 es fecha del aviso laboral. |
+
+Fuentes consultadas: [Grubhub Pearl](https://www.grubhub.com/restaurant/hotlips-pizza-721-nw-9th-ave-ste-150-portland/916382/reviews), [TripAdvisor Crushed Red Kirkwood](https://www.tripadvisor.co.uk/Restaurant_Review-g44551-d5003131-Reviews-Crushed_Red_Kirkwood-Kirkwood_Saint_Louis_Missouri.html), [TripAdvisor Billy G’s](https://www.tripadvisor.com/Restaurant_Review-g44551-d4699430-Reviews-Billy_G_s_Kirkwood-Kirkwood_Saint_Louis_Missouri.html), [DoorDash Astoria](https://www.doordash.com/store/birria-les-45691131/). Un enlace que falló documenta el intento, no respalda su contenido.
+
+## Balance vigente: 42 casos del control detallado
+
+| Comentarios sobre dificultad telefónica o presión de servicio | Casos |
+| --- | ---: |
+| Recientes, con fecha comprobable | 2 |
+| Antiguos, con fecha comprobable | 5 |
+| Fecha o verificación pendiente | 5 |
+| Sin comentario pertinente verificado | 30 |
+| **Total** | **42** |
+
+Hay **12 de 42 con algún comentario reciente aceptado**; **8 están entre los 25 seleccionados**. Los mismos dos, Pappy’s y Pequod’s, tienen comentario operativo reciente pertinente. Las cinco altas no agregan quejas telefónicas recientes verificadas. Los 17 secundarios originales se mantienen.
