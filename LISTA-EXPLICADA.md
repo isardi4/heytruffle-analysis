@@ -1,6 +1,6 @@
-# Los 12 casos del CSV, explicados
+# Los 20 casos del CSV, explicados
 
-Este documento acompaña a [gtm-lista.csv](gtm-lista.csv). Presenta las mismas 12 empresas, en el mismo orden, con los mismos datos, señales, puntos y límites. Es una selección de hipótesis para validar, no una lista de llamadas perdidas confirmadas. Corte: **14/10/2026**.
+Este documento acompaña a [gtm-lista.csv](gtm-lista.csv). Presenta las mismas 20 empresas, en el mismo orden, con los mismos datos, señales, puntos y límites. Es una selección de hipótesis para validar, no una lista de llamadas perdidas confirmadas. Corte: **14/10/2026**.
 
 ## Cómo leer la prioridad
 
@@ -15,19 +15,27 @@ El orden de las filas es el orden sugerido para revisar o validar los casos. Se 
 | Orden | Empresa | Sucursal | Puntos | Motivo para ubicarla aquí |
 | --- | --- | --- | ---: | --- |
 | 1 | Joe's Kansas City Bar-B-Que | Gas Station · 3002 W 47th | 40 | Primera revisión |
-| 2 | Pequod's Pizza | Chicago · 2207 N Clybourn | 40 | Primera revisión |
-| 3 | Litza's Pizza | 835 East Fort Union Boulevard | 40 | Primera revisión |
-| 4 | Bar-Bill Tavern | East Aurora · 185 Main St; retiros en 191 Main St Rear | 40 | Primera revisión |
-| 5 | Pappy's Smokehouse | St. Louis · 3106 Olive St | 40 | Primera revisión |
-| 6 | Black's Barbecue | 215 N Main St | 40 | Primera revisión, con límite de capacidad |
-| 7 | Glass Nickel Pizza | 3191 Muir Field Rd | 20 | Validar antecedente antiguo |
-| 8 | Prime Pizza | 235 E Imperial Highway | 20 | Validar funcionamiento |
-| 9 | NY Pie Nashville | 1441 New Highway 96 West | 20 | Validar funcionamiento |
-| 10 | Salvatore's Tomato Pies | Contacto elegido: Madison North Livingston · 10 N Livingston | 20 | Validar funcionamiento y sucursal |
-| 11 | Downtown Pizza | 156 Magnolia St | 20 | Validar funcionamiento publicado en el código |
-| 12 | Pizza Luce | Downtown Minneapolis · 119 N 4th St | 40 | Validar antecedente antiguo, menor prioridad |
+| 2 | Katie's Pizza & Pasta Osteria | Rock Hill · 9568 Manchester Road | 40 | Primera revisión, confirmar vigencia de la política |
+| 3 | Pequod's Pizza | Chicago · 2207 N Clybourn | 40 | Primera revisión |
+| 4 | Litza's Pizza | 835 East Fort Union Boulevard | 40 | Primera revisión |
+| 5 | Bar-Bill Tavern | East Aurora · 185 Main St; retiros en 191 Main St Rear | 40 | Primera revisión |
+| 6 | Pappy's Smokehouse | St. Louis · 3106 Olive St | 40 | Primera revisión |
+| 7 | Mama's Pizza Omaha | Midtown · 715 N Saddle Creek Road | 40 | Primera revisión, confirmar alcance de la FAQ |
+| 8 | Black's Barbecue | 215 N Main St | 40 | Primera revisión, con límite de capacidad |
+| 9 | Glass Nickel Pizza | 3191 Muir Field Rd | 20 | Validar antecedente antiguo |
+| 10 | Home Run Inn | Hillside · 60 S Mannheim Rd | 20 | Validar funcionamiento |
+| 11 | SPIN! Pizza | Richardson · 348 W Campbell Rd | 20 | Validar funcionamiento |
+| 12 | Prime Pizza | 235 E Imperial Highway | 20 | Validar funcionamiento |
+| 13 | NY Pie Nashville | 1441 New Highway 96 West | 20 | Validar funcionamiento |
+| 14 | V Pizza | San Marco · 1406 Hendricks Ave | 20 | Validar funcionamiento |
+| 15 | Salvatore's Tomato Pies | Contacto elegido: Madison North Livingston · 10 N Livingston | 20 | Validar funcionamiento y sucursal |
+| 16 | Pizzeria Delfina | Palo Alto · 651 Emerson Street | 20 | Validar funcionamiento |
+| 17 | Zachary's Chicago Pizza | Pleasant Hill · 140 Crescent Drive | 20 | Validar funcionamiento |
+| 18 | Downtown Pizza | 156 Magnolia St | 20 | Validar funcionamiento publicado en el código |
+| 19 | Pizza Luce | Downtown Minneapolis · 119 N 4th St | 40 | Validar antecedente antiguo, menor prioridad |
+| 20 | Golden Boy Pizza | North Beach · 542 Green Street | 40 | Antecedente antiguo y encaje parcial |
 
-Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy’s y Pequod’s tienen comentarios operativos recientes comprobados. Una reseña de comida no renueva una queja telefónica antigua. El detalle de las búsquedas está en [COMENTARIOS.md](COMENTARIOS.md).
+Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fechado; entre las ocho incorporaciones se aceptaron comentarios recientes de comida de Pizzeria Delfina y uno favorable de servicio y entrega de Golden Boy. Este último no renueva la fila antigua. En los 20, solo Pappy’s y Pequod’s tienen comentarios operativos recientes comprobados. La búsqueda no demuestra ausencia de otras reseñas. Una reseña de comida no renueva una queja telefónica antigua. El detalle de las búsquedas está en [COMENTARIOS.md](COMENTARIOS.md).
 
 ## Fichas en el mismo orden que el CSV
 
@@ -59,7 +67,35 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** Cuando las líneas están ocupadas, ¿cuántas llamadas quedan sin atender y quién se encarga de ellas?
 
-### 2. Pequod's Pizza
+### 2. Katie's Pizza & Pasta Osteria
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Katie's Pizza & Pasta Osteria |
+| `city` | Rock Hill |
+| `state` | MO |
+| `locations_count` | 4 |
+| `cuisine` | Pizza |
+| `phone` | +13149426557 |
+| `website` | https://katies.com/ |
+| `source_url` | https://katies.com/pages/important-info |
+| `signal_1` | La página Important Info dice que recibe muchas llamadas y tiene líneas limitadas; pide volver a llamar cuando están todas ocupadas. |
+| `signal_2` | La misma página permite pedidos telefónicos en vivo para quienes no tienen computadora y favorece el pedido online para administrar la capacidad. |
+| `priority_score` | 40 |
+| `why_now` | Sin fecha de publicación comprobable. Confirmar la política de líneas ocupadas todavía publicada y qué cambió desde que se escribió. |
+| `notes` | Sucursal: Rock Hill · 9568 Manchester Road. La página conserva texto de dos sedes y retiro en auto: su vigencia no está confirmada. Se cuentan cuatro fichas con dirección, teléfono y horario: Rock Hill, Town & Country, Ballpark Village y Crestwood; no las aperturas anunciadas ni otra marca del grupo. El aviso Host/Hostess de Rock Hill en StaffedUp aporta tareas de teléfono y salón, sin puntos adicionales. No se midieron llamadas perdidas. No se toma la actualización global de Indeed como fecha de una reseña. Por qué se elige: La propia empresa explica una dificultad de acceso telefónico y el uso del teléfono para pedir, aunque con una política restrictiva. Qué validar: ¿Sigue vigente en Rock Hill la política de líneas ocupadas? ¿El límite está en las líneas, en quién atiende o en la cocina? ¿Qué solución usan hoy? Fuente de señal 2: https://katies.com/pages/important-info Perfil y contacto: https://katies.com/pages/rock-hill Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** La propia empresa explica una dificultad de acceso telefónico y el uso del teléfono para pedir, aunque con una política restrictiva.
+
+**Qué podría necesitar y qué falta demostrar:** Podría necesitar ayuda para responder consultas o a quienes no pueden pedir online. Hay que distinguir capacidad de líneas, atención y cocina.
+
+**Puntaje explicado:** 20 por canal + 20 por comunicación + 0 por presión = 40. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** ¿Sigue vigente en Rock Hill la política de líneas ocupadas? ¿El límite está en las líneas, en quién atiende o en la cocina? ¿Qué solución usan hoy?
+
+### 3. Pequod's Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -87,7 +123,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** Entre las 18 y las 20, ¿quién atiende los pedidos por teléfono y qué pasa si ya está atendiendo a otra persona?
 
-### 3. Litza's Pizza
+### 4. Litza's Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -115,7 +151,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** Los viernes y sábados por la noche, ¿la misma persona atiende el salón y las llamadas? ¿Qué ocurre cuando coinciden?
 
-### 4. Bar-Bill Tavern
+### 5. Bar-Bill Tavern
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -143,7 +179,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** Cuando se cierra el pedido online por capacidad, ¿aumentan las llamadas? ¿Las pueden atender o el límite es la cocina?
 
-### 5. Pappy's Smokehouse
+### 6. Pappy's Smokehouse
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -171,7 +207,35 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En los días con más fila, ¿los pedidos por teléfono los toma el mismo equipo? ¿Quedan llamadas sin atender?
 
-### 6. Black's Barbecue
+### 7. Mama's Pizza Omaha
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Mama's Pizza Omaha |
+| `city` | Omaha |
+| `state` | NE |
+| `locations_count` | 4 |
+| `cuisine` | Pizza |
+| `phone` | +14025539270 |
+| `website` | https://mamaspizzaomaha.com/ |
+| `source_url` | https://mamaspizzaomaha.com/ |
+| `signal_1` | La página oficial ofrece pedidos por teléfono para Midtown. |
+| `signal_2` | La FAQ de reservas de grupos identifica como picos las noches de viernes a domingo; no es una queja telefónica ni una política atribuida solo a Midtown. |
+| `priority_score` | 40 |
+| `why_now` | Sin novedad telefónica fechada. La FAQ permite preguntar por las noches de viernes a domingo; confirmar aplicación y vigencia en Midtown. |
+| `notes` | Sucursal: Midtown · 715 N Saddle Creek Road. La FAQ trata reservas de grupos y muestra actualización del 22/07/2025; no es un comentario reciente. Cuatro sedes publicadas: Midtown, West Omaha, La Vista y Tiburon. Hay canal online. No hay llamadas perdidas comprobadas ni una reseña reciente original aceptada. Por qué se elige: El canal está identificado para Midtown y la empresa publica momentos de mayor actividad en su política de grupos. Qué validar: En Midtown, ¿también tienen más trabajo las noches de viernes a domingo? ¿Quién cubre los pedidos telefónicos mientras atienden el salón? Fuente de señal 2: https://mamaspizzaomaha.com/faqs/ Perfil y contacto: https://mamaspizzaomaha.com/locations/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** El canal está identificado para Midtown y la empresa publica momentos de mayor actividad en su política de grupos.
+
+**Qué podría necesitar y qué falta demostrar:** Conviene comprobar si las llamadas y la atención presencial coinciden en esos horarios y cómo se cubren.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 20 por presión = 40. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** En Midtown, ¿también tienen más trabajo las noches de viernes a domingo? ¿Quién cubre los pedidos telefónicos mientras atienden el salón?
+
+### 8. Black's Barbecue
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -199,7 +263,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** Cuando solo aceptan pedidos presenciales, ¿es por capacidad de cocina o porque no pueden atender llamadas? ¿Se pierden también consultas que podrían responder?
 
-### 7. Glass Nickel Pizza
+### 9. Glass Nickel Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -227,7 +291,63 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En la recaudación de marzo de 2025 hubo dificultades telefónicas reportadas: ¿volvieron a ocurrir en eventos posteriores y cómo las cubren hoy?
 
-### 8. Prime Pizza
+### 10. Home Run Inn
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Home Run Inn |
+| `city` | Hillside |
+| `state` | IL |
+| `locations_count` | 6 |
+| `cuisine` | Pizza |
+| `phone` | +17084939696 |
+| `website` | https://www.homeruninnpizza.com/ |
+| `source_url` | https://recruiting.paylocity.com/Recruiting/Jobs/Details/4520679 |
+| `signal_1` | El puesto Cashier de Hillside incluye responder llamadas entrantes y tomar pedidos de comida para llevar. |
+| `signal_2` | El mismo puesto recibe y ubica comensales, gestiona la espera, cobra y ayuda a retirar y preparar mesas. |
+| `priority_score` | 20 |
+| `why_now` | El portal del empleador registra publicación del aviso el 21/09/2026. Preguntar por la organización actual del puesto, sin atribuir urgencia ni falta de personal. |
+| `notes` | Sucursal: Hillside · 60 S Mannheim Rd. Fuente original Paylocity enlazada desde Careers oficial, leída en HTML público. La fecha publicada aparece en los datos del listado; no demuestra que las tareas hayan empezado ese día. Se cuentan seis restaurantes del directorio actual; se excluyen fábricas, supermercados y locales cerrados de directorios antiguos. No se puntúa la frase genérica sobre trabajar en un ambiente rápido. Sin comentario reciente original aceptado. Por qué se elige: El empleador describe para Hillside una combinación explícita de pedidos por teléfono y atención del salón. Qué validar: En Hillside, ¿la misma persona toma pedidos telefónicos y ubica o ayuda con las mesas? ¿Quién cubre las llamadas cuando sale del puesto? Fuente de señal 2: https://recruiting.paylocity.com/Recruiting/Jobs/Details/4520679 Perfil y contacto: https://www.homeruninnpizza.com/restaurants/hillside/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** El empleador describe para Hillside una combinación explícita de pedidos por teléfono y atención del salón.
+
+**Qué podría necesitar y qué falta demostrar:** Es una buena pregunta sobre cobertura: no sabemos si el puesto se reparte entre varias personas o si ya tienen un sistema de apoyo.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** En Hillside, ¿la misma persona toma pedidos telefónicos y ubica o ayuda con las mesas? ¿Quién cubre las llamadas cuando sale del puesto?
+
+### 11. SPIN! Pizza
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | SPIN! Pizza |
+| `city` | Richardson |
+| `state` | TX |
+| `locations_count` | 13 |
+| `cuisine` | Pizza |
+| `phone` | +19722357746 |
+| `website` | https://www.spinpizza.com/ |
+| `source_url` | https://www.indeed.com/viewjob?jk=c309fd6de51c1b87 |
+| `signal_1` | El aviso Hourly Team Member de Richardson asigna a caja los pedidos telefónicos y para llevar. |
+| `signal_2` | La misma descripción indica que caja ayuda a los camareros cuando hace falta. No demuestra que ambas tareas coincidan ni que fallen llamadas. |
+| `priority_score` | 20 |
+| `why_now` | Sin fecha de publicación comprobable del aviso. Validar el reparto actual de tareas de caja en Richardson. |
+| `notes` | Sucursal: Richardson · 348 W Campbell Rd. Descripción leída en el aviso original de Indeed. Dos hechos del mismo puesto, no dos pruebas independientes. Se cuentan las 13 sedes con ficha del directorio oficial; no se usan conteos de terceros. La mención genérica de picos de cocina no suma presión ni falta de personal. Sin comentario reciente aceptado; el original de DoorDash no abrió. Por qué se elige: El aviso corresponde a Richardson y combina pedidos telefónicos con apoyo al salón. Qué validar: En Richardson, cuando caja ayuda a los camareros, ¿quién toma los pedidos por teléfono? ¿Queda alguna llamada sin atender? Fuente de señal 2: https://www.indeed.com/viewjob?jk=c309fd6de51c1b87 Perfil y contacto: https://www.spinpizza.com/locations/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** El aviso corresponde a Richardson y combina pedidos telefónicos con apoyo al salón.
+
+**Qué podría necesitar y qué falta demostrar:** Puede servir una cobertura cuando caja ayuda a los camareros. Falta comprobar si ya tienen esa cobertura y qué demanda reciben.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** En Richardson, cuando caja ayuda a los camareros, ¿quién toma los pedidos por teléfono? ¿Queda alguna llamada sin atender?
+
+### 12. Prime Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -255,7 +375,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En Brea, ¿el cajero sigue tomando llamadas mientras cobra y empaqueta? ¿Cómo cubren las llamadas cuando se juntan esas tareas?
 
-### 9. NY Pie Nashville
+### 13. NY Pie Nashville
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -283,7 +403,35 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En Franklin, ¿caja atiende las llamadas mientras cobra y prepara productos? ¿Hay alguien que la cubra cuando se acumula trabajo?
 
-### 10. Salvatore's Tomato Pies
+### 14. V Pizza
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | V Pizza |
+| `city` | Jacksonville |
+| `state` | FL |
+| `locations_count` | 13 |
+| `cuisine` | Pizza |
+| `phone` | +19045271511 |
+| `website` | https://www.vpizza.com/ |
+| `source_url` | https://www.vpizza.com/jobs/cashier-and-food-runner/ |
+| `signal_1` | El puesto general Cashier incluye responder llamadas y cargar pedidos para llevar en Toast; confirmar que describa San Marco. |
+| `signal_2` | El mismo puesto también lleva comida a las mesas, cobra y limpia mesas; es una descripción general, sin sucursal asignada. |
+| `priority_score` | 20 |
+| `why_now` | Sin novedad fechada. Confirmar en San Marco la descripción general de caja y reparto de tareas. |
+| `notes` | Sucursal: San Marco · 1406 Hendricks Ave. Aviso sin fecha comprobable ni sucursal fija. El directorio tiene 13 sedes con atención y una futura en Durbin: se excluye Durbin. El texto del puesto todavía menciona 12 y dos en construcción; se prefiere el directorio detallado. No se supone falta de personal, llamadas perdidas ni actividad urgente por contratar. Por qué se elige: La descripción oficial combina teléfono con trabajo en las mesas, una coincidencia directa con la hipótesis del ejercicio. Qué validar: En San Marco, ¿el cajero que toma llamadas también lleva comida y limpia mesas? ¿Quién lo cubre cuando sale al salón? Fuente de señal 2: https://www.vpizza.com/jobs/cashier-and-food-runner/ Perfil y contacto: https://www.vpizza.com/locations/san-marco-jacksonville-fl/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** La descripción oficial combina teléfono con trabajo en las mesas, una coincidencia directa con la hipótesis del ejercicio.
+
+**Qué podría necesitar y qué falta demostrar:** Esas tareas podrían competir por la misma persona. Primero hay que confirmar que así se trabaje en San Marco.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** En San Marco, ¿el cajero que toma llamadas también lleva comida y limpia mesas? ¿Quién lo cubre cuando sale al salón?
+
+### 15. Salvatore's Tomato Pies
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -311,7 +459,63 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En Madison North Livingston, ¿el puesto Host/Phone también toma reservas y ayuda a los camareros? ¿Quién cubre las llamadas mientras lo hace?
 
-### 11. Downtown Pizza
+### 16. Pizzeria Delfina
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Pizzeria Delfina |
+| `city` | Palo Alto |
+| `state` | CA |
+| `locations_count` | 4 |
+| `cuisine` | Pizza |
+| `phone` | +16503532208 |
+| `website` | https://www.pizzeriadelfina.com/ |
+| `source_url` | https://www.pizzeriadelfina.com/catering/ |
+| `signal_1` | La página oficial de catering permite pedidos por teléfono y publica el contacto de Palo Alto; exige 24 horas de anticipación. No confirma pedidos individuales inmediatos por teléfono. |
+| `signal_2` | El anuncio Host/Cashier de Palo Alto del 06/10/2026 combina teléfono, cobro, recepción de comensales y coordinación de takeout y delivery. |
+| `priority_score` | 20 |
+| `why_now` | Aviso de Palo Alto publicado el 06/10/2026. Sirve para revisar tareas telefónicas y de salón; no prueba falta de personal ni una contratación urgente. |
+| `notes` | Sucursal: Palo Alto · 651 Emerson Street. Anuncio y página de catering leídos en HTML público porque la herramienta web no mostraba todo. Fecha del aviso y datos del puesto en HTML/JSON del original. Las tres sedes de catering no reemplazan las cuatro de la marca. Se excluye el aviso de Delfina Restaurant Mission: es otra operación. DoorDash de Palo Alto tiene reseñas favorables de comida del 22/04/2026 y 20/07/2026; no prueban dificultad telefónica. Por qué se elige: Hay un puesto local fechado que combina llamadas y salón. El pedido telefónico comprobado es catering: el argumento comercial queda limitado a ese canal y a consultas. Qué validar: En Palo Alto, ¿el Host/Cashier recibe pedidos individuales por teléfono o solo consultas y catering? ¿Quién cubre esas llamadas mientras recibe comensales? Fuente de señal 2: https://www.craigslist.org/view/d/palo-alto-host-cashier-pizzeria-delfina/6CCYBMgqvxpfbqfA7EQJsg Perfil y contacto: https://www.pizzeriadelfina.com/location/palo-alto/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** Hay un puesto local fechado que combina llamadas y salón. El pedido telefónico comprobado es catering: el argumento comercial queda limitado a ese canal y a consultas.
+
+**Qué podría necesitar y qué falta demostrar:** Podría ayudar a cubrir consultas y catering cuando recepción está ocupada; antes de proponer pedidos individuales hay que confirmar que los acepten por teléfono.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. Se comprobó algún comentario reciente de la sucursal; su tema puede ser distinto del problema telefónico.
+
+**Pregunta para validar:** En Palo Alto, ¿el Host/Cashier recibe pedidos individuales por teléfono o solo consultas y catering? ¿Quién cubre esas llamadas mientras recibe comensales?
+
+### 17. Zachary's Chicago Pizza
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Zachary's Chicago Pizza |
+| `city` | Pleasant Hill |
+| `state` | CA |
+| `locations_count` | 6 |
+| `cuisine` | Pizza |
+| `phone` | +19256027000 |
+| `website` | https://zacharys.com/ |
+| `source_url` | https://zacharys.com/frequently-asked-questions/ |
+| `signal_1` | La FAQ acepta pedidos para comer en el local por teléfono de 11 a 16; después de las 16 solo acepta por teléfono pedidos para llevar. |
+| `signal_2` | Pleasant Hill permite adelantar la pizza después de entrar en la lista de espera de mesas. Es una organización del servicio, sin presión extraordinaria comprobada. |
+| `priority_score` | 20 |
+| `why_now` | Sin problema reciente fechado. Validar cómo funciona la restricción de pedidos telefónicos para comer en el local después de las 16. |
+| `notes` | Sucursal: Pleasant Hill · 140 Crescent Drive. No se suman puntos por una espera posible ni por una regla horaria. Se cuentan seis sedes del menú actual, incluida Livermore abierta; se deja atrás el texto antiguo que dice cinco. Hay pedidos online y plataformas. Sin comentario operativo reciente original aceptado. Por qué se elige: Hay una regla horaria concreta del teléfono y una forma publicada de coordinar pedidos con la espera de mesas. Qué validar: Después de las 16, ¿quién toma los pedidos para llevar por teléfono? ¿Cómo se coordina con las personas que esperan mesa? Fuente de señal 2: https://zacharys.com/locations/pleasant-hill/ Perfil y contacto: https://zacharys.com/locations/pleasant-hill/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** Hay una regla horaria concreta del teléfono y una forma publicada de coordinar pedidos con la espera de mesas.
+
+**Qué podría necesitar y qué falta demostrar:** Sirve para preguntar por el reparto de llamadas y atención de mesas después de las 16. No sabemos si la regla responde a una dificultad.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** Después de las 16, ¿quién toma los pedidos para llevar por teléfono? ¿Cómo se coordina con las personas que esperan mesa?
+
+### 18. Downtown Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -339,7 +543,7 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En Spartanburg, ¿por qué recomiendan Toast frente al teléfono cuando hay más trabajo? ¿La diferencia está en atender, tomar el pedido o prepararlo?
 
-### 12. Pizza Luce
+### 19. Pizza Luce
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -367,16 +571,44 @@ Los 12 contienen 5 casos con algún comentario reciente fechado, pero solo Pappy
 
 **Pregunta para validar:** En Downtown, ¿siguen tomando pedidos por teléfono y aumenta esa demanda en noches de partido? ¿Cómo cubren esas llamadas hoy?
 
+### 20. Golden Boy Pizza
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Golden Boy Pizza |
+| `city` | San Francisco |
+| `state` | CA |
+| `locations_count` | 3 |
+| `cuisine` | Pizza |
+| `phone` | +14159829738 |
+| `website` | https://www.goldenboypizza.com/ |
+| `source_url` | https://www.goldenboypizza.com/ |
+| `signal_1` | La web oficial ofrece pedir por teléfono, personalmente o por plataformas; informa que funciona solo para llevar. |
+| `signal_2` | nadia y relata 30 minutos de fila en North Beach; publicó su reseña el 12/07/2025. Es un antecedente antiguo de atención presencial, no una llamada perdida. |
+| `priority_score` | 40 |
+| `why_now` | Antecedente del 12/07/2025, fuera de los últimos 12 meses. Sin urgencia actual; confirmar funcionamiento y si vuelve a haber filas similares. |
+| `notes` | Sucursal: North Beach · 542 Green Street. Encaje parcial: takeout sin salón, con tres sedes oficiales. Una fila presencial antigua no demuestra volumen telefónico ni que el mismo empleado atienda ambos canales. El relato de fila del 10/08/2025 también es antiguo. Frank S. el 11/06/2026 elogia servicio y entrega en Uber Eats: se conserva como contrapeso favorable, sin renovar la fila antigua. Los fragmentos de TripAdvisor que aluden a 2026 no se aceptan: la lectura del original no permitió vincularlos a una reseña fechada concreta. Por qué se elige: Combina un canal telefónico oficial con una fila concreta de la misma sucursal, aunque el antecedente es antiguo y el encaje es menor. Qué validar: En North Beach, ¿quién responde pedidos telefónicos mientras atienden la fila de ventanilla? ¿Qué cambió desde el episodio de julio de 2025? Fuente de señal 2: https://www.tripadvisor.com/Restaurant_Review-g60713-d353911-Reviews-Golden_Boy_Pizza-San_Francisco_California.html Perfil y contacto: https://www.goldenboypizza.com/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** Combina un canal telefónico oficial con una fila concreta de la misma sucursal, aunque el antecedente es antiguo y el encaje es menor.
+
+**Qué podría necesitar y qué falta demostrar:** La coincidencia posible es entre teléfono y ventanilla. Al ser solo takeout, no se plantea el problema de empleados atendiendo mesas.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 20 por presión = 40. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Comentario operativo o telefónico antiguo. Se comprobó algún comentario reciente de la sucursal; su tema puede ser distinto del problema telefónico.
+
+**Pregunta para validar:** En North Beach, ¿quién responde pedidos telefónicos mientras atienden la fila de ventanilla? ¿Qué cambió desde el episodio de julio de 2025?
+
 ## Decisiones de formato y alcance
 
 Se usa una fila por cadena y un contacto de una sucursal identificada. `locations_count` indica el total de la cadena, no cantidad de incidentes. `phone` usa el formato internacional +1 y diez dígitos. `source_url` apunta a la primera señal; la segunda fuente y el perfil están en `notes`, junto con sucursal, límites y pregunta de validación. Si las dos señales salen de la misma página, se deja visible.
 
 `why_now` explica el motivo para revisar el caso y avisa cuando no hay novedad fechada. No se convierte una página consultada hoy en una noticia nueva, una vacante en falta de personal ni una entrega demorada en una llamada perdida.
 
-Se conservaron los 12 casos razonados y se mantuvieron otros 17 en una lista secundaria de validación. Se presentan menos de 40 porque no hay respaldo suficiente para defender más filas con el mismo detalle. Los motivos de selección y exclusión están en [CASOS.md](CASOS.md).
+Se conservaron los 12 casos iniciales y se incorporaron ocho después de revisar seis tandas de diez candidatos. El CSV tiene 20 hipótesis documentadas, con confianza desigual. Otros 17 de la cohorte original siguen en la lista secundaria. Los 60 resultados de la ampliación están en [TANDAS.md](TANDAS.md). Se detuvo la ampliación al completar 20; no se afirma que sean todos los casos posibles. Los motivos de selección y exclusión están en [CASOS.md](CASOS.md).
 
 ## Controles realizados
 
-Se compararon las 13 columnas y su orden con el template, se quitaron sus ejemplos y se comprobaron 12 empresas sin duplicados. Se revisaron correspondencia de los datos con el control de fuentes, formato de teléfonos, rango de 2–15 locales, dos señales por fila y sumas. CSV y este Markdown se generan a partir de los mismos registros para evitar diferencias.
+Se compararon las 13 columnas y su orden con el template, se quitaron sus ejemplos y se comprobaron 20 empresas sin duplicados. Se revisaron correspondencia de los datos con el control de fuentes, formato de teléfonos, rango de 2–15 locales, dos señales por fila y sumas. CSV y este Markdown se generan a partir de los mismos registros para evitar diferencias.
 
 Se volvieron a leer fuentes oficiales y avisos accesibles; el blog de Litza’s y los datos de Downtown se comprobaron en HTML público. Estos controles comprueban lo publicado y el archivo; no sustituyen hablar con los negocios. No se contactó a los restaurantes.

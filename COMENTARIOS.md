@@ -1,6 +1,6 @@
-# Revisión de comentarios de los 29 casos
+# Revisión de comentarios: cohorte inicial y ampliación
 
-Fecha de revisión: **14/10/2026**. Últimos 12 meses: **14/10/2025 a 14/10/2026**. La búsqueda cubrió los 29 candidatos del control. No se contactó a los restaurantes.
+Fecha de revisión: **14/10/2026**. Últimos 12 meses: **14/10/2025 a 14/10/2026**. La primera revisión cubrió los 29 candidatos iniciales. La sección final agrega las ocho incorporaciones; los conteos iniciales de esta sección se refieren solo a esos 29. No se contactó a los restaurantes.
 
 ## Qué diferencia hacemos
 
@@ -339,7 +339,7 @@ No se agregó un comentario atribuible y comprobable. Se mantiene el argumento y
 
 ## Qué cambia en la elección y en el puntaje
 
-La preselección queda en **12 casos**, incluyendo Glass Nickel y Pizza Lucé como antecedentes de menor prioridad. Los **17 secundarios** necesitan validación antes de pasar a esa selección. Ninguno se considera un problema telefónico confirmado.
+Al cierre de aquella revisión, la preselección quedaba en **12 casos**, incluyendo Glass Nickel y Pizza Lucé como antecedentes de menor prioridad. Los **17 secundarios** necesitan validación antes de pasar a esa selección. Ninguno se considera un problema telefónico confirmado.
 
 El puntaje sigue contando señales aceptadas, incluso históricas. La antigüedad se muestra aparte y sirve para ordenar casos comparables: no se aplicó un descuento numérico inventado. Glass Nickel conserva 20 puntos históricos; Pizza Lucé, 40 como hipótesis histórica; Prince’s, 20 por su relato antiguo y continúa secundario. Las copias sin verificar o experiencias de otra sucursal no recuperan puntos por este cambio.
 
@@ -350,3 +350,32 @@ No se aceptaron nuevas quejas telefónicas verificadas en esta pasada. Sí se ag
 ## Cómo repetir una búsqueda sin complicarla
 
 Elegir empresa y sucursal. Buscar el nombre junto con ciudad o dirección; después agregar “phone”, “call”, “wait” o “busy”. Repetir en Reddit y en las fichas de DoorDash o Uber Eats. Abrir el relato original, anotar autor, fecha mostrada, qué pasó y qué no demuestra. Si no abre, dejarlo como intento pendiente de verificación. No usar la fecha de rastreo del buscador como fecha del comentario.
+
+## Revisión de las ocho incorporaciones
+
+Mismo corte: 14/10/2026; recientes desde el 14/10/2025. Se buscaron comentarios por nombre y sucursal y se probaron resultados de Reddit y plataformas de entrega. Los fallos de acceso y resultados de otras sedes se excluyeron. No se afirma una lectura completa de todas las reseñas de todas las plataformas.
+
+| Empresa | Comentarios aceptados y resultado de búsqueda | Uso en la decisión |
+| --- | --- | --- |
+| Mama’s Pizza Omaha, Midtown | Aparecieron copias y resúmenes; no se aceptó una reseña reciente individual del original para la ficha. | La selección usa web y FAQ oficiales; sin novedad telefónica fechada. |
+| Zachary’s, Pleasant Hill | Se encontró perfil de DoorDash, pero el original no abrió. Sin comentario pertinente aceptado. | Se usan reglas oficiales, sin sumar presión por una posible espera de mesa. |
+| V Pizza, San Marco | El original de Uber Eats no abrió; una nota de gastronomía de 2026 no es una reseña de llamadas. | El puesto general aporta la hipótesis; falta confirmar sucursal. |
+| SPIN!, Richardson | El original de DoorDash no abrió; no se aceptó un comentario reciente individual para puntuar. | El aviso laboral no se presenta como experiencia de cliente. |
+| Katie’s, Rock Hill | El encabezado de Indeed mostraba actualización global de octubre de 2026; no se pudo vincular esa fecha a la experiencia operativa individual. | No se usa como reseña reciente; la política oficial tampoco tiene fecha comprobada. |
+| Pizzeria Delfina, Palo Alto | Sarah F, 20/07/2026, y Gabriel M, 22/04/2026, elogian comida en DoorDash. Scott C, 15/05/2023, critica comida pero dice que el pedido estuvo listo a tiempo. | Algún comentario reciente: sí. Sin dificultad o presión reciente demostrada. La fecha 06/10/2026 es de un anuncio, no de una reseña. |
+| Golden Boy, North Beach | nadia y, 12/07/2025: 30 minutos de fila presencial. Frank S, 11/06/2026 en Uber Eats: servicio y entrega favorables. | Algún comentario reciente: sí; no renueva el episodio de fila antiguo ni prueba problema telefónico. Se conserva el dato favorable. |
+| Home Run Inn, Hillside | Los resultados no permitieron aceptar un comentario pertinente reciente. Se excluyeron relatos del cerrado Melrose Park. | El 21/09/2026 corresponde a publicación del puesto en Paylocity, no a una experiencia de cliente. |
+
+Fuentes originales leídas: [DoorDash Palo Alto](https://www.doordash.com/store/pizzeria-delfina-palo-alto-919), [TripAdvisor North Beach](https://www.tripadvisor.com/Restaurant_Review-g60713-d353911-Reviews-Golden_Boy_Pizza-San_Francisco_California.html), [Uber Eats North Beach](https://www.ubereats.com/store/golden-boy-pizza-north-beach/u5funwcQVgSRWeEWjnSZXA). En el lector, algunas páginas mostraban fragmentos de 2026 junto con reseñas antiguas: no se trasladaron fechas de un elemento a otro.
+
+## Balance del control detallado de 37
+
+| Comentarios sobre dificultad telefónica o presión de servicio | Casos |
+| --- | ---: |
+| Recientes, con fecha comprobable | 2 |
+| Antiguos, con fecha comprobable | 5 |
+| Fecha o verificación pendiente, conservados de la cohorte inicial | 5 |
+| Sin comentario pertinente verificado | 25 |
+| **Total del control detallado** | **37** |
+
+Hay **11 de 37 con algún comentario reciente aceptado**, pero solo los mismos **2 con dificultad o presión operativa reciente**: Pappy’s y Pequod’s. Un elogio genérico del servicio o entrega se conserva como contexto favorable, sin convertirlo en prueba de saturación. En los **20 seleccionados**, **7 tienen algún comentario reciente aceptado**. No se confirmaron llamadas perdidas. Los 17 secundarios originales siguen separados.

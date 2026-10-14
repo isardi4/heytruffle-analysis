@@ -1,12 +1,12 @@
 # Por qué elegimos o dejamos afuera cada caso
 
-Corte de la investigación: 14 de octubre de 2026. Se documentan **29 candidatos**: **12 conservados en preselección provisional** y **17 en una lista secundaria para validar**. No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
+Corte de la investigación: 14 de octubre de 2026. El control detallado reúne **37 candidatos**: **20 preseleccionados** y **17 en una lista secundaria para validar**. La ampliación evaluó otros grupos de candidatos; sus 60 decisiones están en [TANDAS.md](TANDAS.md). No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
 
-La revisión de comentarios y fuentes nuevas de los 29 casos está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
+La revisión de comentarios y fuentes nuevas de los 29 iniciales y las ocho incorporaciones está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
 
 La elección se basa en hechos publicados y en una hipótesis explícita. La fuente puede respaldar el hecho sin demostrar la hipótesis. Los puntajes ayudan a revisar la evidencia, pero no deciden la selección.
 
-## Los 12 de la preselección provisional
+## Los 12 casos iniciales que se conservan
 
 Siete tienen una dificultad de comunicación publicada, una franja de actividad o una restricción de capacidad. Otros cinco se conservan por cómo se organizan los pedidos, con confianza menor. Downtown tiene un respaldo menos visible. Se mantienen esas diferencias en sus fichas.
 
@@ -268,6 +268,154 @@ Siete tienen una dificultad de comunicación publicada, una franja de actividad 
 
 **Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20. [Perfil publicado](https://www.salvatorestomatopies.com/). La fecha de consulta no reemplaza la fecha de la experiencia.
 
+## Las ocho incorporaciones
+
+Las fichas completas, en el mismo orden y con los mismos valores que el CSV, están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md). Las decisiones por tanda están en [TANDAS.md](TANDAS.md).
+
+### Mama's Pizza Omaha
+
+**Sucursal y contacto:** Midtown · 715 N Saddle Creek Road · Omaha, NE · +14025539270. Tamaño publicado: 4.
+
+**Hechos:** La página oficial ofrece pedidos por teléfono para Midtown. [Fuente](https://mamaspizzaomaha.com/). La FAQ de reservas de grupos identifica como picos las noches de viernes a domingo; no es una queja telefónica ni una política atribuida solo a Midtown. [Fuente](https://mamaspizzaomaha.com/faqs/).
+
+**Por qué se elige:** El canal está identificado para Midtown y la empresa publica momentos de mayor actividad en su política de grupos.
+
+**Hipótesis:** Conviene comprobar si las llamadas y la atención presencial coinciden en esos horarios y cómo se cubren.
+
+**Límites y datos en contra:** La FAQ trata reservas de grupos y muestra actualización del 22/07/2025; no es un comentario reciente. Cuatro sedes publicadas: Midtown, West Omaha, La Vista y Tiburon. Hay canal online. No hay llamadas perdidas comprobadas ni una reseña reciente original aceptada.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 20 por presión = 40.
+
+**Qué preguntar:** En Midtown, ¿también tienen más trabajo las noches de viernes a domingo? ¿Quién cubre los pedidos telefónicos mientras atienden el salón?
+
+**Perfil publicado:** https://mamaspizzaomaha.com/locations/
+
+### Zachary's Chicago Pizza
+
+**Sucursal y contacto:** Pleasant Hill · 140 Crescent Drive · Pleasant Hill, CA · +19256027000. Tamaño publicado: 6.
+
+**Hechos:** La FAQ acepta pedidos para comer en el local por teléfono de 11 a 16; después de las 16 solo acepta por teléfono pedidos para llevar. [Fuente](https://zacharys.com/frequently-asked-questions/). Pleasant Hill permite adelantar la pizza después de entrar en la lista de espera de mesas. Es una organización del servicio, sin presión extraordinaria comprobada. [Fuente](https://zacharys.com/locations/pleasant-hill/).
+
+**Por qué se elige:** Hay una regla horaria concreta del teléfono y una forma publicada de coordinar pedidos con la espera de mesas.
+
+**Hipótesis:** Sirve para preguntar por el reparto de llamadas y atención de mesas después de las 16. No sabemos si la regla responde a una dificultad.
+
+**Límites y datos en contra:** No se suman puntos por una espera posible ni por una regla horaria. Se cuentan seis sedes del menú actual, incluida Livermore abierta; se deja atrás el texto antiguo que dice cinco. Hay pedidos online y plataformas. Sin comentario operativo reciente original aceptado.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20.
+
+**Qué preguntar:** Después de las 16, ¿quién toma los pedidos para llevar por teléfono? ¿Cómo se coordina con las personas que esperan mesa?
+
+**Perfil publicado:** https://zacharys.com/locations/pleasant-hill/
+
+### V Pizza
+
+**Sucursal y contacto:** San Marco · 1406 Hendricks Ave · Jacksonville, FL · +19045271511. Tamaño publicado: 13.
+
+**Hechos:** El puesto general Cashier incluye responder llamadas y cargar pedidos para llevar en Toast; confirmar que describa San Marco. [Fuente](https://www.vpizza.com/jobs/cashier-and-food-runner/). El mismo puesto también lleva comida a las mesas, cobra y limpia mesas; es una descripción general, sin sucursal asignada. [Fuente](https://www.vpizza.com/jobs/cashier-and-food-runner/).
+
+**Por qué se elige:** La descripción oficial combina teléfono con trabajo en las mesas, una coincidencia directa con la hipótesis del ejercicio.
+
+**Hipótesis:** Esas tareas podrían competir por la misma persona. Primero hay que confirmar que así se trabaje en San Marco.
+
+**Límites y datos en contra:** Aviso sin fecha comprobable ni sucursal fija. El directorio tiene 13 sedes con atención y una futura en Durbin: se excluye Durbin. El texto del puesto todavía menciona 12 y dos en construcción; se prefiere el directorio detallado. No se supone falta de personal, llamadas perdidas ni actividad urgente por contratar.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20.
+
+**Qué preguntar:** En San Marco, ¿el cajero que toma llamadas también lleva comida y limpia mesas? ¿Quién lo cubre cuando sale al salón?
+
+**Perfil publicado:** https://www.vpizza.com/locations/san-marco-jacksonville-fl/
+
+### SPIN! Pizza
+
+**Sucursal y contacto:** Richardson · 348 W Campbell Rd · Richardson, TX · +19722357746. Tamaño publicado: 13.
+
+**Hechos:** El aviso Hourly Team Member de Richardson asigna a caja los pedidos telefónicos y para llevar. [Fuente](https://www.indeed.com/viewjob?jk=c309fd6de51c1b87). La misma descripción indica que caja ayuda a los camareros cuando hace falta. No demuestra que ambas tareas coincidan ni que fallen llamadas. [Fuente](https://www.indeed.com/viewjob?jk=c309fd6de51c1b87).
+
+**Por qué se elige:** El aviso corresponde a Richardson y combina pedidos telefónicos con apoyo al salón.
+
+**Hipótesis:** Puede servir una cobertura cuando caja ayuda a los camareros. Falta comprobar si ya tienen esa cobertura y qué demanda reciben.
+
+**Límites y datos en contra:** Descripción leída en el aviso original de Indeed. Dos hechos del mismo puesto, no dos pruebas independientes. Se cuentan las 13 sedes con ficha del directorio oficial; no se usan conteos de terceros. La mención genérica de picos de cocina no suma presión ni falta de personal. Sin comentario reciente aceptado; el original de DoorDash no abrió.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20.
+
+**Qué preguntar:** En Richardson, cuando caja ayuda a los camareros, ¿quién toma los pedidos por teléfono? ¿Queda alguna llamada sin atender?
+
+**Perfil publicado:** https://www.spinpizza.com/locations/
+
+### Katie's Pizza & Pasta Osteria
+
+**Sucursal y contacto:** Rock Hill · 9568 Manchester Road · Rock Hill, MO · +13149426557. Tamaño publicado: 4.
+
+**Hechos:** La página Important Info dice que recibe muchas llamadas y tiene líneas limitadas; pide volver a llamar cuando están todas ocupadas. [Fuente](https://katies.com/pages/important-info). La misma página permite pedidos telefónicos en vivo para quienes no tienen computadora y favorece el pedido online para administrar la capacidad. [Fuente](https://katies.com/pages/important-info).
+
+**Por qué se elige:** La propia empresa explica una dificultad de acceso telefónico y el uso del teléfono para pedir, aunque con una política restrictiva.
+
+**Hipótesis:** Podría necesitar ayuda para responder consultas o a quienes no pueden pedir online. Hay que distinguir capacidad de líneas, atención y cocina.
+
+**Límites y datos en contra:** La página conserva texto de dos sedes y retiro en auto: su vigencia no está confirmada. Se cuentan cuatro fichas con dirección, teléfono y horario: Rock Hill, Town & Country, Ballpark Village y Crestwood; no las aperturas anunciadas ni otra marca del grupo. El aviso Host/Hostess de Rock Hill en StaffedUp aporta tareas de teléfono y salón, sin puntos adicionales. No se midieron llamadas perdidas. No se toma la actualización global de Indeed como fecha de una reseña.
+
+**Puntaje:** 20 por canal + 20 por comunicación + 0 por presión = 40.
+
+**Qué preguntar:** ¿Sigue vigente en Rock Hill la política de líneas ocupadas? ¿El límite está en las líneas, en quién atiende o en la cocina? ¿Qué solución usan hoy?
+
+**Perfil publicado:** https://katies.com/pages/rock-hill
+
+### Pizzeria Delfina
+
+**Sucursal y contacto:** Palo Alto · 651 Emerson Street · Palo Alto, CA · +16503532208. Tamaño publicado: 4.
+
+**Hechos:** La página oficial de catering permite pedidos por teléfono y publica el contacto de Palo Alto; exige 24 horas de anticipación. No confirma pedidos individuales inmediatos por teléfono. [Fuente](https://www.pizzeriadelfina.com/catering/). El anuncio Host/Cashier de Palo Alto del 06/10/2026 combina teléfono, cobro, recepción de comensales y coordinación de takeout y delivery. [Fuente](https://www.craigslist.org/view/d/palo-alto-host-cashier-pizzeria-delfina/6CCYBMgqvxpfbqfA7EQJsg).
+
+**Por qué se elige:** Hay un puesto local fechado que combina llamadas y salón. El pedido telefónico comprobado es catering: el argumento comercial queda limitado a ese canal y a consultas.
+
+**Hipótesis:** Podría ayudar a cubrir consultas y catering cuando recepción está ocupada; antes de proponer pedidos individuales hay que confirmar que los acepten por teléfono.
+
+**Límites y datos en contra:** Anuncio y página de catering leídos en HTML público porque la herramienta web no mostraba todo. Fecha del aviso y datos del puesto en HTML/JSON del original. Las tres sedes de catering no reemplazan las cuatro de la marca. Se excluye el aviso de Delfina Restaurant Mission: es otra operación. DoorDash de Palo Alto tiene reseñas favorables de comida del 22/04/2026 y 20/07/2026; no prueban dificultad telefónica.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20.
+
+**Qué preguntar:** En Palo Alto, ¿el Host/Cashier recibe pedidos individuales por teléfono o solo consultas y catering? ¿Quién cubre esas llamadas mientras recibe comensales?
+
+**Perfil publicado:** https://www.pizzeriadelfina.com/location/palo-alto/
+
+### Golden Boy Pizza
+
+**Sucursal y contacto:** North Beach · 542 Green Street · San Francisco, CA · +14159829738. Tamaño publicado: 3.
+
+**Hechos:** La web oficial ofrece pedir por teléfono, personalmente o por plataformas; informa que funciona solo para llevar. [Fuente](https://www.goldenboypizza.com/). nadia y relata 30 minutos de fila en North Beach; publicó su reseña el 12/07/2025. Es un antecedente antiguo de atención presencial, no una llamada perdida. [Fuente](https://www.tripadvisor.com/Restaurant_Review-g60713-d353911-Reviews-Golden_Boy_Pizza-San_Francisco_California.html).
+
+**Por qué se elige:** Combina un canal telefónico oficial con una fila concreta de la misma sucursal, aunque el antecedente es antiguo y el encaje es menor.
+
+**Hipótesis:** La coincidencia posible es entre teléfono y ventanilla. Al ser solo takeout, no se plantea el problema de empleados atendiendo mesas.
+
+**Límites y datos en contra:** Encaje parcial: takeout sin salón, con tres sedes oficiales. Una fila presencial antigua no demuestra volumen telefónico ni que el mismo empleado atienda ambos canales. El relato de fila del 10/08/2025 también es antiguo. Frank S. el 11/06/2026 elogia servicio y entrega en Uber Eats: se conserva como contrapeso favorable, sin renovar la fila antigua. Los fragmentos de TripAdvisor que aluden a 2026 no se aceptan: la lectura del original no permitió vincularlos a una reseña fechada concreta.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 20 por presión = 40.
+
+**Qué preguntar:** En North Beach, ¿quién responde pedidos telefónicos mientras atienden la fila de ventanilla? ¿Qué cambió desde el episodio de julio de 2025?
+
+**Perfil publicado:** https://www.goldenboypizza.com/
+
+### Home Run Inn
+
+**Sucursal y contacto:** Hillside · 60 S Mannheim Rd · Hillside, IL · +17084939696. Tamaño publicado: 6.
+
+**Hechos:** El puesto Cashier de Hillside incluye responder llamadas entrantes y tomar pedidos de comida para llevar. [Fuente](https://recruiting.paylocity.com/Recruiting/Jobs/Details/4520679). El mismo puesto recibe y ubica comensales, gestiona la espera, cobra y ayuda a retirar y preparar mesas. [Fuente](https://recruiting.paylocity.com/Recruiting/Jobs/Details/4520679).
+
+**Por qué se elige:** El empleador describe para Hillside una combinación explícita de pedidos por teléfono y atención del salón.
+
+**Hipótesis:** Es una buena pregunta sobre cobertura: no sabemos si el puesto se reparte entre varias personas o si ya tienen un sistema de apoyo.
+
+**Límites y datos en contra:** Fuente original Paylocity enlazada desde Careers oficial, leída en HTML público. La fecha publicada aparece en los datos del listado; no demuestra que las tareas hayan empezado ese día. Se cuentan seis restaurantes del directorio actual; se excluyen fábricas, supermercados y locales cerrados de directorios antiguos. No se puntúa la frase genérica sobre trabajar en un ambiente rápido. Sin comentario reciente original aceptado.
+
+**Puntaje:** 20 por canal + 0 por comunicación + 0 por presión = 20.
+
+**Qué preguntar:** En Hillside, ¿la misma persona toma pedidos telefónicos y ubica o ayuda con las mesas? ¿Quién cubre las llamadas cuando sale del puesto?
+
+**Perfil publicado:** https://www.homeruninnpizza.com/restaurants/hillside/
+
 ## Los 17 de la lista secundaria
 
 **Decisión: reservar para validación, sin incorporarlos a la preselección comercial.** Son 17 casos con respaldo insuficiente para la preselección. La antigüedad por sí sola no excluye: los antecedentes aceptados se conservan y se distinguen de la evidencia reciente. Se puede preguntar por su operación para comprobar si existe el problema. Una conversación no garantiza una venta: hace falta confirmar canal, dificultad actual y relación con el producto.
@@ -309,11 +457,11 @@ En la primera evaluación de 110 empresas hubo cuatro descartes por tamaño y un
 
 ## Hallazgos que tampoco se seleccionan todavía
 
-Motorino tiene pendiente el alcance internacional; Katie’s, la vigencia de una política que habla de menos sedes que su directorio; Zuppardi’s, el conteo activo exacto; Zachary’s, una segunda señal suficiente; Golden Boy, otra señal y el encaje de una operación solo takeout; Jack Stack Lenexa, la fuente original del puesto y su contacto; Ardovino’s, fecha y sucursal del relato de empleo. No forman parte de los 29 consolidados y no se presentan como descartes definitivos.
+Motorino conserva pendiente el alcance internacional; Zuppardi’s, el conteo activo exacto; Jack Stack Lenexa, la fuente original del puesto y su contacto; Ardovino’s, fecha y sucursal del relato de empleo. Katie’s, Zachary’s y Golden Boy se retomaron y ahora están entre las ocho incorporaciones, con los límites detallados arriba. Los restantes no son descartes definitivos.
 
 Tampoco se unieron Gino’s RVC y Gino’s Long Beach para formar una cadena sin comprobar su relación comercial. Un nombre parecido o parentesco de sus dueños no resuelve ese requisito.
 
-En el balance inicial también hubo 41 empresas con perfil compatible sin señales puntuables y 45 con perfil pendiente. No se las transforma en empresas sin problema: quedaron sin seleccionar por falta de evidencia o datos sin resolver. Esos conteos describen aquella etapa, no se suman al control actual de 29.
+En el balance inicial también hubo 41 empresas con perfil compatible sin señales puntuables y 45 con perfil pendiente. No se las transforma en empresas sin problema: quedaron sin seleccionar por falta de evidencia o datos sin resolver. Esos conteos describen aquella etapa, no se suman al control histórico de 29, hoy ampliado a 37.
 
 ## Qué permitiría cambiar una decisión
 

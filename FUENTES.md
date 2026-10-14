@@ -4,7 +4,11 @@ Corte de la investigación: 14 de octubre de 2026. Los enlaces que respaldan cad
 
 Una página puede servir para una cosa y no para otra. Por ejemplo, una web oficial puede confirmar el teléfono sin demostrar que se pierdan llamadas. No se acepta ni se descarta una plataforma entera sin mirar el contenido concreto.
 
-Con la evidencia registrada se conservan doce casos en preselección provisional y 17 en una lista secundaria de validación. No se afirma que los secundarios carezcan del problema: falta evidencia suficiente o actual.
+Con la evidencia registrada se conservan 20 casos en preselección provisional y 17 en una lista secundaria de validación. No se afirma que los secundarios carezcan del problema: falta evidencia suficiente o actual.
+
+## De dónde salieron los nombres, antes de verificar fuentes
+
+Los primeros nombres de candidatos fueron propuestos por la IA a partir del conocimiento previo del modelo, antes de verificar fuentes en este trabajo: posibles cadenas regionales de pizza, alitas y comida china. No se obtuvo primero un listado completo de restaurantes desde un directorio. La secuencia fue proponer nombres y después buscarlos; las sucursales se obtuvieron de las páginas oficiales. Luego se buscaron los nombres y sus directorios oficiales para filtrar el perfil. No salió de una base comprada ni de una exportación completa de Google Maps. La propuesta de nombres fue una ayuda para descubrir candidatos; las webs, avisos y reseñas respaldan los datos aceptados. [README.md](README.md) muestra las consultas de ejemplo, las etapas y quién hizo cada tarea. No es posible identificar el dato de entrenamiento que originó cada sugerencia. No se atribuye una página de descubrimiento a nombres que ya estaban en la propuesta del modelo.
 
 ## Fuentes que usamos
 
@@ -82,7 +86,7 @@ Una página oficial permanente puede respaldar un canal publicado aunque no indi
 
 ## Revisión con las fuentes nuevas
 
-Se buscaron los **29 casos del control**, por empresa y sucursal, en Google, Reddit y las plataformas de entrega. Se hizo una segunda pasada de búsquedas orientada a comentarios recientes. Yelp tuvo un bloqueo de dominio, por lo que no se completó una revisión individual de sus reseñas. Google Maps tampoco permitió recuperar comentarios originales utilizables. Esos accesos incompletos no se anotan como ausencia de reseñas.
+En la revisión inicial se buscaron los **29 casos de aquella cohorte**, por empresa y sucursal, en Google, Reddit y las plataformas de entrega. Se hizo una segunda pasada de búsquedas orientada a comentarios recientes. Yelp tuvo un bloqueo de dominio, por lo que no se completó una revisión individual de sus reseñas. Google Maps tampoco permitió recuperar comentarios originales utilizables. Esos accesos incompletos no se anotan como ausencia de reseñas.
 
 | Fuente | Por qué se probó | Resultado y límite |
 | --- | --- | --- |
@@ -101,3 +105,17 @@ Ejemplos de decisiones de esta pasada:
 - **Black’s Lockhart:** se descartaron reseñas de Terry Black’s porque es otra empresa. **Buffalo Joe’s Clark:** se descartó la ficha de Howard por ser otra sucursal. **Krispy Brooklyn:** las esperas de Jersey City o Brooklyn Char en Indiana no se trasladaron al local elegido.
 
 Esto es una revisión pública con fuentes accesibles, no una lectura exhaustiva de todas las reseñas existentes.
+
+## Fuentes de las ocho incorporaciones
+
+La ampliación revisó seis grupos de diez candidatos. [TANDAS.md](TANDAS.md) muestra la decisión y fuente o pista de cada uno. [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) y [CASOS.md](CASOS.md) incluyen los dos hechos aceptados, sus enlaces y los límites de cada alta.
+
+Se usaron páginas oficiales para el teléfono, la cantidad de sedes y políticas de Mama’s, Zachary’s, Katie’s y Golden Boy. En V Pizza se usó la descripción oficial de caja. En SPIN! se pudo leer el aviso original de Indeed. En Home Run Inn se siguió Careers hasta el portal Paylocity del empleador y se leyó el HTML original; en Delfina se leyó el anuncio original de Craigslist y la página oficial de catering, incluidos los datos de Palo Alto que el lector no mostraba completos. Los datos estructurados ayudan a leer un original; no son otra fuente independiente.
+
+Se revisaron resultados de Reddit y plataformas de entrega para las ocho altas, además de reseñas generales. No se recuperó un relato pertinente nuevo aceptable de Reddit. Algunos originales de TripAdvisor, Indeed, DoorDash y Uber Eats no abrieron: esos intentos quedan incompletos, no se convierten en ausencia de comentarios. No se reiteró la revisión individual bloqueada de Yelp o Google Maps ni se afirmó que se hubiera completado.
+
+Se aceptaron el relato antiguo de fila de nadia y en TripAdvisor de North Beach (12/07/2025), las opiniones favorables de comida de Sarah F y Gabriel M en DoorDash Palo Alto (20/07/2026 y 22/04/2026) y el comentario favorable de servicio y entrega de Frank S en Uber Eats North Beach (11/06/2026). Solo el primero respalda la señal de presión, como antecedente antiguo. Los otros conservan contexto y datos favorables, sin puntos nuevos. Las búsquedas sobre 2026 no actualizaron fechas de reseñas viejas.
+
+Se descartaron para puntuar los fragmentos sin original de Pizza Shuttle, Cane Rosso y Pie Tap; las copias de quejas de Mineo’s y Sizzle Pie; el anuncio de otra operación de Delfina; los homónimos de Home Slice y Goodfellas; formularios que solo piden el teléfono del postulante; y bases de contactos personales. Los ejemplos ficticios de planes de negocio no prueban la operación de Picasso’s.
+
+También se conservó evidencia que puede ir en contra: Sally’s anunció en 2020 una solución online junto con su problema telefónico. Un proveedor afirma haber ampliado las líneas de Imperial, pero el PDF no pudo leerse; es una pista comercial sin confirmación de su operación actual. No se toma ninguno de esos relatos como prueba de que el problema siga abierto.
