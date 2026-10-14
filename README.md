@@ -208,3 +208,7 @@ Se eligieron los 20 candidatos a partir de resultados de búsquedas de avisos y 
 **Little Chef, Ocean Beach:** el aviso original de Indeed combina teléfono, caja y apoyo de cocina. **A favor:** la sucursal está identificada y el canal es explícito. **En contra:** trabaja principalmente para llevar, con encaje parcial frente a un salón tradicional; falta conocer quién cubre el teléfono. Los comentarios de junio de 2026 elogian comida y no agregan puntos.
 
 Ambos suman 20 por canal, sin puntos por presión ni por publicar una vacante. No se usa la fecha relativa del aviso para inventar una urgencia. La tanda nueve aportó dos; la diez, ninguna. Mantener las reglas puede dar una tanda sin altas. La revisión humana confirmada sigue siendo la de los primeros 20; los siete posteriores están preparados para revisión.
+
+## Alcance de las fuentes de esta versión
+
+Apollo.io no se utilizó para descubrir, verificar ni puntuar los 27 casos de esta versión. Su posible incorporación como base externa queda por evaluar. Los nombres propuestos por IA y los encontrados en búsquedas conservan su procedencia real; agregar una herramienta no cambia el origen de los casos existentes. Una base de empresas puede ayudar a descubrir candidatos, pero sus datos también requieren comprobación y no demuestran llamadas perdidas.

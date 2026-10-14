@@ -144,3 +144,7 @@ Los nombres aparecieron en búsquedas de tareas telefónicas en avisos y resulta
 - **Cadenas grandes y perfiles no resueltos:** Newk’s y Taziki’s publican más de cien sedes; Mellow Mushroom declara más de 160. Se descartan por tamaño antes de buscar quejas. Para otros localizadores que no expusieron el listado completo se registró el límite, sin fabricar un conteo actual desde resúmenes o notas viejas.
 
 **Ventaja:** filtrar primero evita dedicar el mismo tiempo a un negocio fuera del perfil. **Límite:** una fuente inaccesible o una búsqueda sin resultado deja una decisión provisional; no demuestra que el restaurante carezca del problema.
+
+## Herramientas que todavía no son fuente de esta entrega
+
+Apollo.io queda por evaluar como fuente externa de candidatos. No se consultó su base para esta versión y ningún dato de los 27 casos se atribuye a Apollo. La documentación de una herramienta describe funciones; no equivale a recuperar ni verificar empresas dentro de ella.

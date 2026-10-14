@@ -815,3 +815,7 @@ Se conservaron los 12 casos iniciales y se incorporaron quince después de revis
 Se compararon las 13 columnas y su orden con el template, se quitaron sus ejemplos y se comprobaron 27 empresas sin duplicados. Se revisaron correspondencia de los datos con el control de fuentes, formato de teléfonos, rango de 2–15 locales, dos señales por fila y sumas. CSV y este Markdown se generan a partir de los mismos registros para evitar diferencias.
 
 Se volvieron a leer fuentes oficiales y avisos accesibles; el blog de Litza’s y los datos de Downtown se comprobaron en HTML público. Estos controles comprueban lo publicado y el archivo; no sustituyen hablar con los negocios. No se contactó a los restaurantes.
+
+## Procedencia de esta versión
+
+Estas 27 fichas corresponden a la investigación documentada; Apollo.io no se utilizó para obtener ni verificar sus datos. Una futura búsqueda en una base externa no modifica por sí sola el CSV ni sus argumentos.

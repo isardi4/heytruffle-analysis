@@ -628,3 +628,7 @@ Una fuente nueva puede mejorar una ficha: por ejemplo, un aviso original con tar
 ## Resultado de las últimas dos tandas
 
 Se sumaron dos de veinte candidatos. Los otros dieciocho no se incorporan con el respaldo de esta pasada; sus motivos y fuentes o pistas están en las tandas nueve y diez de [TANDAS.md](TANDAS.md). No todos fueron rechazados por carecer del problema: algunos no cumplen el perfil y otros necesitan resolver fuente, marca o canal. No se cambian los 17 secundarios originales.
+
+## Alcance de la selección actual
+
+Los 27 seleccionados y los 17 secundarios mantienen las fuentes y decisiones documentadas. No hay casos obtenidos o verificados en Apollo.io en esta versión; una futura búsqueda externa deberá registrar su procedencia y pasar por los mismos criterios antes de modificar la selección.

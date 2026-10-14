@@ -430,3 +430,7 @@ Se probaron búsquedas por teléfono, sede y opiniones, además de resultados de
 | **Total** | **44** |
 
 Hay **13 de 44 con algún comentario reciente aceptado**; **9 están entre los 27 seleccionados**. Solo Pappy’s y Pequod’s conservan comentario operativo reciente pertinente. Los dos nuevos no aportan quejas telefónicas recientes verificadas. Los 17 secundarios originales no cambian.
+
+## Alcance de la revisión actual
+
+Esta revisión corresponde a las fuentes originales citadas y al corte del 14/10/2026. Apollo.io no aportó comentarios ni se usó para cambiar su antigüedad o clasificación. Encontrar un negocio en una base externa no agrega una experiencia de cliente ni actualiza una opinión antigua.

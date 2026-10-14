@@ -214,3 +214,7 @@ Los comentarios recientes aceptados de Delfina hablan de comida. En Golden Boy, 
 ## Alcance de los conteos
 
 Los 100 son los resultados/candidatos evaluados en esta ampliación, incluidos diez retomados de la búsqueda anterior de 110. Los 44 del control detallado son los 29 anteriores más las quince incorporaciones: 27 seleccionados y los mismos 17 secundarios. Son conjuntos de trabajo distintos; no se suman 100, 110 y 44 como si fueran empresas nuevas distintas. Se detuvo la ampliación tras diez tandas, con 27 casos. El conteo de 100 incluye un distribuidor descartado como falso positivo; no son 100 restaurantes con perfil verificado. En las tandas siete y ocho se encontraron candidatos buscando tareas en avisos originales; HOTLIPS y Pizzicato se propusieron a partir del conocimiento previo del modelo y luego se buscaron fuentes. Las tandas nueve y diez partieron de búsquedas de tareas en avisos y de resultados sobre pedidos telefónicos; se filtró el perfil antes de profundizar. Una tanda no aportó incorporaciones: el criterio no se baja para completar altas. No se contactó a los negocios.
+
+## Procedencia de las tandas cerradas
+
+Estas diez tandas reúnen 100 resultados investigados mediante las búsquedas y fuentes documentadas. No son resultados de Apollo.io. Una prueba futura de esa base tendrá un registro separado; no se atribuirán retrospectivamente estas tandas a una herramienta que no se utilizó.
