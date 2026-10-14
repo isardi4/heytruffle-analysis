@@ -1,8 +1,8 @@
 # Por qué elegimos o dejamos afuera cada caso
 
-Corte de la investigación: 14 de octubre de 2026. El control detallado reúne **42 candidatos**: **25 preseleccionados** y **17 en una lista secundaria para validar**. La ampliación evaluó otros grupos de candidatos; sus 80 decisiones están en [TANDAS.md](TANDAS.md). No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
+Corte de la investigación: 14 de octubre de 2026. El control detallado reúne **44 candidatos**: **27 preseleccionados** y **17 en una lista secundaria para validar**. La ampliación evaluó otros grupos de candidatos; sus 100 decisiones están en [TANDAS.md](TANDAS.md). No todos tienen el mismo respaldo. Los comentarios recientes corresponden a los últimos 12 meses: del 14/10/2025 al 14/10/2026. Los antiguos conservan sus señales aceptadas como antecedentes de menor prioridad; los sin fecha no se presentan como recientes. No se comprobó en ninguno el volumen real de llamadas perdidas ni que la causa sea el equipo ocupado en el salón.
 
-La revisión de comentarios y fuentes nuevas de los 29 iniciales y las trece incorporaciones está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
+La revisión de comentarios y fuentes nuevas de los 29 iniciales y las quince incorporaciones está en [COMENTARIOS.md](COMENTARIOS.md). Allí se separa tener una opinión reciente sobre comida de tener respaldo reciente del problema.
 
 La elección se basa en hechos publicados y en una hipótesis explícita. La fuente puede respaldar el hecho sin demostrar la hipótesis. Los puntajes ayudan a revisar la evidencia, pero no deciden la selección.
 
@@ -528,6 +528,52 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Perfil:** [Contacto y sedes](https://www.doordash.com/business/birria-les-13501665/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
 
+## Incorporaciones de las tandas nueve y diez
+
+### Super Taco Mexican Restaurants
+
+**Sucursal y tamaño:** Franklin · 7131 Franklin Blvd, Sacramento, CA; 4 sedes publicadas como activas.
+
+**Hecho 1:** El aviso original de Server de Franklin incluye tomar pedidos de comida por teléfono. [Aviso original](https://www.snagajob.com/jobs/1303458429).
+
+**Hecho 2:** El mismo puesto cobra, empaqueta pedidos para retirar y ayuda a servir y limpiar mesas. [Mismo aviso](https://www.snagajob.com/jobs/1303458429).
+
+**Por qué se elige:** El aviso del empleador vincula llamadas y atención de mesas en Franklin, una sede identificada.
+
+**Hipótesis:** Las llamadas podrían coincidir con el servicio de mesas; el aviso no demuestra que queden sin atender.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución.
+
+**Límites:** Dos hechos del mismo aviso, no dos fuentes independientes. La fecha relativa Today y Urgently hiring no se convierten en fecha absoluta ni en falta de personal. Cuatro sedes con horario publicado: Franklin, Grant Line, Calvine y Laguna. Mack Road está marcado REMODELING y queda fuera del conteo activo, aunque figure en el pie de página. Hay pedidos online. Uber Eats muestra opiniones favorables antiguas de 2022–enero de 2025, sin comentario reciente aceptado ni falla telefónica. No se usan copias de Google en Wanderlog como originales.
+
+**Qué preguntar:** En Franklin, ¿quién cubre el teléfono cuando el servidor está atendiendo mesas o empaquetando retiros?
+
+**Perfil:** [Contacto y sedes](https://www.supertacomex.com/). Las 13 columnas están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
+### Little Chef Chinese
+
+**Sucursal y tamaño:** Ocean Beach · 4910 Newport Ave, San Diego, CA; 2 sedes publicadas como activas.
+
+**Hecho 1:** El aviso original de cajero de Ocean Beach incluye pedidos telefónicos, presenciales y de plataformas. [Aviso original](https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320).
+
+**Hecho 2:** El mismo puesto cobra, mantiene el área de clientes y ayuda con empaquetado y preparación simple en cocina. [Mismo aviso](https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320).
+
+**Por qué se elige:** El puesto identifica Ocean Beach y combina llamadas, caja y apoyo de cocina y mostrador.
+
+**Hipótesis:** El teléfono podría competir con caja o preparación. El encaje es teléfono más mostrador; no se atribuye servicio de salón completo.
+
+**Puntaje:** 20 canal + 0 comunicación + 0 presión = 20.
+
+**Por qué ahora:** Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución.
+
+**Límites:** Las dos señales provienen del mismo puesto. Sin fecha absoluta comprobada, sin puntos por ambiente rápido ni vacante. Dos direcciones oficiales: Ocean Beach y Sorrento Valley. Operación centrada en takeout, con encaje parcial respecto de la hipótesis de personal en salón. En Uber Eats, Jeremy R. (21/06/2026) y Sarah H. (23/06/2026) elogian la comida: algún comentario reciente sí, dificultad telefónica no. TripAdvisor tiene experiencias antiguas; no se acepta como reciente el año 2026 del título ni testimonios copiados sin fecha en la web.
+
+**Qué preguntar:** En Ocean Beach, ¿quién responde las llamadas cuando caja cobra o ayuda con preparaciones en cocina?
+
+**Perfil:** [Contacto y sedes](https://littlechefcatering.us/). Las 13 columnas están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+
 ## Los 17 de la lista secundaria
 
 **Decisión: reservar para validación, sin incorporarlos a la preselección comercial.** Son 17 casos con respaldo insuficiente para la preselección. La antigüedad por sí sola no excluye: los antecedentes aceptados se conservan y se distinguen de la evidencia reciente. Se puede preguntar por su operación para comprobar si existe el problema. Una conversación no garantiza una venta: hace falta confirmar canal, dificultad actual y relación con el producto.
@@ -578,3 +624,7 @@ En el balance inicial también hubo 41 empresas con perfil compatible sin señal
 ## Qué permitiría cambiar una decisión
 
 Una fuente nueva puede mejorar una ficha: por ejemplo, un aviso original con tareas explícitas, una reseña con fecha y sucursal o un directorio que resuelva el tamaño. Repetir el mismo hecho en dos páginas no agrega una segunda experiencia. Si cambia la decisión, se conserva el dato anterior y se explica cuál fue el hecho que la cambió.
+
+## Resultado de las últimas dos tandas
+
+Se sumaron dos de veinte candidatos. Los otros dieciocho no se incorporan con el respaldo de esta pasada; sus motivos y fuentes o pistas están en las tandas nueve y diez de [TANDAS.md](TANDAS.md). No todos fueron rechazados por carecer del problema: algunos no cumplen el perfil y otros necesitan resolver fuente, marca o canal. No se cambian los 17 secundarios originales.

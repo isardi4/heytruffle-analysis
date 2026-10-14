@@ -4,7 +4,7 @@ Corte de la investigación: 14 de octubre de 2026. Los enlaces que respaldan cad
 
 Una página puede servir para una cosa y no para otra. Por ejemplo, una web oficial puede confirmar el teléfono sin demostrar que se pierdan llamadas. No se acepta ni se descarta una plataforma entera sin mirar el contenido concreto.
 
-Con la evidencia registrada se conservan 25 casos en preselección provisional y 17 en una lista secundaria de validación. No se afirma que los secundarios carezcan del problema: falta evidencia suficiente o actual.
+Con la evidencia registrada se conservan 27 casos en preselección provisional y 17 en una lista secundaria de validación. No se afirma que los secundarios carezcan del problema: falta evidencia suficiente o actual.
 
 ## De dónde salieron los nombres, antes de verificar fuentes
 
@@ -131,3 +131,16 @@ En las dos últimas tandas, las búsquedas de avisos laborales permitieron encon
 - **Birria LES:** [primera señal](https://jobtoday.com/us/job/cashier-and-line-cooks-YRd2LY?locale=en-US), [segunda señal](https://jobtoday.com/us/job/cashier-and-line-cooks-YRd2LY?locale=en-US) y [perfil/contacto](https://www.doordash.com/business/birria-les-13501665/). Dos señales del mismo aviso. El aviso dice dos locales; se prefieren las cinco direcciones publicadas en DoorDash: Rivington, St Marks, Chelsea, Bedford y Astoria. Website es ficha comercial, no dominio oficial confirmado. Teléfono y dirección en https://www.restaurantji.com/ny/astoria/birria-les-astoria-/ y https://restaurantguru.com/Birria-LES-Astoria-New-York: se usan como directorios de contacto, no sus copias de reseñas. Confirmar teléfono y conteo al contactar. No se aceptan sitios de muestra de OrderSave ni comentarios de otras marcas de birria.
 
 Se aceptan avisos originales de StaffedUp y JobToday para describir tareas publicadas. No se usa la fecha de rastreo como publicación ni una vacante como prueba de falta de empleados. Las páginas de muestra de OrderSave no se identificaron como sitio oficial de Birria LES: quedan fuera. Las copias de Teal no sustituyen un aviso original inaccesible. Grubhub bloqueado por país y fragmentos de TripAdvisor sin original legible no prueban experiencias. **Ventaja:** se puede rastrear cada afirmación; **límite:** lo publicado puede estar desactualizado y requiere confirmación comercial.
+
+## Fuentes y decisiones de las tandas nueve y diez
+
+Los nombres aparecieron en búsquedas de tareas telefónicas en avisos y resultados sobre pedidos de comida. El filtro se hizo antes de aceptar una fila. La procedencia y decisión de los veinte están en [TANDAS.md](TANDAS.md).
+
+- **Super Taco:** [aviso del empleador en Snagajob](https://www.snagajob.com/jobs/1303458429) para tareas de Franklin; [web de la marca](https://www.supertacomex.com/) para teléfono y cuatro sedes con horario. Mack Road está en remodelación y no se cuenta como activo. Dos tareas del mismo aviso no son fuentes independientes. Su etiqueta Today no se convirtió en fecha absoluta.
+- **Little Chef:** [aviso original en Indeed](https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320) para Ocean Beach; [web propia](https://littlechefcatering.us/) para dos direcciones y teléfono. Los testimonios copiados sin fecha de esa web no se usaron como reseñas recientes. Los comentarios favorables originales de Uber Eats están detallados en COMENTARIOS.
+- **Beau Jo’s:** se siguió el [empleo oficial](https://www.beaujos.com/about-us/employment/) hasta ADP; el portal pidió un navegador compatible y no mostró el puesto. Las copias de Teal/Tallo no sustituyen esa comprobación. Se deja pendiente, sin sumar.
+- **Flying Pie Pizzaria, Idaho:** el [comunicado de kea del 30/03/2023](https://www.webwire.com/ViewPressRel.asp?aId=302758) anuncia pruebas de atención con IA. Sirve como evidencia en contra de asumir una necesidad sin resolver; el proveedor no es una evaluación independiente y la nota no demuestra continuidad ni éxito en 2026. No se mezcla con la marca de Oregón.
+- **Sugarfire y Mike Duffy’s:** los avisos leídos mencionan carryout y teléfono o atención presencial, pero no se obtuvo una afirmación inequívoca de pedidos de comida por teléfono que cumpla el mismo criterio. No se mezclan puestos para completar la señal. Sugarfire publica once fichas; Mike Duffy’s, tres, pese a un encabezado de dos.
+- **Cadenas grandes y perfiles no resueltos:** Newk’s y Taziki’s publican más de cien sedes; Mellow Mushroom declara más de 160. Se descartan por tamaño antes de buscar quejas. Para otros localizadores que no expusieron el listado completo se registró el límite, sin fabricar un conteo actual desde resúmenes o notas viejas.
+
+**Ventaja:** filtrar primero evita dedicar el mismo tiempo a un negocio fuera del perfil. **Límite:** una fuente inaccesible o una búsqueda sin resultado deja una decisión provisional; no demuestra que el restaurante carezca del problema.

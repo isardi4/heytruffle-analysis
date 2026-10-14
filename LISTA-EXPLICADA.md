@@ -1,6 +1,6 @@
-# Los 25 casos del CSV, explicados
+# Los 27 casos del CSV, explicados
 
-Este documento acompaña a [gtm-lista.csv](gtm-lista.csv). Presenta las mismas 25 empresas, en el mismo orden, con los mismos datos, señales, puntos y límites. Es una selección de hipótesis para validar, no una lista de llamadas perdidas confirmadas. Corte: **14/10/2026**.
+Este documento acompaña a [gtm-lista.csv](gtm-lista.csv). Presenta las mismas 27 empresas, en el mismo orden, con los mismos datos, señales, puntos y límites. Es una selección de hipótesis para validar, no una lista de llamadas perdidas confirmadas. Corte: **14/10/2026**.
 
 ## Cómo leer la prioridad
 
@@ -30,17 +30,19 @@ El orden de las filas es el orden sugerido para revisar o validar los casos. Se 
 | 14 | Prime Pizza | 235 E Imperial Highway | 20 | Validar funcionamiento |
 | 15 | NY Pie Nashville | 1441 New Highway 96 West | 20 | Validar funcionamiento |
 | 16 | Billy G's | Kirkwood · 131 W Argonne Dr | 20 | Validar funcionamiento |
-| 17 | V Pizza | San Marco · 1406 Hendricks Ave | 20 | Validar funcionamiento |
-| 18 | Holland Farms Bakery & Deli | Manlius · 343 Fayette St | 20 | Validar funcionamiento |
-| 19 | Birria LES | Astoria · 31-27 Ditmars Blvd | 20 | Validar funcionamiento |
-| 20 | Salvatore's Tomato Pies | Contacto elegido: Madison North Livingston · 10 N Livingston | 20 | Validar funcionamiento y sucursal |
-| 21 | Pizzeria Delfina | Palo Alto · 651 Emerson Street | 20 | Validar funcionamiento |
-| 22 | Zachary's Chicago Pizza | Pleasant Hill · 140 Crescent Drive | 20 | Validar funcionamiento |
-| 23 | Downtown Pizza | 156 Magnolia St | 20 | Validar funcionamiento publicado en el código |
-| 24 | Pizza Luce | Downtown Minneapolis · 119 N 4th St | 40 | Validar antecedente antiguo, menor prioridad |
-| 25 | Golden Boy Pizza | North Beach · 542 Green Street | 40 | Antecedente antiguo y encaje parcial |
+| 17 | Super Taco Mexican Restaurants | Franklin · 7131 Franklin Blvd | 20 | Validar reparto de tareas en la sucursal |
+| 18 | V Pizza | San Marco · 1406 Hendricks Ave | 20 | Validar funcionamiento |
+| 19 | Holland Farms Bakery & Deli | Manlius · 343 Fayette St | 20 | Validar funcionamiento |
+| 20 | Birria LES | Astoria · 31-27 Ditmars Blvd | 20 | Validar funcionamiento |
+| 21 | Little Chef Chinese | Ocean Beach · 4910 Newport Ave | 20 | Validar reparto de tareas en la sucursal |
+| 22 | Salvatore's Tomato Pies | Contacto elegido: Madison North Livingston · 10 N Livingston | 20 | Validar funcionamiento y sucursal |
+| 23 | Pizzeria Delfina | Palo Alto · 651 Emerson Street | 20 | Validar funcionamiento |
+| 24 | Zachary's Chicago Pizza | Pleasant Hill · 140 Crescent Drive | 20 | Validar funcionamiento |
+| 25 | Downtown Pizza | 156 Magnolia St | 20 | Validar funcionamiento publicado en el código |
+| 26 | Pizza Luce | Downtown Minneapolis · 119 N 4th St | 40 | Validar antecedente antiguo, menor prioridad |
+| 27 | Golden Boy Pizza | North Beach · 542 Green Street | 40 | Antecedente antiguo y encaje parcial |
 
-Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fechado; entre las ocho incorporaciones se aceptaron comentarios recientes de comida de Pizzeria Delfina y uno favorable de servicio y entrega de Golden Boy. Este último no renueva la fila antigua. Entre los cinco siguientes, Crushed Red tiene una opinión favorable publicada el 03/06/2026, sin dificultad telefónica. Hay ocho seleccionados con algún comentario reciente aceptado. En los 25, solo Pappy’s y Pequod’s tienen comentarios operativos recientes comprobados. La búsqueda no demuestra ausencia de otras reseñas. Una reseña de comida no renueva una queja telefónica antigua. El detalle de las búsquedas está en [COMENTARIOS.md](COMENTARIOS.md).
+Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fechado; entre las ocho incorporaciones se aceptaron comentarios recientes de comida de Pizzeria Delfina y uno favorable de servicio y entrega de Golden Boy. Este último no renueva la fila antigua. Entre los cinco siguientes, Crushed Red tiene una opinión favorable publicada el 03/06/2026, sin dificultad telefónica. Little Chef agrega opiniones favorables de comida de junio de 2026. Hay nueve seleccionados con algún comentario reciente aceptado. En los 27, solo Pappy’s y Pequod’s tienen comentarios operativos recientes comprobados. La búsqueda no demuestra ausencia de otras reseñas. Una reseña de comida no renueva una queja telefónica antigua. El detalle de las búsquedas está en [COMENTARIOS.md](COMENTARIOS.md).
 
 ## Fichas en el mismo orden que el CSV
 
@@ -492,7 +494,35 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Kirkwood, ¿quién cubre las llamadas cuando Carryout cobra o entrega un pedido?
 
-### 17. V Pizza
+### 17. Super Taco Mexican Restaurants
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Super Taco Mexican Restaurants |
+| `city` | Sacramento |
+| `state` | CA |
+| `locations_count` | 4 |
+| `cuisine` | Mexicana, tacos y burritos |
+| `phone` | +19164699104 |
+| `website` | https://www.supertacomex.com/ |
+| `source_url` | https://www.snagajob.com/jobs/1303458429 |
+| `signal_1` | El aviso original de Server de Franklin incluye tomar pedidos de comida por teléfono. |
+| `signal_2` | El mismo puesto cobra, empaqueta pedidos para retirar y ayuda a servir y limpiar mesas. |
+| `priority_score` | 20 |
+| `why_now` | Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución. |
+| `notes` | Sucursal: Franklin · 7131 Franklin Blvd. Dos hechos del mismo aviso, no dos fuentes independientes. La fecha relativa Today y Urgently hiring no se convierten en fecha absoluta ni en falta de personal. Cuatro sedes con horario publicado: Franklin, Grant Line, Calvine y Laguna. Mack Road está marcado REMODELING y queda fuera del conteo activo, aunque figure en el pie de página. Hay pedidos online. Uber Eats muestra opiniones favorables antiguas de 2022–enero de 2025, sin comentario reciente aceptado ni falla telefónica. No se usan copias de Google en Wanderlog como originales. Por qué se elige: El aviso del empleador vincula llamadas y atención de mesas en Franklin, una sede identificada. Qué validar: En Franklin, ¿quién cubre el teléfono cuando el servidor está atendiendo mesas o empaquetando retiros? Fuente de señal 2: https://www.snagajob.com/jobs/1303458429 Perfil y contacto: https://www.supertacomex.com/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** El aviso del empleador vincula llamadas y atención de mesas en Franklin, una sede identificada.
+
+**Qué podría necesitar y qué falta demostrar:** Las llamadas podrían coincidir con el servicio de mesas; el aviso no demuestra que queden sin atender.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. No se comprobó un comentario reciente fechado del período para esta sucursal.
+
+**Pregunta para validar:** En Franklin, ¿quién cubre el teléfono cuando el servidor está atendiendo mesas o empaquetando retiros?
+
+### 18. V Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -520,7 +550,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En San Marco, ¿el cajero que toma llamadas también lleva comida y limpia mesas? ¿Quién lo cubre cuando sale al salón?
 
-### 18. Holland Farms Bakery & Deli
+### 19. Holland Farms Bakery & Deli
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -548,7 +578,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Manlius, ¿cuántas llamadas son por comidas del deli y quién atiende mientras el mostrador está ocupado?
 
-### 19. Birria LES
+### 20. Birria LES
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -576,7 +606,35 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Astoria, ¿quién responde el teléfono cuando caja está cobrando o empaquetando entregas?
 
-### 20. Salvatore's Tomato Pies
+### 21. Little Chef Chinese
+
+| Campo del CSV | Valor |
+| --- | --- |
+| `company_name` | Little Chef Chinese |
+| `city` | San Diego |
+| `state` | CA |
+| `locations_count` | 2 |
+| `cuisine` | China para llevar |
+| `phone` | +16192226627 |
+| `website` | https://littlechefcatering.us/ |
+| `source_url` | https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320 |
+| `signal_1` | El aviso original de cajero de Ocean Beach incluye pedidos telefónicos, presenciales y de plataformas. |
+| `signal_2` | El mismo puesto cobra, mantiene el área de clientes y ayuda con empaquetado y preparación simple en cocina. |
+| `priority_score` | 20 |
+| `why_now` | Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución. |
+| `notes` | Sucursal: Ocean Beach · 4910 Newport Ave. Las dos señales provienen del mismo puesto. Sin fecha absoluta comprobada, sin puntos por ambiente rápido ni vacante. Dos direcciones oficiales: Ocean Beach y Sorrento Valley. Operación centrada en takeout, con encaje parcial respecto de la hipótesis de personal en salón. En Uber Eats, Jeremy R. (21/06/2026) y Sarah H. (23/06/2026) elogian la comida: algún comentario reciente sí, dificultad telefónica no. TripAdvisor tiene experiencias antiguas; no se acepta como reciente el año 2026 del título ni testimonios copiados sin fecha en la web. Por qué se elige: El puesto identifica Ocean Beach y combina llamadas, caja y apoyo de cocina y mostrador. Qué validar: En Ocean Beach, ¿quién responde las llamadas cuando caja cobra o ayuda con preparaciones en cocina? Fuente de señal 2: https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320 Perfil y contacto: https://littlechefcatering.us/ Corte: 14/10/2026. |
+
+**Por qué lo elegimos y por qué va aquí:** El puesto identifica Ocean Beach y combina llamadas, caja y apoyo de cocina y mostrador.
+
+**Qué podría necesitar y qué falta demostrar:** El teléfono podría competir con caja o preparación. El encaje es teléfono más mostrador; no se atribuye servicio de salón completo.
+
+**Puntaje explicado:** 20 por canal + 0 por comunicación + 0 por presión = 20. No se suman puntos dos veces por el mismo episodio.
+
+**Comentarios:** Sin comentario pertinente verificado. Se comprobó algún comentario reciente de la sucursal; su tema puede ser distinto del problema telefónico.
+
+**Pregunta para validar:** En Ocean Beach, ¿quién responde las llamadas cuando caja cobra o ayuda con preparaciones en cocina?
+
+### 22. Salvatore's Tomato Pies
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -604,7 +662,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Madison North Livingston, ¿el puesto Host/Phone también toma reservas y ayuda a los camareros? ¿Quién cubre las llamadas mientras lo hace?
 
-### 21. Pizzeria Delfina
+### 23. Pizzeria Delfina
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -632,7 +690,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Palo Alto, ¿el Host/Cashier recibe pedidos individuales por teléfono o solo consultas y catering? ¿Quién cubre esas llamadas mientras recibe comensales?
 
-### 22. Zachary's Chicago Pizza
+### 24. Zachary's Chicago Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -660,7 +718,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** Después de las 16, ¿quién toma los pedidos para llevar por teléfono? ¿Cómo se coordina con las personas que esperan mesa?
 
-### 23. Downtown Pizza
+### 25. Downtown Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -688,7 +746,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Spartanburg, ¿por qué recomiendan Toast frente al teléfono cuando hay más trabajo? ¿La diferencia está en atender, tomar el pedido o prepararlo?
 
-### 24. Pizza Luce
+### 26. Pizza Luce
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -716,7 +774,7 @@ Los 12 de la cohorte inicial contienen 5 casos con algún comentario reciente fe
 
 **Pregunta para validar:** En Downtown, ¿siguen tomando pedidos por teléfono y aumenta esa demanda en noches de partido? ¿Cómo cubren esas llamadas hoy?
 
-### 25. Golden Boy Pizza
+### 27. Golden Boy Pizza
 
 | Campo del CSV | Valor |
 | --- | --- |
@@ -750,10 +808,10 @@ Se usa una fila por cadena y un contacto de una sucursal identificada. `location
 
 `why_now` explica el motivo para revisar el caso y avisa cuando no hay novedad fechada. No se convierte una página consultada hoy en una noticia nueva, una vacante en falta de personal ni una entrega demorada en una llamada perdida.
 
-Se conservaron los 12 casos iniciales y se incorporaron trece después de revisar ocho tandas de diez candidatos. El CSV tiene 25 hipótesis documentadas, con confianza desigual. Otros 17 de la cohorte original siguen en la lista secundaria. Los 80 resultados de la ampliación están en [TANDAS.md](TANDAS.md). Se detuvo la ampliación al completar 25; no se afirma que sean todos los casos posibles. Los motivos de selección y exclusión están en [CASOS.md](CASOS.md).
+Se conservaron los 12 casos iniciales y se incorporaron quince después de revisar diez tandas de diez candidatos. El CSV tiene 27 hipótesis documentadas, con confianza desigual. Otros 17 de la cohorte original siguen en la lista secundaria. Los 100 resultados de la ampliación están en [TANDAS.md](TANDAS.md). Se detuvo la ampliación al completar 27; no se afirma que sean todos los casos posibles. Los motivos de selección y exclusión están en [CASOS.md](CASOS.md).
 
 ## Controles realizados
 
-Se compararon las 13 columnas y su orden con el template, se quitaron sus ejemplos y se comprobaron 25 empresas sin duplicados. Se revisaron correspondencia de los datos con el control de fuentes, formato de teléfonos, rango de 2–15 locales, dos señales por fila y sumas. CSV y este Markdown se generan a partir de los mismos registros para evitar diferencias.
+Se compararon las 13 columnas y su orden con el template, se quitaron sus ejemplos y se comprobaron 27 empresas sin duplicados. Se revisaron correspondencia de los datos con el control de fuentes, formato de teléfonos, rango de 2–15 locales, dos señales por fila y sumas. CSV y este Markdown se generan a partir de los mismos registros para evitar diferencias.
 
 Se volvieron a leer fuentes oficiales y avisos accesibles; el blog de Litza’s y los datos de Downtown se comprobaron en HTML público. Estos controles comprueban lo publicado y el archivo; no sustituyen hablar con los negocios. No se contactó a los restaurantes.

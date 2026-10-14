@@ -1,6 +1,6 @@
 # Ampliación en tandas de diez
 
-Corte: **14/10/2026**. Se revisaron **ocho tandas de diez candidatos: 80 en total**. Se incorporaron **trece** a los 12 iniciales y la lista queda en **25 preseleccionados**. Los otros 67 no se incorporan con el respaldo disponible; eso no significa que esos negocios no tengan el problema. Algunos no cumplen el perfil y otros necesitan mejores fuentes.
+Corte: **14/10/2026**. Se revisaron **diez tandas de diez candidatos: 100 en total**. Se incorporaron **quince** a los 12 iniciales y la lista queda en **27 preseleccionados**. Los otros 85 no se incorporan con el respaldo disponible; eso no significa que esos negocios no tengan el problema. Algunos no cumplen el perfil y otros necesitan mejores fuentes.
 
 Cada tanda reúne diez candidatos de búsqueda, no diez aceptados. Se hicieron búsquedas, lectura de fuentes y comprobación de sucursal cuando aparecía un argumento útil. La profundidad varía: una búsqueda sin resultados pertinentes no se presenta como auditoría completa. Hubo lecturas de seguimiento entre tandas; la tabla muestra el resultado al cerrar la ampliación.
 
@@ -24,8 +24,10 @@ Se distinguieron comentarios de los últimos 12 meses (14/10/2025–14/10/2026),
 | 6 | 10 | 2 | 20 |
 | 7 | 10 | 3 | 23 |
 | 8 | 10 | 2 | 25 |
+| 9 | 10 | 2 | 27 |
+| 10 | 10 | 0 | 27 |
 
-## Los trece incorporados
+## Los quince incorporados
 
 Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columnas exactas del CSV y añaden por qué se elige cada caso, qué podría necesitar y qué preguntar.
 
@@ -44,8 +46,10 @@ Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columna
 | Billy G's | El aviso local permite identificar quién combina llamadas y atención de pedidos presenciales. |
 | Holland Farms Bakery & Deli | Hay un canal de pedidos de comida y un puesto de la misma sede que comparte teléfono y mostrador. |
 | Birria LES | El aviso identifica la sede y combina atención telefónica, presencial y preparación de entregas. |
+| Super Taco Mexican Restaurants | El aviso del empleador vincula llamadas y atención de mesas en Franklin, una sede identificada. |
+| Little Chef Chinese | El puesto identifica Ocean Beach y combina llamadas, caja y apoyo de cocina y mostrador. |
 
-**No se confirmaron 25 pérdidas de llamadas.** Hay doce casos con alguna señal aceptada de comunicación o presión —incluidos antecedentes antiguos— y trece apoyados en tareas o reglas de funcionamiento. Golden Boy tiene encaje parcial: teléfono y ventanilla, sin salón. En Pizzeria Delfina el canal telefónico probado es catering, no pedidos individuales inmediatos. Estos límites también están en el CSV.
+**No se confirmaron 27 pérdidas de llamadas.** Hay doce casos con alguna señal aceptada de comunicación o presión —incluidos antecedentes antiguos— y quince apoyados en tareas o reglas de funcionamiento. Golden Boy tiene encaje parcial: teléfono y ventanilla, sin salón. En Pizzeria Delfina el canal telefónico probado es catering, no pedidos individuales inmediatos. Estos límites también están en el CSV.
 
 ## Decisión de cada candidato
 
@@ -169,6 +173,36 @@ Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columna
 | HOTLIPS Pizza | Se suma | Nombre sugerido por el modelo y luego verificado: dos sedes, derivación al teléfono al apagar online y picos publicados de noches y fines de semana. Límite posible de cocina. | [Fuente o pista](https://www.hotlipspizza.com/) |
 | N.H. Scheppers Distributing | No se suma con el respaldo disponible | Falso positivo de la búsqueda de empleo: distribuidor de bebidas, no restaurante. Se registra para explicar el descarte. | [Fuente o pista](https://staffedup.com/nhscheppers-columbia/) |
 
+### Tanda 9
+
+| Candidato | Decisión | Motivo | Fuente o pista revisada |
+| --- | --- | --- | --- |
+| Mike Duffy's Pub & Grill | No se suma con el respaldo disponible | Tres fichas con dirección y horario, pese a un encabezado que dice dos. El puesto Prep Cook menciona teléfono y carryout, pero no explicita que tome pedidos por teléfono; no se mezclan sus tareas con las del Busser. Falta despejar ese uso del canal. | [Fuente o pista](https://staffedup.com/mike-duffys/) |
+| Twins Pizza and Grill | No se suma con el respaldo disponible | La web de Clio, Michigan, identifica una sede; no se verificó el mínimo de dos. No se suman homónimos ni resultados irrelevantes de una búsqueda inicial con estado incorrecto. | [Fuente o pista](https://twinspizzaclio.com/) |
+| Anthonino’s Taverna | No se suma con el respaldo disponible | La web identifica On The Hill en St. Louis y no permitió confirmar una segunda sede. El aviso de carryout no compensa ese requisito. | [Fuente o pista](https://anthoninos.com/) |
+| YaYa’s EuroBistro | No se suma con el respaldo disponible | El aviso de Chesterfield menciona teléfono y empaquetado, sin decir que se toman pedidos telefónicos. La reserva por teléfono no demuestra ese canal de comida; falta una señal explícita y un conteo completo de la marca entre operadores. | [Fuente o pista](https://staffedup.com/yayasstl/) |
+| Cottle Village | No se suma con el respaldo disponible | El aviso remite a Cottleville y combina varios puestos del mismo establecimiento. No se verificó una segunda sede de la misma marca ni pedidos de comida por teléfono. | [Fuente o pista](https://staffedup.com/cottlevillage/) |
+| The First Seat Pub & Grill | No se suma con el respaldo disponible | El resultado enlaza un puesto de Barley & Vine bajo la cuenta de The First Seat. El original no abrió; no se mezclan marcas ni se valida el tamaño con ese fragmento. | [Fuente o pista](https://staffedup.com/the-first-seat-pub-grill/12072/server-barley-vine/) |
+| Sugarfire Smoke House | No se suma con el respaldo disponible | Once fichas oficiales. El puesto Front of House Specialist de Wentzville describe salón y carryout; no se obtuvo mención explícita de pedidos por teléfono en los avisos leídos. Carryout puede ser online o presencial. | [Fuente o pista](https://staffedup.com/sugarfire-wentz/) |
+| Mellow Mushroom | No se suma con el respaldo disponible | La presentación de la tienda de la marca publica más de 160 sedes: supera quince. No se cuenta una franquicia individual como cadena distinta. | [Fuente o pista](https://www.mellowmushroomshop.com/mellowmushroom/about-us) |
+| Super Taco Mexican Restaurants | Se suma | Franklin: aviso original del empleador combina pedidos por teléfono y atención de mesas. Cuatro sedes con horario; Mack Road queda fuera por remodelación. | [Fuente o pista](https://www.snagajob.com/jobs/1303458429) |
+| Little Chef Chinese | Se suma | Ocean Beach: anuncio original de caja incluye teléfono, cobro y apoyo de cocina. Dos direcciones oficiales; encaje parcial de mostrador/takeout, sin salón completo comprobado. | [Fuente o pista](https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320) |
+
+### Tanda 10
+
+| Candidato | Decisión | Motivo | Fuente o pista revisada |
+| --- | --- | --- | --- |
+| Beau Jo’s Pizza | No se suma con el respaldo disponible | El anuncio apareció en copias de Teal y Tallo. Se siguió la página oficial hasta ADP, que exige navegador compatible y no mostró el puesto. No se acepta la copia como reemplazo; siete sedes en navegación no resuelven la señal. | [Fuente o pista](https://www.beaujos.com/about-us/employment/) |
+| Millie’s Restaurant and Bakery | No se suma con el respaldo disponible | La experiencia laboral localizada es antigua y el original de Indeed no abrió. No se confirmó una cadena activa de dos a quince sedes; Millie’s Cafe de Los Ángeles es otra marca y no se usa para completar el perfil. | [Fuente o pista](https://www.indeed.com/cmp/Millie%27s-Restaurant-and-Bakery) |
+| Flux | No se suma con el respaldo disponible | La web presenta un restaurante en Lisbon Falls, Maine. No se confirmó una segunda sede; un aviso telefónico de una sola sede no cumple el tamaño. | [Fuente o pista](https://www.fluxnomnoms.com/) |
+| Portillo’s | No se suma con el respaldo disponible | La búsqueda apunta a una cadena mayor al rango, pero el documento de inversores no abrió y el localizador no mostró todas las fichas en el lector. No se fija un total actual desde un fragmento; no se verificó el perfil de dos a quince. | [Fuente o pista](https://www.portillos.com/locations/) |
+| Newk’s Eatery | No se suma con el respaldo disponible | La página oficial About publica más de cien sedes. Queda fuera del máximo de quince antes de profundizar en comentarios. | [Fuente o pista](https://newks.com/about/) |
+| Hopdoddy Burger Bar | No se suma con el respaldo disponible | El directorio oficial contiene más de quince restaurantes. Las noticias sobre pruebas de IA tampoco se interpretan como un problema actual sin resolver. | [Fuente o pista](https://www.hopdoddy.com/locations) |
+| Flying Pie Pizzaria Idaho | No se suma con el respaldo disponible | Comunicado de kea del 30/03/2023: anuncia pruebas de atención telefónica en las siete sedes de entonces. Es evidencia en contra de asumir un problema sin solución; no confirma éxito ni continuidad en 2026. No se mezcla con Flying Pie Pizzeria de Oregón. | [Fuente o pista](https://www.webwire.com/ViewPressRel.asp?aId=302758) |
+| Taziki’s Mediterranean Café | No se suma con el respaldo disponible | La publicación oficial de franquicias de mayo de 2025 declara más de cien locales. Supera el tamaño; dos sedes de un mercado no son el total de la marca. | [Fuente o pista](https://www.tazikisfranchising.com/updates/may-2025-updates-tazikis-mediterranean-caf-expands-with-new-locations-across-the-us) |
+| Famous Dave’s | No se suma con el respaldo disponible | La pista laboral era una copia de Career.com y el localizador no expuso fichas completas al lector. No se verificaron simultáneamente perfil de dos a quince y puesto original; los conteos de terceros quedan como pistas. | [Fuente o pista](https://www.famousdaves.com/locations) |
+| BurgerFi | No se suma con el respaldo disponible | Una publicación oficial antigua dice aproximadamente 125 sedes, sin probar el total de hoy. El localizador actual no expuso el listado completo. Falta confirmar encaje de dos a quince y un problema actual; no se usa la centralización histórica de llamadas como urgencia nueva. | [Fuente o pista](https://www.burgerfi.com/locations/) |
+
 ## Cómo interpretar las fuentes descartadas
 
 Un enlace de la tabla puede ser una pista que no abrió: el motivo lo dice y no se usa su contenido como prueba. Las páginas oficiales se priorizan para sedes, teléfonos y políticas; los avisos originales, para tareas del puesto; las reseñas originales con autor y fecha, para experiencias. Se usaron HTML y datos estructurados públicos cuando el lector web no mostraba el contenido completo, por ejemplo Paylocity y Craigslist. No se eludieron bloqueos de acceso.
@@ -179,4 +213,4 @@ Los comentarios recientes aceptados de Delfina hablan de comida. En Golden Boy, 
 
 ## Alcance de los conteos
 
-Los 80 son los resultados/candidatos evaluados en esta ampliación, incluidos diez retomados de la búsqueda anterior de 110. Los 42 del control detallado son los 29 anteriores más las trece incorporaciones: 25 seleccionados y los mismos 17 secundarios. Son conjuntos de trabajo distintos; no se suman 80, 110 y 42 como si fueran empresas nuevas distintas. Se detuvo la ampliación al llegar a 25. El conteo de 80 incluye un distribuidor descartado como falso positivo; no son 80 restaurantes con perfil verificado. En las últimas dos tandas se encontraron candidatos buscando tareas en avisos originales; HOTLIPS y Pizzicato se propusieron a partir del conocimiento previo del modelo y luego se buscaron fuentes. No se contactó a los negocios.
+Los 100 son los resultados/candidatos evaluados en esta ampliación, incluidos diez retomados de la búsqueda anterior de 110. Los 44 del control detallado son los 29 anteriores más las quince incorporaciones: 27 seleccionados y los mismos 17 secundarios. Son conjuntos de trabajo distintos; no se suman 100, 110 y 44 como si fueran empresas nuevas distintas. Se detuvo la ampliación tras diez tandas, con 27 casos. El conteo de 100 incluye un distribuidor descartado como falso positivo; no son 100 restaurantes con perfil verificado. En las tandas siete y ocho se encontraron candidatos buscando tareas en avisos originales; HOTLIPS y Pizzicato se propusieron a partir del conocimiento previo del modelo y luego se buscaron fuentes. Las tandas nueve y diez partieron de búsquedas de tareas en avisos y de resultados sobre pedidos telefónicos; se filtró el perfil antes de profundizar. Una tanda no aportó incorporaciones: el criterio no se baja para completar altas. No se contactó a los negocios.

@@ -394,7 +394,7 @@ Mismo corte: 14/10/2026; recientes desde el 14/10/2025. Se buscaron opiniones po
 
 Fuentes consultadas: [Grubhub Pearl](https://www.grubhub.com/restaurant/hotlips-pizza-721-nw-9th-ave-ste-150-portland/916382/reviews), [TripAdvisor Crushed Red Kirkwood](https://www.tripadvisor.co.uk/Restaurant_Review-g44551-d5003131-Reviews-Crushed_Red_Kirkwood-Kirkwood_Saint_Louis_Missouri.html), [TripAdvisor Billy G’s](https://www.tripadvisor.com/Restaurant_Review-g44551-d4699430-Reviews-Billy_G_s_Kirkwood-Kirkwood_Saint_Louis_Missouri.html), [DoorDash Astoria](https://www.doordash.com/store/birria-les-45691131/). Un enlace que falló documenta el intento, no respalda su contenido.
 
-## Balance vigente: 42 casos del control detallado
+## Balance anterior: 42 casos del control detallado
 
 | Comentarios sobre dificultad telefónica o presión de servicio | Casos |
 | --- | ---: |
@@ -405,3 +405,28 @@ Fuentes consultadas: [Grubhub Pearl](https://www.grubhub.com/restaurant/hotlips-
 | **Total** | **42** |
 
 Hay **12 de 42 con algún comentario reciente aceptado**; **8 están entre los 25 seleccionados**. Los mismos dos, Pappy’s y Pequod’s, tienen comentario operativo reciente pertinente. Las cinco altas no agregan quejas telefónicas recientes verificadas. Los 17 secundarios originales se mantienen.
+
+## Comentarios de las tandas nueve y diez
+
+Se profundizaron los dos candidatos cuyo perfil y tareas permitieron incorporarlos. Los resultados descartados por tamaño o identidad no tuvieron una revisión exhaustiva de comentarios. Corte sin cambios: recientes del 14/10/2025 al 14/10/2026.
+
+| Empresa y sede | Qué se pudo leer | Cómo se usa |
+| --- | --- | --- |
+| Super Taco, Franklin | Uber Eats muestra opiniones favorables de 2022–enero de 2025; CESAR C., 12/01/2025, elogia burrito y rapidez de entrega. DoorDash permitió leer el perfil comercial, sin aceptar una reseña reciente de Franklin con autor y fecha. | Contexto favorable antiguo, sin dificultad telefónica. No se toma el título de un directorio ni su fecha de rastreo como fecha de experiencia. |
+| Little Chef, Ocean Beach | En Uber Eats, Jeremy R., 21/06/2026, y Sarah H., 23/06/2026, elogian comida e ingredientes. TripAdvisor muestra experiencias antiguas, incluida una de julio de 2025 sobre comida. | Algún comentario reciente: sí; presión o dificultad telefónica reciente: no. Las críticas antiguas sobre comida no se transforman en evidencia del problema buscado. |
+
+Fuentes: [Uber Eats Franklin](https://www.ubereats.com/store/super-taco-franklin/ylwVmhLoTPmW1mrqTrfOcw), [DoorDash Super Taco](https://www.doordash.com/business/super-taco-mexican-restaurant-242897/), [Uber Eats Ocean Beach](https://www.ubereats.com/store/little-chef-chinese-takeout-%40-ocean-beach/3GdUK-tIQwaIm_5I-Gm5Tw), [TripAdvisor Ocean Beach](https://www.tripadvisor.co.uk/Restaurant_Review-g60750-d12031334-Reviews-Little_Chef_Chinese_Take_Out-San_Diego_California.html).
+
+Se probaron búsquedas por teléfono, sede y opiniones, además de resultados de Reddit y plataformas de entrega. Las copias de Google en Wanderlog, Restaurantji y testimonios sin fecha reproducidos en la propia web no se aceptaron como originales recientes. No se comprobó la ausencia de otras experiencias.
+
+## Balance vigente: 44 casos del control detallado
+
+| Comentarios sobre dificultad telefónica o presión de servicio | Casos |
+| --- | ---: |
+| Recientes, con fecha comprobable | 2 |
+| Antiguos, con fecha comprobable | 5 |
+| Fecha o verificación pendiente | 5 |
+| Sin comentario pertinente verificado | 32 |
+| **Total** | **44** |
+
+Hay **13 de 44 con algún comentario reciente aceptado**; **9 están entre los 27 seleccionados**. Solo Pappy’s y Pequod’s conservan comentario operativo reciente pertinente. Los dos nuevos no aportan quejas telefónicas recientes verificadas. Los 17 secundarios originales no cambian.
