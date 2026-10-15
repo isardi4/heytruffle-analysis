@@ -1,5 +1,5 @@
 {
-  "completed_at": "2026-10-15T15:36:43+00:00",
+  "completed_at": "2026-10-15T15:50:21+00:00",
   "verdict": "PASS procesamiento desde respuestas registradas; cobertura de adquisición parcial",
   "trusted_input": "locales.csv",
   "input_sha256": "cb804b282325a9aa8d4b08814a8e0988463dc53af98ba32560658cdd005df7b3",
@@ -38,7 +38,7 @@
     "importar_locales.py": "c12f4583c6fa6a8e19fb36a70bf30eddd01cc136bad9a4594df4a1010fb2b989",
     "preparar_entrega.py": "98317a3bc50497e2e5c9a6576d81f7e3944481d3c29cd3230a5fe232413e99bb",
     "comprobar_pipeline.py": "353bd760ae6b28c9720c79aa73f2f7640cd990b6376b504a466abbbd69ffe050",
-    "priorizar_leads.py": "583bc0cc70ed034c22a81489ebff772e0a1a1ef233f3982749ad40b49e40d97b",
+    "priorizar_leads.py": "5dded10b608290354c9a6ec90d1b55d6e665cdb1af5e7ae074c82cd4aa90fbb6",
     "llm_archivos.py": "a6707ca8113585ac27a0e209e693b57da5aded45fd98283d7513cdb5140c7e3a",
     "load_local_env.py": "dea80948b42b5a52b0c18c780ca055c95a4fc7195fb1926797d070b09cd74e9a",
     "configurar_openai.py": "4a8f651e755398f9cb0521d90ee11ca0dfe5abc7a927b5f126bea8ae56a51fc8",

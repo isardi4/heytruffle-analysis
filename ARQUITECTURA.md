@@ -1,138 +1,98 @@
-# Arquitectura del pipeline de prospección
+# Arquitectura del pipeline
 
-## Propósito y alcance
+El sistema transforma `locales.csv` en un CSV de leads priorizados. Usa scripts Python y archivos CSV/JSON, sin base de datos ni paquetes adicionales. La obtención del export de Apollo queda fuera del recorrido.
 
-Convertir un listado de candidatos en un CSV de prospectos priorizados para conversar sobre atención telefónica. El perfil objetivo es una cadena de EE. UU., de 2–15 locales y cocina casual de volumen.
+## Flujo y responsabilidades
 
-**El perfil determina inclusión; la evidencia determina prioridad.** La falta de una captura o una señal telefónica deja investigación pendiente, sin eliminar al candidato del perfil. El puntaje expresa orden de contacto, no probabilidad de compra, ganancia esperada ni volumen de llamadas perdidas.
-
-La aplicación es un conjunto de scripts Python y archivos CSV/JSON. Usa la biblioteca estándar, sin servidor, base de datos ni infraestructura de despliegue. La ejecución con datos reales evaluada es asistida por Codex. El coordinador también ofrece modo API automático con alternativa manual de Codex; ese camino se probó con transporte simulado, sin una llamada paga real.
-
-## Vista general
+`comprobar_pipeline.py` se ejecuta al principio y coordina todas las etapas. Cada script genera sus archivos; el coordinador comprueba el resultado al final.
 
 ```mermaid
 flowchart TD
-    A[Export CSV de Apollo u otra fuente] --> B[importar_locales.py]
-    B --> C[locales.csv: entrada aceptada del piloto]
-    C --> R[Ejecutar comprobar_pipeline.py: coordinador]
-    R -. coordina adquisición nueva .-> D
-    R -. coordina extracción .-> F
-    R -. coordina clasificación .-> J
-    R -. coordina entrega .-> N
-    C --> D[recolectar_evidencias.py]
-    D --> E[evidencia_locales.csv y textos originales]
-    E --> F[extraer_evidencias_llm.py: solicitudes]
-    F --> G[API automática o Codex manual: interpretar documentos]
-    G --> H[Respuestas JSON externas con citas]
-    H --> I[Python: validar y escribir evidencia_llm_procesada.csv]
-    I --> J[analizar_evidencias_llm.py: solicitudes]
-    J --> K[API automática o Codex manual: clasificar afirmaciones]
-    K --> L[Respuestas JSON externas con etiquetas]
-    L --> M[Python: resultados_evidencia_llm.csv]
-    C --> N[preparar_entrega.py y priorizar_leads.py]
-    M --> N
-    I --> N
-    N --> O[gtm-lista.csv y auditoría de prioridad]
-    O --> P[Verificación final dentro del coordinador]
-    P --> Q[Entrega oficial: CSV y explicación en la raíz]
+    A[locales.csv] --> B[comprobar_pipeline.py: coordinador]
+    B --> C[recolectar_evidencias.py]
+    C --> D[evidencia_locales.csv y textos originales]
+    D --> E[extraer_evidencias_llm.py]
+    E --> F[evidencia_llm_procesada.csv]
+    F --> G[analizar_evidencias_llm.py]
+    G --> H[resultados_evidencia_llm.csv]
+    H --> I[preparar_entrega.py y priorizar_leads.py]
+    A --> I
+    F --> I
+    I --> J[gtm-lista.csv y auditoría]
+    J --> K[Verificación final del coordinador]
+    E -. interpretación .-> L[resolver_llm.py: API o Codex manual]
+    G -. interpretación .-> L
 ```
 
-`comprobar_pipeline.py` se ejecuta al principio, una vez disponible `locales.csv`, y coordina las etapas mediante los scripts responsables de cada archivo. Las flechas continuas muestran el flujo de datos; las punteadas indican coordinación. Al faltar respuestas, el modo predeterminado `auto` intenta la API si hay clave y modelo configurados. Si funciona, sigue sin intervención. Si falla o falta configuración, conserva el progreso, exporta solicitudes pendientes y termina para que Codex interprete desde la conversación; se continúa explícitamente con `--resume --out-dir <carpeta>`. `--llm-mode codex` impide llamadas pagas. Cada invocación normal empieza en una carpeta vacía, copia solo locales.csv y vuelve a adquirir e interpretar las fuentes. Al finalizar genera y verifica el CSV dentro de esa corrida. La entrega de la raíz se conserva como entrega guardada; solo su reproducción explícita en comprobacion_codex actualiza esa copia. Con `--verify-only` ejecuta únicamente la verificación de archivos existentes. Las llamadas API quedan registradas con proveedor y modelo; no invoca esta conversación automáticamente ni importa interpretaciones del simulador anterior.
-
-## Componentes y responsabilidades
-
-| Componente | Responsabilidad | Entrada y salida |
+| Etapa | Responsable | Qué hace |
 |---|---|---|
-| `importar_locales.py` | Normalizar un export existente y asignar IDs | Export → locales.csv. No exporta remotamente desde Apollo. |
-| `recolectar_evidencias.py` | Preparar consultas y capturar páginas públicas | Website y enlaces → texto, URL, fecha y estado. |
-| `extraer_evidencias_llm.py` | Preparar solicitudes, recibir respuestas y validar citas | Documentos → afirmaciones atómicas con evidencia. |
-| `analizar_evidencias_llm.py` | Preparar clasificación y agregar etiquetas por empresa | Afirmaciones → indicadores y etiquetas trazables. |
-| `resolver_llm.py` | Resolver solicitudes por API, guardar progreso y preparar pendientes para Codex | Solicitudes → respuestas externas con metadata de procedencia. |
-| `llm_archivos.py` | Validar el contrato JSON y cargar respuestas externas | Solicitudes y respuestas identificadas por huella. |
-| `priorizar_leads.py` | Aplicar reglas de inclusión y puntaje | Perfil e indicadores → candidatos, CSV y auditoría. |
-| `preparar_entrega.py` | Generar la entrega desde archivos | Sin parámetros usa la comprobación actual; con rutas explícitas trabaja aislado. |
-| `comprobar_pipeline.py` | Orquestar, verificar y actualizar la entrega oficial | Carpeta de ejecución → artefactos comprobados. |
-| `tests/test_priorizacion.py` | Proteger el contrato de negocio | Pruebas de inclusión, prioridades y publicación. |
+| Entrada | `importar_locales.py`, antes del flujo | Normaliza un export existente y asigna IDs; no consulta Apollo. |
+| Captura | `recolectar_evidencias.py` | Descarga páginas oficiales y registra textos, URL, fecha y fallos. |
+| Extracción | `extraer_evidencias_llm.py` | Prepara solicitudes y valida las afirmaciones y citas devueltas por el LLM. |
+| Clasificación | `analizar_evidencias_llm.py` | Prepara solicitudes para clasificar evidencias y agrega indicadores por empresa. |
+| Interpretación | `resolver_llm.py` | Envía solicitudes a la API o prepara pendientes para Codex. Guarda respuestas y procedencia. |
+| Entrega | `preparar_entrega.py` y `priorizar_leads.py` | Aplican inclusión y prioridad y escriben el CSV y su auditoría. |
+| Coordinación | `comprobar_pipeline.py` | Ejecuta las etapas, registra avances y verifica consistencia. |
 
-Los prompts están en `prompts/extraer_evidencias.md` y `prompts/clasificar_evidencias.md`. Sus versiones y huellas permiten reconocer cambios en el análisis.
+Los prompts están en [extracción](prompts/extraer_evidencias.md) y [clasificación](prompts/clasificar_evidencias.md). `llm_archivos.py` valida los esquemas JSON.
 
-## Contratos de datos y trazabilidad
+## Qué contiene cada archivo
 
-| Archivo | Unidad y contenido |
+| Archivo | Contenido |
 |---|---|
-| `locales.csv` | Candidato y sucursal de referencia: IDs, país, conteo de locales, web y contacto. En esta prueba se acepta como entrada, no como una nueva verificación de todas sus columnas. |
-| `evidencia_locales.csv` | Documento o tarea de adquisición: relación con empresa/sucursal, URL, pasajes, fecha y estado. Incluye tareas pendientes y descargas fallidas. |
-| `textos_originales/` | Texto completo extraído de descargas exitosas. Permite validar también contra el original de los pasajes seleccionados. |
-| `solicitudes_*.json` | Prompt, esquema y entradas exactas para el LLM, con `request_id`. |
-| `respuestas_*_codex.json` | Interpretaciones nuevas de Codex. Son datos de la ejecución, separados del código. |
-| `evidencia_llm_procesada.csv` | Afirmación con `evidence_id`, cita literal, descripción, tema, alcance y fuente. |
-| `resultados_evidencia_llm.csv` | Indicadores por empresa, estado y etiquetas por evidencia en JSON. |
-| `auditoria_prioridad.json` | Inclusión, estado de evidencia, señales utilizadas y componentes del puntaje. |
-| `gtm-lista.csv` | Prospectos incluidos, ordenados y con las 13 columnas requeridas. |
-| `verificacion.json` | Resultado de controles y huellas de entradas, scripts y artefactos. |
+| `locales.csv` | Empresas, IDs, país, sucursales, web y datos de contacto. Es la entrada aceptada del piloto. |
+| `evidencia_locales.csv` | Documentos capturados y tareas pendientes, con texto seleccionado, URL, fecha y estado. |
+| `textos_originales/` | Texto completo extraído de cada descarga exitosa. |
+| `solicitudes_*.json` | Instrucciones, esquema y entradas exactas para el LLM. |
+| `respuestas_*_codex.json` | Respuestas externas de API o Codex, relacionadas mediante `request_id`. |
+| `evidencia_llm_procesada.csv` | Afirmaciones con cita literal, tema, alcance y fuente. |
+| `resultados_evidencia_llm.csv` | Etiquetas e indicadores agregados por empresa. |
+| `gtm-lista.csv` | Leads incluidos, ordenados y con las 13 columnas de la consigna. |
+| `auditoria_prioridad.json` | Indicadores utilizados, inclusión y componentes del puntaje. |
+| `estado_ejecucion.json` | Etapa, estado y actor de cada avance. |
+| `ejecucion_llm.json` | Intentos de API y solicitudes pendientes de la invocación. |
+| `verificacion.json` | Resultado de controles y huellas de los archivos. |
 
-`company_id` identifica la empresa y `location_id` la sucursal de referencia. Un `document_id` identifica el documento enviado al LLM; `evidence_id` vincula la afirmación con la clasificación. Los IDs no certifican la identidad comercial por sí solos.
+`company_id` relaciona la empresa; `location_id`, la sucursal de referencia; `evidence_id`, la afirmación y su clasificación. La identidad técnica no confirma por sí sola que una fuente corresponda a una sucursal.
 
-Cada respuesta externa debe corresponder al `request_id` calculado para su entrada, prompt y modelo declarado. Una cita debe aparecer literalmente en el texto enviado; la comprobación también la busca en el texto completo descargado. La clasificación exige una etiqueta por evidencia, sin IDs omitidos o duplicados. Una cita literal válida no prueba por sí sola que una experiencia sea cierta ni valida toda la interpretación semántica.
+## Adquisición e interpretación
 
-## Adquisición y alcance real de la búsqueda
+El recolector comienza en `Website`, sigue enlaces del mismo dominio y prioriza FAQ, pedidos, contacto, empleo y ubicaciones. Intenta hasta tres páginas por empresa. Conserva el texto completo y selecciona hasta 3.500 caracteres de pasajes literales mediante términos como `phone`, `call`, `busy`, `peak`, `host` y `capacity`. Esa selección no genera conclusiones.
 
-La comprobación nueva empieza únicamente desde Website de locales.csv. Sigue enlaces publicados del mismo dominio y prioriza FAQ, empleo, contacto, pedidos y ubicaciones. Esta corrida limitó la adquisición a tres páginas por candidato. Se conservan textos completos; el LLM recibe hasta 3.500 caracteres de pasajes seleccionados mecánicamente por palabras clave. Esa selección no genera conclusiones.
+Las búsquedas externas y reseñas no están conectadas al recorrido predeterminado. Los enlaces de Google Maps sirven para revisión manual. La captura actual tiene menos profundidad que la investigación inicial, que consultó fuentes adicionales.
 
-El recolector también puede preparar consultas o usar un proveedor de búsqueda configurado, pero ese camino no se ejecutó en esta comprobación. Las reseñas autorizadas son una entrada opcional y aquí están vacías. Los enlaces de Google Maps son referencias manuales; no alimentan los indicadores.
+Con API disponible, el LLM realiza extracción y clasificación automáticamente. Si falla o falta configuración, el proceso guarda su avance y deja solicitudes para Codex. Codex solo interpreta esas entradas y escribe respuestas JSON; Python valida y genera los CSV. No se modifica el código ni se completa evidencia por fuera de ese contrato.
 
-**Esta búsqueda tiene menos profundidad dirigida que el discovery original.** La investigación anterior consultó fuentes y avisos externos en varias rondas. Una cantidad mayor de descargas no garantiza recuperar las mismas páginas relevantes. Por eso algunas prioridades bajan o quedan pendientes, aunque la empresa siga incluida por perfil. Las fuentes históricas se preservan como respaldo y no se introducen silenciosamente en la ejecución nueva.
+Las respuestas API registran proveedor, modelo real, identificador y uso de tokens en `metadata`. El nombre histórico `respuestas_*_codex.json` admite ambos proveedores. En los CSV intermedios, `model` identifica el contrato de la corrida; el modelo real se consulta en metadata.
 
-## Interpretación y modos de ejecución
+## Inclusión y prioridad
 
-**Modo comprobado con Codex.** Python exporta solicitudes estructuradas; Codex interpreta desde la conversación y guarda JSON. Python valida y agrega resultados. La primera interpretación se hizo con IA; usar `--replay --out-dir comprobacion_codex` reproduce las respuestas registradas y no vuelve a razonar con un modelo. Ejecutar sin esa opción inicia una corrida nueva.
-
-**Modo API automático.** `comprobar_pipeline.py --llm-mode auto` exporta las mismas solicitudes y `resolver_llm.py` las envía a la API mediante salida estructurada. Cada respuesta validada se guarda inmediatamente con metadata de proveedor, modelo, identificador y uso de tokens. Solo `--resume` conserva progreso de la misma corrida; por defecto siempre se crea una corrida desde cero. `--replay` es una reproducción explícita sin llamadas pagas. Ante un error o configuración ausente, se detiene el intento de API y exporta solo las solicitudes pendientes para completar con Codex. No se publica una entrega parcial. El modo `codex` nunca llama a la API. Se probaron el recorrido automático y la recuperación con API simulada; no se validó disponibilidad, saldo ni calidad del modelo mediante una llamada paga real. Los modos `--run` de los scripts individuales siguen disponibles como alternativa.
-
-Los nombres `respuestas_*_codex.json` se conservan por compatibilidad. Las nuevas corridas usan `respuestas_externas_<run_id>` como etiqueta de contrato en el campo model intermedio; la etiqueta `codex_conversacion_nueva` queda solo para reproducir la ejecución antigua. Las huellas de solicitudes incorporan esa identidad única: una respuesta de otra corrida no coincide. No son decisiones sobre empresas ni identifican el modelo real: la procedencia efectiva está en metadata y se agrega en el informe. Las respuestas antiguas sin metadata corresponden a Codex. Ni las respuestas ni los nombres de empresas se incrustan en el coordinador.
-
-No se probó exportación por API de Apollo: el importador consume un archivo ya exportado. Tampoco se puede concluir que un lote de miles de empresas esté resuelto sin supervisión.
-
-**Modo histórico.** El simulador anterior contiene respuestas preparadas en código y el generador tiene un recorrido explícito `--legacy`. No intervienen en la comprobación actual. Las reproducciones históricas se escriben dentro de historico/, sin sustituir la entrega oficial.
-
-## Inclusión, evidencia y prioridad
-
-Son decisiones separadas:
-
-1. **Inclusión:** el código controla país de EE. UU. y conteo de 2–15 sucursales sobre la entrada aceptada. Cocina y volumen no se vuelven a certificar automáticamente.
-2. **Estado de evidencia:** con señal telefónica o con evidencia telefónica pendiente. Una descarga fallida mantiene la incógnita; no equivale a ausencia de necesidad.
-3. **Prioridad:** regla `prioridad-v4`, calculada por Python desde señales clasificadas.
+El perfil determina inclusión; la evidencia determina prioridad. Python controla EEUU y 2–15 sucursales sobre la entrada aceptada. Cocina y volumen requieren validación comercial adicional. La cocina se toma del perfil o se infiere de su nombre, descripción o palabras clave; la procedencia queda registrada y no afecta el puntaje.
 
 | Banda | Puntos | Interpretación |
 |---|---:|---|
-| Perfil sin evidencia telefónica | 10–14 | Prospecto incluido; validar el uso del teléfono. |
-| Antecedente antiguo | 15–24 | Revalidar vigencia antes de priorizar. |
-| Canal exploratorio | 30–49 | Pedidos, consultas o rol telefónico sin dificultad demostrada. |
-| Hipótesis operativa | 50–69 | Tareas compartidas o canal de pedidos con presión operativa. |
-| Dificultad explícita | 80–99 | La fuente describe una dificultad concreta del teléfono. |
+| Perfil sin evidencia telefónica | 10–14 | Posible cliente; validar el uso del teléfono. |
+| Antecedente antiguo | 15–24 | Revalidar vigencia. |
+| Canal exploratorio | 30–49 | Pedidos, consultas o rol telefónico documentado. |
+| Hipótesis operativa | 50–69 | Tareas compartidas o canal con presión operativa. |
+| Dificultad explícita | 80–99 | Dificultad telefónica publicada. |
 
-Las bonificaciones usan presencia de canal, tareas y demanda; alcance de sucursal, texto disponible y recencia. Sus límites mantienen separadas las bandas. Si hubiera dificultades atribuidas a varias sucursales, se reconoce ese patrón; no se confunde el total de locales de una marca con locales afectados. Varias citas de una página no equivalen a incidentes independientes. El bono de recencia depende de la fecha de ejecución; este corpus no aporta fechas de publicación operativa para activarlo.
+La regla `prioridad-v4` suma bonificaciones limitadas por canal, tareas, demanda, alcance, texto y recencia. Reconoce problemas atribuidos a varias sucursales; no confunde el total de sucursales con las afectadas ni varias citas con incidentes independientes. El puntaje ordena el contacto, sin estimar ganancia o probabilidad de compra. La recencia depende de la fecha de ejecución; el corpus actual no aporta fechas para activarla.
 
-## Verificación y publicación de la entrega
+## Ejecución y controles
 
-El verificador compara el conjunto de prospectos con los candidatos que cumplen el perfil, no con un número 30 fijado en el código. Rechaza una salida que omita a un candidato válido. Las pruebas cubren ausencia total de evidencia, orden por señales, exclusión real por perfil y coherencia de la entrega oficial.
+| Modo | Comportamiento |
+|---|---|
+| Sin opciones de continuación | Corrida nueva en `ejecuciones/<fecha_id>/`: copia solo locales.csv y vuelve a capturar e interpretar. |
+| `--resume --out-dir <carpeta>` | Continúa la misma corrida, conservando el progreso. |
+| `--replay --out-dir <carpeta>` | Reproduce capturas y respuestas guardadas, sin API paga. |
+| `--verify-only --out-dir <carpeta>` | Verifica los archivos existentes. |
+| `--llm-mode codex` | Impide llamadas pagas durante una corrida nueva o su continuación. |
 
-La comprobación actual evalúa 30 candidatos: todos quedan incluidos, 14 con señales telefónicas y 16 con evidencia pendiente. Hay 76 capturas con texto para 28 empresas y 56 afirmaciones clasificadas. Dos webs bloquearon la descarga. Se repitió el procesamiento en una copia aislada sin datos históricos, cachés ni salidas previas y con la red bloqueada; el CSV resultó idéntico.
+Una corrida nueva exige una carpeta vacía y solicitudes con identidad propia. Los controles rechazan respuestas ajenas, citas ausentes, clasificaciones incompletas, duplicados, pérdida de leads válidos y puntajes inconsistentes. Las huellas de código, prompts y fuentes impiden ocultar modificaciones durante esa corrida. El comando devuelve 0 al completar, 2 mientras espera a Codex y 1 ante error.
 
-La entrega oficial de la raíz se copia del resultado comprobado. `LISTA-EXPLICADA.md` se genera desde el mismo CSV y auditoría. Los comandos predeterminados no restauran el discovery anterior encima de la entrega actual.
+El CSV de una corrida nueva queda en su carpeta. La raíz conserva la entrega evaluada: reproducir explícitamente `comprobacion_codex` actualiza esa copia y su explicación. El modo `--legacy` del generador reproduce registros históricos aparte.
 
-```sh
-python3 -m unittest discover -s tests -v
-python3 scripts/comprobar_pipeline.py --replay --out-dir comprobacion_codex
-python3 scripts/comprobar_pipeline.py --verify-only --out-dir comprobacion_codex
-```
+Se comprobó la ejecución asistida con Codex y se probaron corridas nuevas, cambios de entrada y recuperación mediante conexiones simuladas. No se probó una llamada paga real ni una ejecución desatendida de miles de empresas. Una cita literal válida demuestra trazabilidad, no garantiza toda la interpretación comercial.
 
-Para adquisición e interpretación nuevas, usar otra carpeta y seguir la [guía completa](comprobacion_codex/README.md). Un clon incluye las capturas y respuestas para la reproducción sin API; excluye `.env`, cachés, logs locales y respaldos comprimidos. El resultado técnico comprobado no equivale a una validación comercial exhaustiva ni a un sistema desatendido de producción.
-
-## Ejecución nueva, continuación y responsabilidad de Codex
-
-El comando `python3 scripts/comprobar_pipeline.py` crea `ejecuciones/<fecha_id>/`, copia únicamente locales.csv y ejecuta adquisición, extracción, clasificación, indicadores, prioridad y verificación. Una salida existente no se reutiliza sin pedirlo. `--resume --out-dir <carpeta>` continúa la misma corrida después de recibir respuestas, y `--replay --out-dir <carpeta>` reproduce una corrida anterior sin API. Ningún recorrido usa fichas históricas.
-
-`estado_ejecucion.json` registra avance y actor. Si no hay API, Codex solo lee solicitudes y escribe respuestas externas; Python valida las citas y genera los CSV. Modificar el código para completar una corrida sería desarrollo o corrección, no ejecución del pipeline. Las corridas nuevas guardan huellas de scripts, prompts y fuentes capturadas; continuar o verificar falla si se modificaron, de modo que una intervención fuera de las respuestas no se oculta como ejecución normal. Las pruebas no implican que Codex deba corregir scripts durante el uso normal. El código de salida es 2 ante una intervención pendiente, 1 ante error y 0 al completar. La verificación técnica no elimina las limitaciones de cobertura de fuentes.
-
-Las pruebas automatizadas ejecutan dos corridas nuevas con fuentes idénticas y comprueban dos adquisiciones, nuevas interpretaciones y distintas huellas; también prueban fallo de API, recuperación manual y cambios de resultados ante otro texto. Otra prueba cambia locales.csv de una empresa a dos empresas distintas y comprueba nombres, cantidad de filas, sucursales y categorías sin contaminación del lote anterior. Las redes se simulan en esas pruebas. No se realizó una nueva ejecución real de los 30 con API paga para validar este cambio.
+Para comandos y continuación con Codex, seguí la [guía de ejecución](comprobacion_codex/README.md). Para resultados y documentos de entrega, el [README central](README.md).

@@ -16,6 +16,23 @@ La entrega contiene **30 leads** frente a una meta de 40: tres incorporaciones d
 
 La [consigna](EJERCICIO.md) y la [definición del proyecto](DEFINICION-PROYECTO.md) completan el contexto. Para revisar el cálculo en detalle, está la [auditoría de prioridad](comprobacion_codex/auditoria_prioridad.json).
 
+## Cómo llegamos a estos 30
+
+El discovery dejó **154 candidatos con revisión registrada**, con distinta profundidad. La IA ayudó a proponer empresas, buscar y leer fuentes públicas y documentar las decisiones.
+
+| Etapa | Candidatos revisados | Incorporados a la entrega |
+|---|---:|---:|
+| [Exploración inicial](interno/control-paso-4.json) | 29 | 12 |
+| [Ampliación en diez tandas](historico/TANDAS.md) | 100 | 15 |
+| [Export gratuito de Apollo](historico/APOLLO-REVISION.md) | 25 | 3 |
+| **Total registrado** | **154** | **30** |
+
+Los **27 provenientes del discovery con IA** son los 12 iniciales más las 15 incorporaciones. Se revisaron tamaño de cadena, actividad, identidad de marca y sucursal y señales de operación telefónica en webs, FAQ, empleos y testimonios públicos. En esa etapa se buscaban dos hechos útiles y atribuibles por caso.
+
+Los otros 124 no se incorporaron: algunos excedían el rango de sucursales, estaban cerrados o no eran restaurantes comparables; otros tenían identidad dudosa, fuentes inaccesibles o respaldo operativo insuficiente. No todos quedan descartados como posibles clientes: podrían revisarse con mejores fuentes.
+
+Estos 30 constituyen el lote elegido durante el discovery, no una clasificación exhaustiva de los 154 bajo la regla actual. El pipeline empieza desde ese lote en `locales.csv`: mantiene a quienes cumplen el perfil y usa la evidencia capturada nuevamente para ordenar el contacto. Por eso conserva leads aunque su evidencia telefónica quede pendiente.
+
 ## Resultado del piloto
 
 | Indicador | Resultado |

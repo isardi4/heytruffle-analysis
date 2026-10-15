@@ -1,14 +1,10 @@
 # Lista oficial y prioridad por empresa
 
-Este documento se genera desde el CSV y la auditoría de la comprobación actual. La entrega de la raíz es una copia exacta de ese resultado; no mezcla puntajes históricos.
+Generado desde el [CSV oficial](gtm-lista.csv) y su auditoría: 30 leads. El perfil determina inclusión; la evidencia determina prioridad.
 
-Se incluyen 30 prospectos por perfil. El perfil determina inclusión; la evidencia determina prioridad. Una fuente faltante o sin señales deja evidencia pendiente, sin descartar al prospecto ni inventar un problema.
+Las capturas tienen cobertura parcial. Una señal telefónica no implica llamadas perdidas; una fuente faltante deja validación pendiente. No se confirmó una novedad fechada para estos casos. Las fuentes, categorías y límites completos se conservan en el CSV; las citas y etiquetas, en [resultados de evidencia](comprobacion_codex/resultados_evidencia_llm.csv).
 
-## Regla prioridad-v4
-
-Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal exploratorio: 30–49. Hipótesis operativa: 50–69. Dificultad explícita: 80–99. Las bonificaciones usan presencia de señales, alcance, texto y recencia; varias citas no se convierten en varios incidentes. El puntaje no estima probabilidad de compra ni ganancia.
-
-[Arquitectura](ARQUITECTURA.md) · [Guía de ejecución](comprobacion_codex/README.md) · [Componentes de puntaje](comprobacion_codex/auditoria_prioridad.json)
+[Reglas de prioridad](ARQUITECTURA.md#inclusión-y-prioridad) · [Componentes del cálculo](comprobacion_codex/auditoria_prioridad.json)
 
 | Empresa | Prioridad | Evidencia | Puntos |
 |---|---|---|---:|
@@ -43,362 +39,332 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 | The Kickin' Chicken | Baja: perfil válido; evidencia telefónica pendiente | Pendiente | 10 |
 | V Pizza | Baja: perfil válido; evidencia telefónica pendiente | Pendiente | 10 |
 
-## Joe's Kansas City Bar-B-Que
+<details>
+<summary>Joe&#x27;s Kansas City Bar-B-Que · 88 puntos</summary>
 
-**Argumento o dato de perfil:** La empresa pide volver a llamar cuando sus teléfonos están ocupados al intentar pedir.
+La empresa pide volver a llamar cuando sus teléfonos están ocupados al intentar pedir.
 
-**Segunda señal o pendiente:** La página indica pedidos por teléfono o en persona.
+La página indica pedidos por teléfono o en persona.
 
-**Prioridad:** base 80 + bonificación aplicada 8 = 88.
+**Cálculo:** base 80 + bonificación 8 = 88. [Fuente principal](https://www.joeskc.com/pages/contact-us)
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Alta: dificultad telefónica publicada Sin novedad fechada confirmada.
+</details>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Gas Station · 3002 W 47th. Fuentes operativas: https://www.joeskc.com/pages/contact-us. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+<details>
+<summary>Downtown Pizza · 69 puntos</summary>
 
-## Downtown Pizza
+El puesto Front of House combina mostrador, pedidos telefónicos y empaquetado.
 
-**Argumento o dato de perfil:** El puesto Front of House combina mostrador, pedidos telefónicos y empaquetado.
+Spartanburg acepta pedidos telefónicos e indica que Toast suele ser más rápido en horas concurridas.
 
-**Segunda señal o pendiente:** Spartanburg acepta pedidos telefónicos e indica que Toast suele ser más rápido en horas concurridas.
+**Cálculo:** base 50 + bonificación 19 = 69. [Fuente principal](https://downtownpizzasc.com/careers)
 
-**Prioridad:** base 50 + bonificación aplicada 19 = 69.
+</details>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+<details>
+<summary>Pequod&#x27;s Pizza · 68 puntos</summary>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 156 Magnolia St. Fuentes operativas: https://downtownpizzasc.com/careers | https://downtownpizzasc.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+El formulario incluye un puesto llamado Host / Phone entre las posiciones disponibles para solicitar.
 
-## Pequod's Pizza
+Pequod’s permite anticipar pedidos por teléfono o por internet.
 
-**Argumento o dato de perfil:** El formulario incluye un puesto llamado Host / Phone entre las posiciones disponibles para solicitar.
+**Cálculo:** base 50 + bonificación 18 = 68. [Fuente principal](https://pequodspizza.com/employment-application/)
 
-**Segunda señal o pendiente:** Pequod’s permite anticipar pedidos por teléfono o por internet.
+</details>
 
-**Prioridad:** base 50 + bonificación aplicada 18 = 68.
+<details>
+<summary>HOTLIPS Pizza · 63 puntos</summary>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+HOTLIPS usa el teléfono para controlar los tiempos cuando desactiva temporalmente los pedidos online.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Chicago · 2207 N Clybourn. Fuentes operativas: https://pequodspizza.com/employment-application/ | https://pequodspizza.com/faqs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+La página laboral de HOTLIPS identifica noches y fines de semana como sus períodos de mayor actividad.
 
-## HOTLIPS Pizza
+**Cálculo:** base 50 + bonificación 13 = 63. [Fuente principal](https://www.hotlipspizza.com/)
 
-**Argumento o dato de perfil:** HOTLIPS usa el teléfono para controlar los tiempos cuando desactiva temporalmente los pedidos online.
+</details>
 
-**Segunda señal o pendiente:** La página laboral de HOTLIPS identifica noches y fines de semana como sus períodos de mayor actividad.
+<details>
+<summary>Zachary&#x27;s Chicago Pizza · 63 puntos</summary>
 
-**Prioridad:** base 50 + bonificación aplicada 13 = 63.
+Las tareas del host incluyen pedidos por teléfono y mostrador, cobro, ensaladas y levantar mesas.
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+Después de las 16, Zachary’s limita los pedidos telefónicos a takeout.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Pearl · 721 NW 9th Ave, Suite 150. Fuentes operativas: https://www.hotlipspizza.com/ | https://www.hotlipspizza.com/jobs. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Cálculo:** base 50 + bonificación 13 = 63. [Fuente principal](https://zacharys.com/jobs/)
 
-## Zachary's Chicago Pizza
+</details>
 
-**Argumento o dato de perfil:** Las tareas del host incluyen pedidos por teléfono y mostrador, cobro, ensaladas y levantar mesas.
+<details>
+<summary>Glass Nickel Pizza · 58 puntos</summary>
 
-**Segunda señal o pendiente:** Después de las 16, Zachary’s limita los pedidos telefónicos a takeout.
+El formulario de empleo incluye un puesto denominado Phones/Counter, sin detallar sus tareas.
 
-**Prioridad:** base 50 + bonificación aplicada 13 = 63.
+Glass Nickel indica llamar directamente al local por problemas que necesitan atención inmediata.
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+**Cálculo:** base 50 + bonificación 8 = 58. [Fuente principal](https://www.glassnickelpizza.com/careers/)
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Pleasant Hill · 140 Crescent Drive. Fuentes operativas: https://zacharys.com/jobs/ | https://zacharys.com/frequently-asked-questions/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+</details>
 
-## Glass Nickel Pizza
+<details>
+<summary>Salvatore&#x27;s Tomato Pies · 58 puntos</summary>
 
-**Argumento o dato de perfil:** El formulario de empleo incluye un puesto denominado Phones/Counter, sin detallar sus tareas.
+El puesto combina responder llamadas, recibir y sentar clientes y ayudar con pedidos.
 
-**Segunda señal o pendiente:** Glass Nickel indica llamar directamente al local por problemas que necesitan atención inmediata.
+Salvatore’s ofrece el teléfono para contacto directo o respuestas urgentes.
 
-**Prioridad:** base 50 + bonificación aplicada 8 = 58.
+**Cálculo:** base 50 + bonificación 8 = 58. [Fuente principal](https://www.salvatorestomatopies.com/careers/)
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+</details>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 3191 Muir Field Rd. Fuentes operativas: https://www.glassnickelpizza.com/careers/ | https://www.glassnickelpizza.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+<details>
+<summary>Litza&#x27;s Pizza · 41 puntos</summary>
 
-## Salvatore's Tomato Pies
+El sitio invita a pedir por teléfono con anticipación.
 
-**Argumento o dato de perfil:** El puesto combina responder llamadas, recibir y sentar clientes y ayudar con pedidos.
+El selector ofrece llamar para pedir a Midvale, además de Slice.
 
-**Segunda señal o pendiente:** Salvatore’s ofrece el teléfono para contacto directo o respuestas urgentes.
+**Cálculo:** base 30 + bonificación 11 = 41. [Fuente principal](https://www.litzaspizza.com/)
 
-**Prioridad:** base 50 + bonificación aplicada 8 = 58.
+</details>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
+<details>
+<summary>Pappy&#x27;s Smokehouse · 41 puntos</summary>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Contacto elegido: Madison North Livingston · 10 N Livingston. Fuentes operativas: https://www.salvatorestomatopies.com/careers/ | https://www.salvatorestomatopies.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+Los pedidos de retiro pueden hacerse llamando al teléfono publicado de St. Louis.
 
-## Litza's Pizza
+Pide llamar si se visita tarde porque puede agotar sus productos antes del cierre.
 
-**Argumento o dato de perfil:** El sitio invita a pedir por teléfono con anticipación.
+**Cálculo:** base 30 + bonificación 11 = 41. [Fuente principal](https://www.pappyssmokehouse.com/contact)
 
-**Segunda señal o pendiente:** El selector ofrece llamar para pedir a Midvale, además de Slice.
+</details>
 
-**Prioridad:** base 30 + bonificación aplicada 11 = 41.
+<details>
+<summary>Golden Boy Pizza · 38 puntos</summary>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+Golden Boy opera solo para llevar y ofrece llamar por adelantado, pedir presencialmente o delivery.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 835 East Fort Union Boulevard. Fuentes operativas: https://www.litzaspizza.com/ | https://www.litzaspizza.com/jobs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-## Pappy's Smokehouse
+**Cálculo:** base 30 + bonificación 8 = 38. [Fuente principal](https://www.goldenboypizza.com/)
 
-**Argumento o dato de perfil:** Los pedidos de retiro pueden hacerse llamando al teléfono publicado de St. Louis.
+</details>
 
-**Segunda señal o pendiente:** Pide llamar si se visita tarde porque puede agotar sus productos antes del cierre.
+<details>
+<summary>Billy G&#x27;s · 36 puntos</summary>
 
-**Prioridad:** base 30 + bonificación aplicada 11 = 41.
+Billy G’s dirige las consultas urgentes y de reservas al host desk por teléfono de 10 a 22.
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: St. Louis · 3106 Olive St. Fuentes operativas: https://www.pappyssmokehouse.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Cálculo:** base 30 + bonificación 6 = 36. [Fuente principal](https://billygskirkwood.com/contact/)
 
-## Golden Boy Pizza
+</details>
 
-**Argumento o dato de perfil:** Golden Boy opera solo para llevar y ofrece llamar por adelantado, pedir presencialmente o delivery.
+<details>
+<summary>Dallas BBQ · 33 puntos</summary>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Dallas BBQ publica el puesto Phone Operator, separado de Host y Takeout Packing.
 
-**Prioridad:** base 30 + bonificación aplicada 8 = 38.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+**Cálculo:** base 30 + bonificación 3 = 33. [Fuente principal](http://www.dallasbbq.com/careers)
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: North Beach · 542 Green Street. Fuentes operativas: https://www.goldenboypizza.com/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+</details>
 
-## Billy G's
+<details>
+<summary>Little Chef Chinese · 33 puntos</summary>
 
-**Argumento o dato de perfil:** Billy G’s dirige las consultas urgentes y de reservas al host desk por teléfono de 10 a 22.
+El sitio invita a contactar por teléfono, correo o presencialmente para recibir ayuda.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Prioridad:** base 30 + bonificación aplicada 6 = 36.
+**Cálculo:** base 30 + bonificación 3 = 33. [Fuente principal](https://littlechefcatering.us/)
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+</details>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Kirkwood · 131 W Argonne Dr. Fuentes operativas: https://billygskirkwood.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+<details>
+<summary>Prime Pizza · 33 puntos</summary>
 
-## Dallas BBQ
+Prime Pizza invita a contactar por correo o llamando a sus sucursales.
 
-**Argumento o dato de perfil:** Dallas BBQ publica el puesto Phone Operator, separado de Host y Takeout Packing.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+**Cálculo:** base 30 + bonificación 3 = 33. [Fuente principal](https://primepizza.com/contact)
 
-**Prioridad:** base 30 + bonificación aplicada 3 = 33.
+</details>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+<details>
+<summary>Bar-Bill Tavern · 10 puntos</summary>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Times Square · 241 W 42nd Street. Fuentes operativas: http://www.dallasbbq.com/careers. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+Perfil según locales.csv: 3 sucursales en United States; operación telefónica por validar.
 
-## Little Chef Chinese
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Argumento o dato de perfil:** El sitio invita a contactar por teléfono, correo o presencialmente para recibir ayuda.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.barbill.com/)
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+</details>
 
-**Prioridad:** base 30 + bonificación aplicada 3 = 33.
+<details>
+<summary>Birria LES · 10 puntos</summary>
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+Perfil según locales.csv: 5 sucursales en United States; operación telefónica por validar.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Ocean Beach · 4910 Newport Ave. Fuentes operativas: https://littlechefcatering.us/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-## Prime Pizza
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.doordash.com/business/birria-les-13501665/)
 
-**Argumento o dato de perfil:** Prime Pizza invita a contactar por correo o llamando a sus sucursales.
+</details>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+<details>
+<summary>Black&#x27;s Barbecue · 10 puntos</summary>
 
-**Prioridad:** base 30 + bonificación aplicada 3 = 33.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-**Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 235 E Imperial Highway. Fuentes operativas: https://primepizza.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.blacksbbq.com/locations)
 
-## Bar-Bill Tavern
+</details>
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 3 sucursales en United States; operación telefónica por validar.
+<details>
+<summary>Crushed Red · 10 puntos</summary>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Perfil según locales.csv: 5 sucursales en United States; operación telefónica por validar.
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://crushed-red.com/)
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: East Aurora · 185 Main St; retiros en 191 Main St Rear. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+</details>
 
-## Birria LES
+<details>
+<summary>Holland Farms Bakery &amp; Deli · 10 puntos</summary>
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 5 sucursales en United States; operación telefónica por validar.
+Perfil según locales.csv: 2 sucursales en United States; operación telefónica por validar.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://hollandfarms.com/)
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+</details>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Astoria · 31-27 Ditmars Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+<details>
+<summary>Home Run Inn · 10 puntos</summary>
 
-## Black's Barbecue
+Perfil según locales.csv: 6 sucursales en United States; operación telefónica por validar.
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.homeruninnpizza.com/)
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+</details>
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+<details>
+<summary>Katie&#x27;s Pizza &amp; Pasta Osteria · 10 puntos</summary>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 215 N Main St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-## Crushed Red
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 5 sucursales en United States; operación telefónica por validar.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://katies.com/)
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+</details>
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+<details>
+<summary>Mama&#x27;s Pizza Omaha · 10 puntos</summary>
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Kirkwood · 140 S Kirkwood Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-## Holland Farms Bakery & Deli
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://mamaspizzaomaha.com/)
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 2 sucursales en United States; operación telefónica por validar.
+</details>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+<details>
+<summary>NY Pie Nashville · 10 puntos</summary>
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Manlius · 343 Fayette St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.nypienashville.com/)
 
-## Home Run Inn
+</details>
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 6 sucursales en United States; operación telefónica por validar.
+<details>
+<summary>Pizza Luce · 10 puntos</summary>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Perfil según locales.csv: 9 sucursales en United States; operación telefónica por validar.
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://pizzaluce.com/locations)
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Hillside · 60 S Mannheim Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+</details>
 
-## Katie's Pizza & Pasta Osteria
+<details>
+<summary>Pizzeria Delfina · 10 puntos</summary>
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.pizzeriadelfina.com/)
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+</details>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Rock Hill · 9568 Manchester Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+<details>
+<summary>SPIN! Pizza · 10 puntos</summary>
 
-## Mama's Pizza Omaha
+Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.spinpizza.com/)
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+</details>
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+<details>
+<summary>Sickies Garage Burgers &amp; Brews · 10 puntos</summary>
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Midtown · 715 N Saddle Creek Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
 
-## NY Pie Nashville
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](http://www.sickiesburgers.com)
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+</details>
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+<details>
+<summary>Super Taco Mexican Restaurants · 10 puntos</summary>
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 1441 New Highway 96 West. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-## Pizza Luce
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.supertacomex.com/)
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 9 sucursales en United States; operación telefónica por validar.
+</details>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+<details>
+<summary>The Kickin&#x27; Chicken · 10 puntos</summary>
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+Perfil según locales.csv: 6 sucursales en United States; operación telefónica por validar.
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Downtown Minneapolis · 119 N 4th St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](http://www.kickinchicken.com)
 
-## Pizzeria Delfina
+</details>
 
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
+<details>
+<summary>V Pizza · 10 puntos</summary>
 
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
+Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
 
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
+Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
 
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
+**Cálculo:** base 10 + bonificación 0 = 10. [Web de perfil; evidencia telefónica pendiente](https://www.vpizza.com/)
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Palo Alto · 651 Emerson Street. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
-
-## SPIN! Pizza
-
-**Argumento o dato de perfil:** Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
-
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
-
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
-
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
-
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Richardson · 348 W Campbell Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
-
-## Sickies Garage Burgers & Brews
-
-**Argumento o dato de perfil:** Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
-
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
-
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
-
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
-
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Las Vegas · 6629 S Las Vegas Blvd, Bldg J, Ste B120. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
-
-## Super Taco Mexican Restaurants
-
-**Argumento o dato de perfil:** Perfil según locales.csv: 4 sucursales en United States; operación telefónica por validar.
-
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
-
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
-
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
-
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Franklin · 7131 Franklin Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
-
-## The Kickin' Chicken
-
-**Argumento o dato de perfil:** Perfil según locales.csv: 6 sucursales en United States; operación telefónica por validar.
-
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
-
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
-
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
-
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: West Ashley · 1179 Sam Rittenberg Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
-
-## V Pizza
-
-**Argumento o dato de perfil:** Perfil según locales.csv: 13 sucursales en United States; operación telefónica por validar.
-
-**Segunda señal o pendiente:** Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.
-
-**Prioridad:** base 10 + bonificación aplicada 0 = 10.
-
-**Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
-
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: San Marco · 1406 Hendricks Ave. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+</details>

@@ -167,6 +167,7 @@ def publish_final(execution_dir, project_root):
     import csv
     import json
     import shutil
+    from html import escape
     with (execution_dir/'gtm-lista.csv').open(encoding='utf-8',newline='') as f:
         rows=list(csv.DictReader(f))
     audit={r['company_name']:r for r in json.loads((execution_dir/'auditoria_prioridad.json').read_text())}
@@ -177,11 +178,9 @@ def publish_final(execution_dir, project_root):
     shutil.copyfile(execution_dir/'gtm-lista.csv',project_root/'gtm-lista.csv')
     def cell(value): return str(value).replace('|','\\|').replace('\n',' ')
     lines=['# Lista oficial y prioridad por empresa','',
-        'Este documento se genera desde el CSV y la auditoría de la comprobación actual. La entrega de la raíz es una copia exacta de ese resultado; no mezcla puntajes históricos.',
-        '',f'Se incluyen {len(rows)} prospectos por perfil. El perfil determina inclusión; la evidencia determina prioridad. Una fuente faltante o sin señales deja evidencia pendiente, sin descartar al prospecto ni inventar un problema.',
-        '', '## Regla prioridad-v4','',
-        'Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal exploratorio: 30–49. Hipótesis operativa: 50–69. Dificultad explícita: 80–99. Las bonificaciones usan presencia de señales, alcance, texto y recencia; varias citas no se convierten en varios incidentes. El puntaje no estima probabilidad de compra ni ganancia.',
-        '', '[Arquitectura](ARQUITECTURA.md) · [Guía de ejecución](comprobacion_codex/README.md) · [Componentes de puntaje](comprobacion_codex/auditoria_prioridad.json)',
+        f'Generado desde el [CSV oficial](gtm-lista.csv) y su auditoría: {len(rows)} leads. El perfil determina inclusión; la evidencia determina prioridad.',
+        '', 'Las capturas tienen cobertura parcial. Una señal telefónica no implica llamadas perdidas; una fuente faltante deja validación pendiente. No se confirmó una novedad fechada para estos casos. Las fuentes, categorías y límites completos se conservan en el CSV; las citas y etiquetas, en [resultados de evidencia](comprobacion_codex/resultados_evidencia_llm.csv).',
+        '', '[Reglas de prioridad](ARQUITECTURA.md#inclusión-y-prioridad) · [Componentes del cálculo](comprobacion_codex/auditoria_prioridad.json)',
         '', '| Empresa | Prioridad | Evidencia | Puntos |','|---|---|---|---:|']
     for row in rows:
         entry=audit[row['company_name']]
@@ -189,11 +188,10 @@ def publish_final(execution_dir, project_root):
         lines.append(f"| {cell(row['company_name'])} | {cell(entry['priority']['level'])} | {status} | {row['priority_score']} |")
     for row in rows:
         entry=audit[row['company_name']];priority=entry['priority']
-        lines += ['',f"## {row['company_name']}",'',
-            f"**Argumento o dato de perfil:** {row['signal_1']}",'',
-            f"**Segunda señal o pendiente:** {row['signal_2']}",'',
-            f"**Prioridad:** base {priority['components']['base']} + bonificación aplicada {priority['bonus_applied']} = {priority['score']}.",'',
-            f"**Validación comercial:** {row['why_now']}",'',
-            f"**Trazabilidad y límites:** {row['notes']}"]
+        source_label='Fuente principal' if entry['evidence_status']=='con_senal_telefonica' else 'Web de perfil; evidencia telefónica pendiente'
+        lines += ['', '<details>',f"<summary>{escape(row['company_name'])} · {priority['score']} puntos</summary>",'',
+            row['signal_1'],'',row['signal_2'],'',
+            f"**Cálculo:** base {priority['components']['base']} + bonificación {priority['bonus_applied']} = {priority['score']}. "
+            f"[{source_label}]({row['source_url']})",'', '</details>']
     (project_root/'LISTA-EXPLICADA.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     print(f'Entrega oficial actualizada: gtm-lista.csv y LISTA-EXPLICADA.md; {len(rows)} prospectos.')
