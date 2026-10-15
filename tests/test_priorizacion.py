@@ -9,10 +9,19 @@ import tempfile
 import unittest
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from priorizar_leads import generate_from_files, score_final, publish_final
+from priorizar_leads import generate_from_files, score_final, publish_final, cuisine_from_profile
 
 
 class PrioridadTest(unittest.TestCase):
+    def test_cuisine_uses_profile_without_matching_delivery_as_deli(self):
+        for name, expected in [('Golden Boy Pizza', 'Pizza'), ('Dallas BBQ', 'Barbacoa'),
+                               ("Joe's Kansas City Bar-B-Que", 'Barbacoa'),
+                               ('Holland Farms Bakery & Deli', 'Deli / panadería')]:
+            self.assertEqual(cuisine_from_profile({'company_name': name})[0], expected)
+        self.assertEqual(cuisine_from_profile({'Keywords': 'delivery, delicious food'})[0], 'Por confirmar')
+        self.assertEqual(cuisine_from_profile({'cuisine': 'Italiana', 'company_name': 'Pizza'})[0], 'Italiana')
+        self.assertEqual(cuisine_from_profile({'Short Description': 'pizza and burgers'})[0], 'Por confirmar')
+
     def generate(self, signals=True, outside=False, publish=False):
         with tempfile.TemporaryDirectory() as temp:
             folder=Path(temp)

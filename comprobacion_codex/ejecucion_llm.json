@@ -1,0 +1,14 @@
+{
+  "extraccion": {
+    "complete": true,
+    "api_attempts": 0,
+    "pending": 0,
+    "reason": ""
+  },
+  "clasificacion": {
+    "complete": true,
+    "api_attempts": 0,
+    "pending": 0,
+    "reason": ""
+  }
+}

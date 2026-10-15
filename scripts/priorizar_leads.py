@@ -35,6 +35,34 @@ def score_final(signals):
             "cross_location_bonus_available": repeated_locations >= 2}
 
 
+def cuisine_from_profile(local):
+    """Categoría de perfil independiente de las citas operativas; devuelve procedencia."""
+    import re
+    for field in ('cuisine', 'project_cuisine'):
+        value = (local.get(field) or '').strip()
+        if value and value.lower() != 'por confirmar':
+            return value, f'campo {field} de locales.csv'
+    patterns = [
+        (r'\b(?:pizza|pizzeria|pizzería)\b', 'Pizza'),
+        (r'\b(?:barbecue|bbq|bar[ -]b[ -]que|smokehouse)\b', 'Barbacoa'),
+        (r'\b(?:tacos?|mexican|mexicana|birria)\b', 'Tacos / mexicana'),
+        (r'\b(?:burgers?|hamburguesas?)\b', 'Hamburguesas'),
+        (r'\bchicken\b', 'Pollo'),
+        (r'\bchinese\b', 'China'),
+        (r'\b(?:deli|bakery|panadería)\b', 'Deli / panadería'),
+    ]
+    # El nombre suele identificar la especialidad; descripciones y keywords
+    # pueden enumerar muchos platos. Toda inferencia queda marcada como tal.
+    for field in ('company_name', 'Company Name', 'Short Description', 'Keywords'):
+        text = (local.get(field) or '').lower()
+        matches = list(dict.fromkeys(label for pattern, label in patterns if re.search(pattern, text)))
+        if len(matches) == 1:
+            return matches[0], f'inferencia de {field} en locales.csv; por validar'
+        if matches:
+            return 'Por confirmar', f'categoría ambigua en {field} de locales.csv'
+    return 'Por confirmar', 'sin categoría identificable en el perfil de locales.csv'
+
+
 def generate_from_files(locales_path, results_path, evidence_path, out_dir):
     """Entrega independiente: únicamente locales, evidencia y resultados nuevos."""
     import csv
@@ -49,6 +77,13 @@ def generate_from_files(locales_path, results_path, evidence_path, out_dir):
             writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore',lineterminator='\n')
             writer.writeheader();writer.writerows(rows)
     locales, results, evidence = read(locales_path), read(results_path), read(evidence_path)
+    response_records=[]
+    for kind in ('extraccion','clasificacion'):
+        response_file=results_path.parent/f'respuestas_{kind}_codex.json'
+        if response_file.exists():
+            response_records.extend(json.loads(response_file.read_text(encoding='utf-8')))
+    providers={r.get('metadata',{}).get('provider','codex_conversacion') for r in response_records}
+    llm_origin=' / '.join(sorted(providers)) if providers else 'respuestas externas; consultar procedencia de la ejecución'
     by_company = {r['company_id']:r for r in results}
     by_evidence = {r['evidence_id']:r for r in evidence}
     columns=['company_name','city','state','locations_count','cuisine','phone','website','source_url','signal_1','signal_2','priority_score','why_now','notes']
@@ -95,10 +130,8 @@ def generate_from_files(locales_path, results_path, evidence_path, out_dir):
             if description not in claims: claims.append(description)
         fallback='Pendiente: no hay una segunda señal operativa respaldada en esta ejecución.'
         texts=[r['verbatim_quote'] for r in ordered]
-        # Es una inferencia de categoría y queda explícita si solo viene del nombre.
         name=local.get('company_name') or local.get('Company Name')
-        category_text=' '.join(r['verbatim_quote'] for r in usable).lower()
-        cuisine=next((label for pattern,label in [('pizza','Pizza'),('barbecue','Barbacoa'),('bbq','Barbacoa'),('taco','Tacos / mexicana'),('burger','Hamburguesas'),('chicken','Pollo'),('deli','Deli / panadería')] if pattern in category_text),'Por confirmar')
+        cuisine,cuisine_origin=cuisine_from_profile(local)
         digits=''.join(c for c in (local.get('phone') or local.get('Company Phone') or '') if c.isdigit())
         if len(digits)==10:digits='1'+digits
         sources=list(dict.fromkeys(r['source_url'] for r in ordered))
@@ -113,11 +146,11 @@ def generate_from_files(locales_path, results_path, evidence_path, out_dir):
              'source_url':sources[0] if sources else local.get('Website',''),
              'signal_1':claims[0] if claims else f'Perfil según locales.csv: {count} sucursales en {local.get("Company Country", "país por confirmar")}; operación telefónica por validar.',
              'signal_2':claims[1] if len(claims)>1 else fallback,'priority_score':priority['score'],'why_now':explanation+' Sin novedad fechada confirmada.',
-             'notes':f"Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: {local.get('location_label','')}. Fuentes operativas: {' | '.join(sources) if sources else 'ninguna en esta captura; source_url es la web de perfil, no una prueba de problema'}. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: {'prospecto_por_perfil' if included else 'fuera_de_perfil'}. Evidencia: {evidence_status}. Regla: {priority['version']}."}
+             'notes':f"Comprobación nueva desde locales.csv. LLM: {llm_origin}, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: {local.get('location_label','')}. Fuentes operativas: {' | '.join(sources) if sources else 'ninguna en esta captura; source_url es la web de perfil, no una prueba de problema'}. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: {cuisine_origin}; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: {'prospecto_por_perfil' if included else 'fuera_de_perfil'}. Evidencia: {evidence_status}. Regla: {priority['version']}."}
         all_rows.append(row)
         audit.append({'company_id':cid,'company_name':name,'status':'prospecto_por_perfil' if included else 'fuera_de_perfil',
             'included_in_final':included,'evidence_status':evidence_status,'profile_fit_from_locales':profile_ok,
-            'signals':signals,'priority':priority,'evidence_ids':[r['evidence_id'] for r in ordered],'analysis_status':result['analysis_status']})
+            'signals':signals,'priority':priority,'cuisine':cuisine,'cuisine_origin':cuisine_origin,'evidence_ids':[r['evidence_id'] for r in ordered],'analysis_status':result['analysis_status']})
     all_rows.sort(key=lambda r:(-r['priority_score'],r['company_name']))
     names={r['company_name'] for r in audit if r['included_in_final']}
     out_dir.mkdir(parents=True,exist_ok=True)

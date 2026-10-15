@@ -1,0 +1,105 @@
+{
+  "run_id": "historical_saved_run",
+  "events": [
+    {
+      "stage": "inicio",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:31:08+00:00"
+    },
+    {
+      "stage": "extraccion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:31:08+00:00"
+    },
+    {
+      "stage": "extraccion",
+      "status": "etapa_completada",
+      "actor": "respuestas_externas_validadas",
+      "at": "2026-10-15T15:31:09+00:00"
+    },
+    {
+      "stage": "clasificacion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:31:09+00:00"
+    },
+    {
+      "stage": "clasificacion",
+      "status": "etapa_completada",
+      "actor": "respuestas_externas_validadas",
+      "at": "2026-10-15T15:31:09+00:00"
+    },
+    {
+      "stage": "entrega",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:31:09+00:00"
+    },
+    {
+      "stage": "verificacion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:31:09+00:00"
+    },
+    {
+      "stage": "fin",
+      "status": "completada",
+      "actor": "python",
+      "at": "2026-10-15T15:31:10+00:00"
+    },
+    {
+      "stage": "inicio",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:32:35+00:00"
+    },
+    {
+      "stage": "extraccion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:32:35+00:00"
+    },
+    {
+      "stage": "extraccion",
+      "status": "etapa_completada",
+      "actor": "respuestas_externas_validadas",
+      "at": "2026-10-15T15:32:35+00:00"
+    },
+    {
+      "stage": "clasificacion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:32:35+00:00"
+    },
+    {
+      "stage": "clasificacion",
+      "status": "etapa_completada",
+      "actor": "respuestas_externas_validadas",
+      "at": "2026-10-15T15:32:36+00:00"
+    },
+    {
+      "stage": "entrega",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:32:36+00:00"
+    },
+    {
+      "stage": "verificacion",
+      "status": "en_curso",
+      "actor": "python",
+      "at": "2026-10-15T15:32:36+00:00"
+    },
+    {
+      "stage": "fin",
+      "status": "completada",
+      "actor": "python",
+      "at": "2026-10-15T15:32:36+00:00"
+    }
+  ],
+  "invocation_mode": "replay",
+  "status": "completada",
+  "current_stage": "fin",
+  "updated_at": "2026-10-15T15:32:36+00:00"
+}

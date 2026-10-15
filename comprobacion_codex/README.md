@@ -37,7 +37,7 @@ Los 16 con evidencia pendiente están incluidos: cumplen el perfil de entrada au
 5. `evidencia_llm_procesada.csv`: generado por `extraer_evidencias_llm.py --responses ...`. El script valida el esquema y las citas y asigna IDs de evidencia.
 6. `solicitudes_clasificacion.json` y `respuestas_clasificacion_codex.json`: segunda lectura de las afirmaciones mediante el prompt de clasificación. Una etiqueta por `evidence_id`, con cita, fuerza y alcance. No se importó una tabla histórica de prioridades.
 7. `resultados_evidencia_llm.csv`: generado por `analizar_evidencias_llm.py --responses ...`, con indicadores agregados para las 30 empresas. Las respuestas vacías revisadas se distinguen de la falta de texto fuente.
-8. `gtm-lista.csv`: generado por `preparar_entrega.py` en modo independiente. Al terminar la comprobación predeterminada, se copia a la raíz como entrega oficial y se genera su explicación desde la misma auditoría. Contiene los 30 prospectos del perfil y las 13 columnas del template. `candidatos_evaluados.csv` conserva todos los candidatos evaluados; también permite revisar exclusiones si otro lote tiene empresas fuera de perfil. `auditoria_prioridad.json` permite seguir cada puntaje hasta sus indicadores y citas.
+8. `gtm-lista.csv`: generado por `preparar_entrega.py` en modo independiente. Al reproducir explícitamente esta comprobación guardada, se copia a la raíz como entrega oficial y se genera su explicación desde la misma auditoría. Contiene los 30 prospectos del perfil y las 13 columnas del template. `candidatos_evaluados.csv` conserva todos los candidatos evaluados; también permite revisar exclusiones si otro lote tiene empresas fuera de perfil. `auditoria_prioridad.json` permite seguir cada puntaje hasta sus indicadores y citas.
 9. `verificacion.json` y `pruebas.json`: resultado técnico, huellas de archivos y pruebas de rechazo/aislamiento.
 
 `evidencia_resenas.csv` está vacío: no se usaron reseñas exportadas de Google ni una fuente de reseñas paga. No se fabricaron datos para suplir su ausencia. Algunas categorías de cocina quedan por confirmar; el CSV no debe presentarse como calificación comercial exhaustiva.
@@ -47,7 +47,7 @@ Los 16 con evidencia pendiente están incluidos: cumplen el perfil de entrada au
 Desde la raíz del proyecto:
 
 ```sh
-python3 scripts/comprobar_pipeline.py
+python3 scripts/comprobar_pipeline.py --replay --out-dir comprobacion_codex
 ```
 
 Regenera extracción, clasificación, indicadores y CSV desde las capturas y las respuestas nuevas guardadas en esta carpeta. Después de verificar, actualiza el CSV oficial y LISTA-EXPLICADA.md en la raíz. Una ejecución en otra carpeta no publica automáticamente su resultado como entrega oficial. **Ese comando no interpreta otra vez con un LLM**: reproduce las respuestas registradas y ejecuta la validación y los cálculos. Es el mismo principio que conservar respuestas de API en caché, con procedencia explícita de Codex.
@@ -57,20 +57,26 @@ La regla actual es **prioridad-v4: el perfil incluye; la evidencia prioriza**. P
 Para comprobar solamente las salidas existentes:
 
 ```sh
-python3 scripts/comprobar_pipeline.py --verify-only
+python3 scripts/comprobar_pipeline.py --verify-only --out-dir comprobacion_codex
 ```
 
 La prueba adicional se ejecutó en una copia aislada sin `data/`, `interno/`, el simulador antiguo, cachés ni salidas calculadas. Se copiaron únicamente los scripts/prompts y las entradas nuevas adquiridas en esta prueba, los textos originales y las respuestas nuevas de Codex. Con la red bloqueada se regeneró un CSV idéntico. Se rechazaron una cita inventada, respuestas que no corresponden a la entrada y una clasificación incompleta. Esa reproducción usa respuestas guardadas; no simula una nueva interpretación en secreto.
+
+## API automática y alternativa con Codex
+
+Sin `--resume` ni `--replay`, cada invocación crea una corrida nueva en una carpeta vacía y vuelve a adquirir e interpretar todo desde locales.csv. El modo predeterminado `--llm-mode auto` intenta la API cuando hay `OPENAI_API_KEY` y `OPENAI_MODEL`. Si funciona, completa extracción, clasificación y CSV en la misma ejecución. Si falla, conserva las respuestas exitosas y exporta únicamente lo pendiente en `solicitudes_*_pendientes_codex.json`; Codex debe agregar las respuestas faltantes al archivo indicado, preservando las existentes. Después se continúa con `--resume --out-dir <carpeta>`. La intervención de Codex sigue siendo manual y limitada a responder los prompts.
+
+`--llm-mode codex` garantiza que el coordinador no llame a APIs pagas, incluso con una clave configurada. Los pasos siguientes usan ese modo. `ejecucion_llm.json` registra intentos y pendientes de la última ejecución; `verificacion.json` contabiliza respuestas guardadas según proveedor. Los nombres históricos de archivos y la etiqueta de contrato no equivalen al modelo real: las nuevas respuestas API guardan proveedor, modelo y uso de tokens en metadata. El camino API y la recuperación se probaron con transporte simulado, sin una llamada paga real.
 
 ## Empezar otra comprobación verdaderamente desde locales
 
 Usá una carpeta nueva para no mezclar respuestas de entradas distintas:
 
 ```sh
-python3 scripts/comprobar_pipeline.py --input data/locales.csv --out-dir comprobacion_nueva --collect
+python3 scripts/comprobar_pipeline.py --input data/locales.csv --out-dir comprobacion_nueva --llm-mode codex
 ```
 
-Este comando hace adquisición nueva. Necesita acceso a Internet para las páginas públicas, pero no usa APIs de pago. Puede requerir autorización de red en Codex. En este macOS el orquestador usa el certificado raíz `/etc/ssl/cert.pem` cuando está disponible; no desactiva TLS.
+Este comando requiere que comprobacion_nueva no exista o esté vacía; hace adquisición nueva. Necesita acceso a Internet para las páginas públicas, pero no usa APIs de pago. Puede requerir autorización de red en Codex. En este macOS el orquestador usa el certificado raíz `/etc/ssl/cert.pem` cuando está disponible; no desactiva TLS.
 
 Después de capturar, exporta las solicitudes de extracción y se detiene indicando que espera respuestas de Codex. En ese punto usá este mensaje en Codex:
 
@@ -79,19 +85,19 @@ Ejecutá la comprobación de este proyecto usando solamente locales.csv como
 entrada validada y una carpeta nueva comprobacion_nueva. No leas las fichas de
 interno/, la evidencia anterior ni CLAIMS del simulador. No llames a APIs de pago.
 Si no se capturaron fuentes todavía, ejecutá:
-python3 scripts/comprobar_pipeline.py --input data/locales.csv --out-dir comprobacion_nueva --collect
+python3 scripts/comprobar_pipeline.py --input data/locales.csv --out-dir comprobacion_nueva --llm-mode codex
 
-Leé las instrucciones, el esquema y TODAS las entradas de
-comprobacion_nueva/solicitudes_extraccion.json. Interpretalas desde esta
+Limitá tu intervención a interpretar solicitudes y escribir respuestas JSON. No edites scripts, textos capturados, indicadores ni CSV de salida para completar la corrida. Leé las instrucciones, el esquema y TODAS las entradas de
+comprobacion_nueva/solicitudes_extraccion_pendientes_codex.json. Interpretalas desde esta
 conversación por lotes manejables y guardá las respuestas en
-comprobacion_nueva/respuestas_extraccion_codex.json. No copies respuestas de
+comprobacion_nueva/respuestas_extraccion_codex.json. Si ya hay respuestas parciales de esta corrida, preservalas y agregá solo las faltantes. Incluí metadata.provider=codex_conversacion. No copies respuestas de
 otra corrida ni generes conclusiones con reglas de palabras clave. Cada cita
 debe ser literal. Registrá sin evidencia o pendientes cuando corresponda.
 
-Ejecutá python3 scripts/comprobar_pipeline.py --out-dir comprobacion_nueva.
-Se exportarán las solicitudes de clasificación. Leelas, aplicá el prompt desde
+Ejecutá python3 scripts/comprobar_pipeline.py --resume --out-dir comprobacion_nueva --llm-mode codex.
+Se exportarán las solicitudes de clasificación pendientes. Leelas, aplicá el prompt desde
 esta conversación y guardá respuestas_clasificacion_codex.json con una etiqueta
-por evidencia. Repetí el comando hasta generar y verificar el CSV. No uses --run,
+por evidencia. Incluí la misma procedencia en metadata. Continuá siempre con --resume hasta generar y verificar el CSV. No uses --run,
 no inventes datos para obtener 30 leads y no modifiques el puntaje para forzar
 un resultado. Separá el éxito técnico del flujo de la cobertura de las fuentes.
 ```
@@ -129,8 +135,10 @@ Antes de mostrar el proceso:
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 scripts/comprobar_pipeline.py
-python3 scripts/comprobar_pipeline.py --verify-only
+python3 scripts/comprobar_pipeline.py --replay --out-dir comprobacion_codex
+python3 scripts/comprobar_pipeline.py --verify-only --out-dir comprobacion_codex
 ```
 
 Las pruebas cubren inclusión sin evidencia, fallo total de fuentes, orden por fuerza de señales, exclusión por perfil y mayor prioridad de un problema repetido sobre un pico de demanda. No requieren red ni API.
+
+La corrida nueva escribe `estado_ejecucion.json`: `pendiente_codex` significa que no terminó; `completada` requiere generación y verificación. El proceso devuelve código 2 mientras espera interpretación y no genera un CSV final ficticio. Para empezar de cero otra vez, usar otra carpeta sin --resume; para continuar las mismas capturas, usar --resume.

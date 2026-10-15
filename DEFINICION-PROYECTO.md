@@ -29,7 +29,7 @@ locales.csv → captura de páginas → evidencia_locales.csv
                               gtm-lista.csv
 ```
 
-La adquisición arranca de Website y sigue enlaces publicados del mismo dominio. Cada fuente conserva URL, fecha de captura y texto. En este piloto Codex interpreta las solicitudes desde la conversación y guarda respuestas JSON externas; Python valida esquema, identidad y citas. Repetir el procesamiento usa esas respuestas registradas, sin un modelo nuevo ni una API.
+La adquisición arranca de Website y sigue enlaces publicados del mismo dominio. Cada fuente conserva URL, fecha de captura y texto. En este piloto Codex interpreta las solicitudes desde la conversación y guarda respuestas JSON externas; Python valida esquema, identidad y citas. Una ejecución normal inicia desde cero y vuelve a capturar e interpretar; con API configurada completa todas las etapas automáticamente. Si falta la API, se detiene para interpretar las solicitudes con Codex y continúa con --resume. Solo --replay reutiliza deliberadamente la corrida guardada sin una interpretación nueva.
 
 ## Estado comprobado
 

@@ -36,6 +36,8 @@
       "bonus_applied": 18,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_f071d25512cd16",
       "evi_bd698b4d77a050",
@@ -81,6 +83,8 @@
       "bonus_applied": 11,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Barbacoa",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_e5264243c08ff3",
       "evi_da2205aca65c6d"
@@ -124,6 +128,8 @@
       "bonus_applied": 11,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_14ba4447d7f80f",
       "evi_b98a2e9665f2bb"
@@ -167,6 +173,8 @@
       "bonus_applied": 8,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Barbacoa",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_57d12c77ff001f",
       "evi_f05dcf51c36aa9"
@@ -210,6 +218,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [],
     "analysis_status": "awaiting_source_text"
   },
@@ -250,6 +260,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Barbacoa",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -290,6 +302,8 @@
       "bonus_applied": 8,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_351a113d38c6ad",
       "evi_85c7e42a05c095"
@@ -333,6 +347,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -373,6 +389,8 @@
       "bonus_applied": 19,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_d4522ae0318245",
       "evi_21ca15686c845f",
@@ -417,6 +435,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -457,6 +477,8 @@
       "bonus_applied": 3,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_9320eda47dc6f1"
     ],
@@ -499,6 +521,8 @@
       "bonus_applied": 8,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [
       "evi_ebe5c1f612a425",
       "evi_74022bf411a373"
@@ -542,6 +566,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "awaiting_source_text"
   },
@@ -582,6 +608,8 @@
       "bonus_applied": 13,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_23f351e7d978c8",
       "evi_a8d9b318019742"
@@ -625,6 +653,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -665,6 +695,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -705,6 +737,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -745,6 +779,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -785,6 +821,8 @@
       "bonus_applied": 8,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_fa520c73e28ad5"
     ],
@@ -827,6 +865,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -867,6 +907,8 @@
       "bonus_applied": 13,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pizza",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_19603cf394d90a",
       "evi_574b29aa81fa76"
@@ -910,6 +952,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -950,6 +994,8 @@
       "bonus_applied": 6,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Por confirmar",
+    "cuisine_origin": "sin categoría identificable en el perfil de locales.csv",
     "evidence_ids": [
       "evi_6235ddf74557ee"
     ],
@@ -992,6 +1038,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Deli / panadería",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -1032,6 +1080,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Tacos / mexicana",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -1072,6 +1122,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Tacos / mexicana",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -1112,6 +1164,8 @@
       "bonus_applied": 3,
       "cross_location_bonus_available": false
     },
+    "cuisine": "China",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_09ef113e531239"
     ],
@@ -1154,6 +1208,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Pollo",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -1194,6 +1250,8 @@
       "bonus_applied": 0,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Hamburguesas",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [],
     "analysis_status": "complete"
   },
@@ -1234,6 +1292,8 @@
       "bonus_applied": 3,
       "cross_location_bonus_available": false
     },
+    "cuisine": "Barbacoa",
+    "cuisine_origin": "inferencia de company_name en locales.csv; por validar",
     "evidence_ids": [
       "evi_040be8b39d91d8"
     ],

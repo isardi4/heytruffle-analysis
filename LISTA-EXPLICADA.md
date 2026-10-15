@@ -53,7 +53,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Alta: dificultad telefónica publicada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Gas Station · 3002 W 47th. Fuentes operativas: https://www.joeskc.com/pages/contact-us. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Gas Station · 3002 W 47th. Fuentes operativas: https://www.joeskc.com/pages/contact-us. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Downtown Pizza
 
@@ -65,7 +65,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 156 Magnolia St. Fuentes operativas: https://downtownpizzasc.com/careers | https://downtownpizzasc.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 156 Magnolia St. Fuentes operativas: https://downtownpizzasc.com/careers | https://downtownpizzasc.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Pequod's Pizza
 
@@ -77,7 +77,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Chicago · 2207 N Clybourn. Fuentes operativas: https://pequodspizza.com/employment-application/ | https://pequodspizza.com/faqs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Chicago · 2207 N Clybourn. Fuentes operativas: https://pequodspizza.com/employment-application/ | https://pequodspizza.com/faqs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## HOTLIPS Pizza
 
@@ -89,7 +89,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Pearl · 721 NW 9th Ave, Suite 150. Fuentes operativas: https://www.hotlipspizza.com/ | https://www.hotlipspizza.com/jobs. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Pearl · 721 NW 9th Ave, Suite 150. Fuentes operativas: https://www.hotlipspizza.com/ | https://www.hotlipspizza.com/jobs. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Zachary's Chicago Pizza
 
@@ -101,7 +101,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Pleasant Hill · 140 Crescent Drive. Fuentes operativas: https://zacharys.com/jobs/ | https://zacharys.com/frequently-asked-questions/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Pleasant Hill · 140 Crescent Drive. Fuentes operativas: https://zacharys.com/jobs/ | https://zacharys.com/frequently-asked-questions/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Glass Nickel Pizza
 
@@ -113,7 +113,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 3191 Muir Field Rd. Fuentes operativas: https://www.glassnickelpizza.com/careers/ | https://www.glassnickelpizza.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 3191 Muir Field Rd. Fuentes operativas: https://www.glassnickelpizza.com/careers/ | https://www.glassnickelpizza.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Salvatore's Tomato Pies
 
@@ -125,7 +125,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Media: hipótesis operativa respaldada Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Contacto elegido: Madison North Livingston · 10 N Livingston. Fuentes operativas: https://www.salvatorestomatopies.com/careers/ | https://www.salvatorestomatopies.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Contacto elegido: Madison North Livingston · 10 N Livingston. Fuentes operativas: https://www.salvatorestomatopies.com/careers/ | https://www.salvatorestomatopies.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Litza's Pizza
 
@@ -137,7 +137,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 835 East Fort Union Boulevard. Fuentes operativas: https://www.litzaspizza.com/ | https://www.litzaspizza.com/jobs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 835 East Fort Union Boulevard. Fuentes operativas: https://www.litzaspizza.com/ | https://www.litzaspizza.com/jobs/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Pappy's Smokehouse
 
@@ -149,7 +149,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: St. Louis · 3106 Olive St. Fuentes operativas: https://www.pappyssmokehouse.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: St. Louis · 3106 Olive St. Fuentes operativas: https://www.pappyssmokehouse.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Golden Boy Pizza
 
@@ -161,7 +161,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: North Beach · 542 Green Street. Fuentes operativas: https://www.goldenboypizza.com/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: North Beach · 542 Green Street. Fuentes operativas: https://www.goldenboypizza.com/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Billy G's
 
@@ -173,7 +173,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Kirkwood · 131 W Argonne Dr. Fuentes operativas: https://billygskirkwood.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Kirkwood · 131 W Argonne Dr. Fuentes operativas: https://billygskirkwood.com/contact/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Dallas BBQ
 
@@ -185,7 +185,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Times Square · 241 W 42nd Street. Fuentes operativas: http://www.dallasbbq.com/careers. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Times Square · 241 W 42nd Street. Fuentes operativas: http://www.dallasbbq.com/careers. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Little Chef Chinese
 
@@ -197,7 +197,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Ocean Beach · 4910 Newport Ave. Fuentes operativas: https://littlechefcatering.us/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Ocean Beach · 4910 Newport Ave. Fuentes operativas: https://littlechefcatering.us/. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Prime Pizza
 
@@ -209,7 +209,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Hay operación telefónica documentada; validar volumen, cobertura y utilidad del producto. Exploratoria: encaje y operación telefónica Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 235 E Imperial Highway. Fuentes operativas: https://primepizza.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 235 E Imperial Highway. Fuentes operativas: https://primepizza.com/contact. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: con_senal_telefonica. Regla: prioridad-v4.
 
 ## Bar-Bill Tavern
 
@@ -221,7 +221,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: East Aurora · 185 Main St; retiros en 191 Main St Rear. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: East Aurora · 185 Main St; retiros en 191 Main St Rear. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Birria LES
 
@@ -233,7 +233,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Astoria · 31-27 Ditmars Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Astoria · 31-27 Ditmars Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Black's Barbecue
 
@@ -245,7 +245,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 215 N Main St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 215 N Main St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Crushed Red
 
@@ -257,7 +257,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Kirkwood · 140 S Kirkwood Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Kirkwood · 140 S Kirkwood Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Holland Farms Bakery & Deli
 
@@ -269,7 +269,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Manlius · 343 Fayette St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Manlius · 343 Fayette St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Home Run Inn
 
@@ -281,7 +281,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Hillside · 60 S Mannheim Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Hillside · 60 S Mannheim Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Katie's Pizza & Pasta Osteria
 
@@ -293,7 +293,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Rock Hill · 9568 Manchester Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Rock Hill · 9568 Manchester Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Mama's Pizza Omaha
 
@@ -305,7 +305,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Midtown · 715 N Saddle Creek Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Midtown · 715 N Saddle Creek Road. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## NY Pie Nashville
 
@@ -317,7 +317,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: 1441 New Highway 96 West. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: 1441 New Highway 96 West. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: sin categoría identificable en el perfil de locales.csv; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Pizza Luce
 
@@ -329,7 +329,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Downtown Minneapolis · 119 N 4th St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Downtown Minneapolis · 119 N 4th St. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Pizzeria Delfina
 
@@ -341,7 +341,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Palo Alto · 651 Emerson Street. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Palo Alto · 651 Emerson Street. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## SPIN! Pizza
 
@@ -353,7 +353,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Richardson · 348 W Campbell Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Richardson · 348 W Campbell Rd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Sickies Garage Burgers & Brews
 
@@ -365,7 +365,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Las Vegas · 6629 S Las Vegas Blvd, Bldg J, Ste B120. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Las Vegas · 6629 S Las Vegas Blvd, Bldg J, Ste B120. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## Super Taco Mexican Restaurants
 
@@ -377,7 +377,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: Franklin · 7131 Franklin Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: Franklin · 7131 Franklin Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## The Kickin' Chicken
 
@@ -389,7 +389,7 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: West Ashley · 1179 Sam Rittenberg Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: West Ashley · 1179 Sam Rittenberg Blvd. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
 
 ## V Pizza
 
@@ -401,4 +401,4 @@ Perfil sin evidencia telefónica: 10–14. Antecedentes antiguos: 15–24. Canal
 
 **Validación comercial:** Encaja en el perfil aceptado de locales.csv. Contacto exploratorio para validar uso del teléfono; evidencia operativa pendiente. Sin novedad fechada confirmada.
 
-**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: Codex en conversación mediante respuestas JSON externas; no API. Sucursal: San Marco · 1406 Hendricks Ave. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina inferida de citas cuando disponible; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
+**Trazabilidad y límites:** Comprobación nueva desde locales.csv. LLM: codex_conversacion, mediante respuestas JSON externas; procedencia por respuesta cuando está registrada. Sucursal: San Marco · 1406 Hendricks Ave. Fuentes operativas: ninguna en esta captura; source_url es la web de perfil, no una prueba de problema. Alcance y citas en resultados_evidencia_llm.csv. Categoría de cocina: inferencia de company_name en locales.csv; por validar; validar volumen telefónico antes de calificar definitivamente. Cobertura parcial; no se midieron llamadas perdidas. Sin fichas ni etiquetas históricas. Estado de inclusión: prospecto_por_perfil. Evidencia: evidencia_telefonica_pendiente. Regla: prioridad-v4.
