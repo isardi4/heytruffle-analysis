@@ -2,7 +2,33 @@
 
 Identificamos posibles compradores de una solución de atención telefónica: restaurantes de EEUU, con 2–15 sucursales y cocina casual de volumen. **El perfil determina la inclusión; la evidencia determina la prioridad.**
 
-La entrega contiene **30 leads** frente a una meta de 40: tres incorporaciones del export gratuito de Apollo y 27 del discovery con IA. Hay 14 con señales telefónicas y 16 con evidencia telefónica pendiente; todos se incluyen por perfil.
+La entrega contiene **30 leads** frente a una meta de 40: tres incorporaciones del export gratuito de Apollo y 27 del discovery con IA. Todos se incluyen por perfil; la evidencia disponible define el orden de contacto.
+
+## Por dónde empezar si estás evaluando el proyecto
+
+| Orden | Documento | Qué permite evaluar |
+|---|---|---|
+| 1 | [Criterio](CRITERIO.md) | Perfil, selección, prioridad y uso de IA. |
+| 2 | [Arquitectura](ARQUITECTURA.md) | Cómo se conectan las etapas y qué genera cada script. |
+| 3 | [Guía de ejecución](comprobacion_codex/README.md) | Cómo correr desde cero, usar Codex o reproducir la entrega. |
+| 4 | [CSV final](gtm-lista.csv) | Los 30 leads priorizados y sus señales. |
+| 5 | [Explicación por lead](LISTA-EXPLICADA.md) | Justificación del puntaje y evidencia pendiente de cada caso. |
+
+La [consigna](EJERCICIO.md) y la [definición del proyecto](DEFINICION-PROYECTO.md) completan el contexto. Para revisar el cálculo en detalle, está la [auditoría de prioridad](comprobacion_codex/auditoria_prioridad.json).
+
+## Resultado del piloto
+
+| Indicador | Resultado |
+|---|---:|
+| Leads incluidos por perfil | 30 |
+| Empresas con texto descargado | 28 |
+| Páginas capturadas con texto | 76 |
+| Afirmaciones respaldadas por citas | 56 |
+| Leads con señales telefónicas | 14 |
+| Leads con evidencia telefónica pendiente | 16 |
+| Llamadas a APIs pagas en la entrega | 0 |
+
+Los 16 pendientes siguen siendo posibles clientes y tienen menor prioridad. Una señal telefónica puede documentar pedidos o consultas; no implica por sí sola un problema de llamadas perdidas.
 
 ## El proceso
 
@@ -35,11 +61,6 @@ python3 scripts/comprobar_pipeline.py --replay --out-dir comprobacion_codex
 
 Este modo reconstruye la entrega desde las capturas y respuestas registradas. Las pruebas se ejecutan con `python3 -m unittest discover -s tests -v`.
 
-## Qué revisar
-
-- [CSV final](gtm-lista.csv): los 30 leads priorizados.
-- [Criterio](CRITERIO.md): selección, prioridad y uso de IA.
-- [Arquitectura](ARQUITECTURA.md): componentes, archivos y controles técnicos.
-- [Explicación por lead](LISTA-EXPLICADA.md): señales y motivos del puntaje.
+## Alcance comprobado
 
 Se comprobó el flujo asistido con Codex y se probó el modo automático con API simulada; no se hizo una llamada paga real. Las señales ayudan a priorizar, sin afirmar que todos los leads pierdan llamadas. [historico/](historico/README.md) e [interno/](interno/README.md) conservan el discovery y no alimentan las corridas nuevas.
