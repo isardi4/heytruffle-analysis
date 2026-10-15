@@ -1,0 +1,1242 @@
+[
+  {
+    "company_id": "cmp_c26757fbfb86",
+    "company_name": "Pequod's Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": true,
+      "explicit_phone_issue": false,
+      "demand_peak": true,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 68,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 5,
+        "demanda": 5,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 18,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_f071d25512cd16",
+      "evi_bd698b4d77a050",
+      "evi_6d5d9a41ece57d",
+      "evi_7e55f0a2bbab8a"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_dfc9c678b805",
+    "company_name": "Pappy's Smokehouse",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": true,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 41,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 3,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 11,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_e5264243c08ff3",
+      "evi_da2205aca65c6d"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_fdd50f35f0f9",
+    "company_name": "Litza's Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": true,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 41,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 3,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 11,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_14ba4447d7f80f",
+      "evi_b98a2e9665f2bb"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_5836d4091646",
+    "company_name": "Joe's Kansas City Bar-B-Que",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": false,
+      "explicit_phone_issue": true,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Alta: dificultad telefónica publicada",
+      "score": 88,
+      "components": {
+        "base": 80,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 8,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_57d12c77ff001f",
+      "evi_f05dcf51c36aa9"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_35fc461b5228",
+    "company_name": "Bar-Bill Tavern",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "awaiting_source_text"
+  },
+  {
+    "company_id": "cmp_3fdcfe4b995e",
+    "company_name": "Black's Barbecue",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_700ab6112a46",
+    "company_name": "Glass Nickel Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": true,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 58,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 5,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 8,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_351a113d38c6ad",
+      "evi_85c7e42a05c095"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_200e0f515e8e",
+    "company_name": "Pizza Luce",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_6e12ba4645d0",
+    "company_name": "Downtown Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": true,
+      "explicit_phone_issue": false,
+      "demand_peak": true,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": true,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 69,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 5,
+        "demanda": 5,
+        "atribucion_local": 3,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 19,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_d4522ae0318245",
+      "evi_21ca15686c845f",
+      "evi_921c6d59a5b723"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_d248a3aa19fd",
+    "company_name": "NY Pie Nashville",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_9a0f16f5d97a",
+    "company_name": "Prime Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 33,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 3,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_9320eda47dc6f1"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_fadac0d063a2",
+    "company_name": "Salvatore's Tomato Pies",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": true,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 58,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 5,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 8,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_ebe5c1f612a425",
+      "evi_74022bf411a373"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_6a1a29926ef3",
+    "company_name": "Mama's Pizza Omaha",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "awaiting_source_text"
+  },
+  {
+    "company_id": "cmp_8d425e3430e6",
+    "company_name": "Zachary's Chicago Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": true,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 63,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 5,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 13,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_23f351e7d978c8",
+      "evi_a8d9b318019742"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_02e717ecc99f",
+    "company_name": "V Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_23fe6a977190",
+    "company_name": "SPIN! Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_8a60830645de",
+    "company_name": "Katie's Pizza & Pasta Osteria",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_9b2c8442e745",
+    "company_name": "Pizzeria Delfina",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_96ed78605e9f",
+    "company_name": "Golden Boy Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 38,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 8,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_fa520c73e28ad5"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_03655fbc58cc",
+    "company_name": "Home Run Inn",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_f2f7871f497e",
+    "company_name": "HOTLIPS Pizza",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": true,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": true,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Media: hipótesis operativa respaldada",
+      "score": 63,
+      "components": {
+        "base": 50,
+        "canal_pedidos": 5,
+        "tareas_compartidas": 0,
+        "demanda": 5,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 13,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_19603cf394d90a",
+      "evi_574b29aa81fa76"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_87714c0ba4bc",
+    "company_name": "Crushed Red",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_f30a5e10b983",
+    "company_name": "Billy G's",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": true,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 36,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 3,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 6,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_6235ddf74557ee"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_24c31bc1d29c",
+    "company_name": "Holland Farms Bakery & Deli",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_0df925298fdc",
+    "company_name": "Birria LES",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_925a0936e02e",
+    "company_name": "Super Taco Mexican Restaurants",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_655113192055",
+    "company_name": "Little Chef Chinese",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": true,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 33,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 3,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_09ef113e531239"
+    ],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_a1335b228666",
+    "company_name": "The Kickin' Chicken",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_791db6f10989",
+    "company_name": "Sickies Garage Burgers & Brews",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "evidencia_telefonica_pendiente",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": false,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": false,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Baja: perfil válido; evidencia telefónica pendiente",
+      "score": 10,
+      "components": {
+        "base": 10,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 0,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 0,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [],
+    "analysis_status": "complete"
+  },
+  {
+    "company_id": "cmp_de9a7bb56de3",
+    "company_name": "Dallas BBQ",
+    "status": "prospecto_por_perfil",
+    "included_in_final": true,
+    "evidence_status": "con_senal_telefonica",
+    "profile_fit_from_locales": true,
+    "signals": {
+      "phone_orders": false,
+      "shared_workload": false,
+      "explicit_phone_issue": false,
+      "demand_peak": false,
+      "capacity_constraint": false,
+      "dedicated_phone_role": true,
+      "historical_only": false,
+      "phone_inquiries": false,
+      "location_specific": false,
+      "source_text_available": true,
+      "recent_operational_publication": false,
+      "verified_problem_locations": 0
+    },
+    "priority": {
+      "version": "prioridad-v4",
+      "level": "Exploratoria: encaje y operación telefónica",
+      "score": 33,
+      "components": {
+        "base": 30,
+        "canal_pedidos": 0,
+        "tareas_compartidas": 0,
+        "demanda": 0,
+        "atribucion_local": 0,
+        "texto_fuente_disponible": 3,
+        "publicacion_operativa_reciente": 0
+      },
+      "bonus_applied": 3,
+      "cross_location_bonus_available": false
+    },
+    "evidence_ids": [
+      "evi_040be8b39d91d8"
+    ],
+    "analysis_status": "complete"
+  }
+]

@@ -12,10 +12,12 @@ Para entender el proyecto no hace falta abrir esta carpeta. Seguí README.md y D
 - apollo/incorporacion-01.json: registro estructurado de las incorporaciones de Apollo.
 - entrega-actual.json: salida de auditoría del generador, con indicadores y componentes de prioridad por empresa.
 
-Para regenerar la entrega, desde la raíz del proyecto ejecutá:
-python3 scripts/preparar_entrega.py
+Para reproducir estos registros históricos, desde la raíz del proyecto ejecutá:
+python3 scripts/preparar_entrega.py --legacy
 
-El cálculo usa `score_final` de `scripts/priorizar_leads.py`, regla prioridad-v3. No usa los puntajes antiguos ni un orden manual. `entrega-actual.json` permite revisar los indicadores y componentes de cada puntaje. Los resultados de `data/simulacion_conversacion/` describen solo el corpus capturado; las fichas previas conservan fuentes adicionales pendientes de recaptura.
+Las salidas van en historico/reproduccion_inicial/. La entrega oficial se genera con la comprobación actual, sin leer estas fichas.
+
+El cálculo usa `score_final` de `scripts/priorizar_leads.py`, regla prioridad-v4 (el perfil incluye; la evidencia prioriza). No usa los puntajes antiguos ni un orden manual. `entrega-actual.json` permite revisar los indicadores y componentes de cada puntaje. Los resultados de `data/simulacion_conversacion/` describen solo el corpus capturado; las fichas previas conservan fuentes adicionales pendientes de recaptura.
 
 ## Archivo histórico
 

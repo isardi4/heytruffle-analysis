@@ -1,0 +1,45 @@
+[
+  {
+    "test": "rechazo_cita_inventada",
+    "passed": true
+  },
+  {
+    "test": "rechazo_respuestas_de_otra_entrada",
+    "passed": true
+  },
+  {
+    "test": "rechazo_clasificacion_incompleta",
+    "passed": true
+  },
+  {
+    "test": "reproduccion_aislada_sin_red_sin_interno_sin_data_historica_sin_simulador",
+    "passed": true
+  },
+  {
+    "test": "regeneracion_desde_cero_sin_salidas_previas_sin_cache_sin_historia_y_con_red_bloqueada",
+    "passed": true,
+    "new_llm_during_replay": false,
+    "saved_new_codex_responses_used": true
+  },
+  {
+    "test": "regresion_inclusion_perfil_y_prioridad_5_pruebas",
+    "passed": true,
+    "details": "test_all_profile_candidates_survive_even_without_phone_signal (test_priorizacion.PrioridadTest.test_all_profile_candidates_survive_even_without_phone_signal) ... ok\ntest_cross_location_problem_has_more_priority_than_demand_only (test_priorizacion.PrioridadTest.test_cross_location_problem_has_more_priority_than_demand_only) ... ok\ntest_evidence_orders_without_becoming_inclusion_filter (test_priorizacion.PrioridadTest.test_evidence_orders_without_becoming_inclusion_filter) ... ok\ntest_profile_exclusion_still_applies_without_forcing_row_count (test_priorizacion.PrioridadTest.test_profile_exclusion_still_applies_without_forcing_row_count) ... ok\ntest_total_source_failure_preserves_all_profile_candidates (test_priorizacion.PrioridadTest.test_total_source_failure_preserves_all_profile_candidates) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.022s\n\nOK\n"
+  },
+  {
+    "test": "verificador_rechaza_csv_que_omite_un_prospecto_valido",
+    "passed": true
+  },
+  {
+    "test": "regeneracion_aislada_sin_red_sin_historia_sin_cache_con_30_prospectos",
+    "passed": true,
+    "new_llm_during_replay": false
+  },
+  {
+    "test": "revision_previa_publicacion_copia_limpia_6_tests_pipeline_y_entrega_unica",
+    "passed": true,
+    "network_blocked": true,
+    "secrets_present": false,
+    "legacy_cannot_replace_official_csv": true
+  }
+]

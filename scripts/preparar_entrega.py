@@ -6,8 +6,27 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser(description=__doc__)
-parser.add_argument('--results', type=Path, default=ROOT / 'data/simulacion_conversacion/resultados_evidencia_llm.csv', help='Indicadores por empresa; por defecto usa el ensayo sin API.')
+parser.add_argument('--results', type=Path, help='Indicadores por empresa; por defecto usa la comprobación actual.')
+parser.add_argument('--locales', type=Path, help='Modo independiente: locales de entrada, sin fichas históricas.')
+parser.add_argument('--evidence', type=Path, help='Modo independiente: afirmaciones extraídas en esta ejecución.')
+parser.add_argument('--out-dir', type=Path, help='Modo independiente: carpeta de entrega aislada.')
+parser.add_argument('--legacy', action='store_true', help='Reproduce el discovery anterior dentro de historico/reproduccion_inicial, sin reemplazar la entrega oficial.')
 args = parser.parse_args()
+if args.locales or args.evidence or args.out_dir:
+    if not (args.locales and args.evidence and args.out_dir):
+        parser.error('Modo independiente requiere --locales, --evidence y --out-dir')
+    from priorizar_leads import generate_from_files
+    generate_from_files(args.locales, args.results or ROOT/'comprobacion_codex/resultados_evidencia_llm.csv', args.evidence, args.out_dir)
+    raise SystemExit(0)
+if not args.legacy:
+    from priorizar_leads import generate_from_files, publish_final
+    execution=ROOT/'comprobacion_codex'
+    generate_from_files(execution/'locales.csv',args.results or execution/'resultados_evidencia_llm.csv',execution/'evidencia_llm_procesada.csv',execution)
+    publish_final(execution,ROOT)
+    raise SystemExit(0)
+args.results=args.results or ROOT/'data/simulacion_conversacion/resultados_evidencia_llm.csv'
+LEGACY_OUT=ROOT/'historico/reproduccion_inicial'
+LEGACY_OUT.mkdir(parents=True,exist_ok=True)
 I = ROOT / 'interno'
 CONTROL = json.loads((I / 'control-paso-4.json').read_text())
 BY_NAME = {r['company_name']: r for r in CONTROL if r['selected_for_working_list']}
@@ -162,11 +181,11 @@ for name,group,reason,hypothesis,question,why_now,limit in ARGUMENTS:
         profile_source=source['profile_source'],provenance=provenance,row=row))
 export.sort(key=lambda e: (-e['row']['priority_score'],e['row']['company_name']))
 for rank, e in enumerate(export, 1): e['rank']=rank
-with (ROOT/'gtm-lista.csv').open('w',newline='',encoding='utf-8') as f:
+with (LEGACY_OUT/'gtm-lista.csv').open('w',newline='',encoding='utf-8') as f:
     writer=csv.DictWriter(f,fieldnames=columns,lineterminator='\n');writer.writeheader();writer.writerows(e['row'] for e in export)
 (I/'entrega-actual.json').write_text(json.dumps(export,ensure_ascii=False,indent=2)+'\n')
 def cell(value):return str(value).replace('|','\\|').replace('\n','<br>')
-lines=['# Los 30 prospectos del CSV, explicados','','La lista contiene posibles compradores, priorizados para validar la necesidad. Todos tienen encaje de perfil y una señal de operación telefónica en la investigación previa. No se exige una queja para incluirlos. No se comprobó que los 30 pierdan llamadas.','','## Selección y procedencia','','Se revisaron cadenas de 2–15 locales en EE. UU., cocina casual de volumen y pedidos para llevar. Se conservaron las que tenían pedidos telefónicos, tareas que incluyen llamadas o un rol telefónico explícito, junto con contexto para formular una pregunta comercial. Dos señales pueden provenir de la misma publicación; no representan dos incidentes independientes. Los 27 candidatos de IA y tres de Apollo se revisaron con fuentes públicas; el nombre sugerido por IA no es evidencia.','','Se integra la investigación original con el reproceso sobre texto capturado. Una captura sin señal o una descarga fallida no anula una fuente revisada anteriormente. Cuando no está el texto en el corpus actual, se declara pendiente de recaptura; no se lo presenta como una extracción LLM nueva.','','## Prioridad calculada por Python','','Regla prioridad-v3: base 80 para dificultad telefónica explícita; 50 para tareas compartidas con el teléfono o pedidos telefónicos junto con demanda/límite de capacidad; 30 para evidencia exploratoria de canal u operación telefónica; 15 si el argumento depende de antecedentes antiguos. Antigüedad se aplica antes que las otras bandas.','','Bonificaciones por presencia de señales: canal de pedidos +5, tareas compartidas +5, demanda +5, atribución a la sucursal +3, texto de ambas fuentes disponible +3, publicación operativa fechada en los últimos 365 días +3. El total de bonificaciones se limita a 19 puntos, o 9 para antecedentes antiguos. Si una dificultad explícita estuviera atribuida a varias sucursales, +5 por sucursal adicional, máximo +15 dentro del mismo límite de 19; hoy no hay cobertura para aplicar ese bono. Varias citas no se cuentan como incidentes. El número de locales de la cadena no es el número de locales afectados.','','El puntaje ordena la investigación y el contacto; no estima ingresos, disposición de compra ni porcentaje de llamadas perdidas. El volumen telefónico no está medido. Las políticas de espera, las vacantes y las colas presenciales se explican como señales indirectas. La fecha de captura no se usa como fecha de publicación. Empates: nombre de empresa. Cálculo reproducible con fecha de corte 2026-10-15.','','| Orden | Empresa | Prioridad | Puntos |','|---|---|---|---:|']
+lines=['# Los 30 prospectos del CSV, explicados','','La lista contiene posibles compradores, priorizados para validar la necesidad. Todos tienen encaje de perfil y una señal de operación telefónica en la investigación previa. No se exige una queja para incluirlos. No se comprobó que los 30 pierdan llamadas.','','## Selección y procedencia','','Se revisaron cadenas de 2–15 locales en EE. UU., cocina casual de volumen y pedidos para llevar. Se conservaron las que tenían pedidos telefónicos, tareas que incluyen llamadas o un rol telefónico explícito, junto con contexto para formular una pregunta comercial. Dos señales pueden provenir de la misma publicación; no representan dos incidentes independientes. Los 27 candidatos de IA y tres de Apollo se revisaron con fuentes públicas; el nombre sugerido por IA no es evidencia.','','Se integra la investigación original con el reproceso sobre texto capturado. Una captura sin señal o una descarga fallida no anula una fuente revisada anteriormente. Cuando no está el texto en el corpus actual, se declara pendiente de recaptura; no se lo presenta como una extracción LLM nueva.','','## Prioridad calculada por Python','','Regla prioridad-v4: base 10–14 para perfil válido sin evidencia telefónica; base 80 para dificultad telefónica explícita; 50 para tareas compartidas con el teléfono o pedidos telefónicos junto con demanda/límite de capacidad; 30 para evidencia exploratoria de canal u operación telefónica; 15 si el argumento depende de antecedentes antiguos. Antigüedad se aplica antes que las otras bandas.','','Bonificaciones por presencia de señales: canal de pedidos +5, tareas compartidas +5, demanda +5, atribución a la sucursal +3, texto de ambas fuentes disponible +3, publicación operativa fechada en los últimos 365 días +3. El total de bonificaciones se limita a 4 puntos para perfil sin evidencia telefónica, 19 para señales telefónicas, o 9 para antecedentes antiguos. Si una dificultad explícita estuviera atribuida a varias sucursales, +5 por sucursal adicional, máximo +15 dentro del mismo límite de 19; hoy no hay cobertura para aplicar ese bono. Varias citas no se cuentan como incidentes. El número de locales de la cadena no es el número de locales afectados.','','El puntaje ordena la investigación y el contacto; no estima ingresos, disposición de compra ni porcentaje de llamadas perdidas. El volumen telefónico no está medido. Las políticas de espera, las vacantes y las colas presenciales se explican como señales indirectas. La fecha de captura no se usa como fecha de publicación. Empates: nombre de empresa. Cálculo reproducible con fecha de corte 2026-10-15.','','| Orden | Empresa | Prioridad | Puntos |','|---|---|---|---:|']
 for e in export:
     lines.append(f"| {e['rank']} | {cell(e['row']['company_name'])} | {e['group']} | {e['row']['priority_score']} |")
 for e in export:
@@ -174,7 +193,7 @@ for e in export:
     lines += ['',f"## {e['rank']}. {r['company_name']}",'',f"**Motivo de inclusión:** {e['reason']}",'',f"**Utilidad posible:** {e['hypothesis']}",'',f"**Qué validar:** {e['question']}",'',f"**Procedencia:** {e['provenance']}",'',f"**Cálculo:** base {p['components']['base']} + bono aplicado {p['bonus_applied']} = {p['score']}. Componentes: {json.dumps(p['components'],ensure_ascii=False)}.",'','| Campo | Valor |','|---|---|']
     for key in columns: lines.append(f"| `{key}` | {cell(r[key])} |")
 lines += ['','## Alcance de la entrega','','30 filas frente a una meta de 40. Se conserva la selección investigada y no se agregan empresas sin argumento para completar la cantidad. El ejercicio permite menos filas con una explicación. Apollo aportó tres incorporaciones de su export de 25; los otros 27 nombres se propusieron con IA y se investigaron. Ver historico/APOLLO-REVISION.md y los respaldos de historico/. No se contactó a los restaurantes.']
-(ROOT/'LISTA-EXPLICADA.md').write_text('\n'.join(lines)+'\n')
+(LEGACY_OUT/'LISTA-EXPLICADA.md').write_text('\n'.join(lines)+'\n')
 criterion = """# Criterio de selección
 
 Seleccionamos **30 cadenas de Estados Unidos, con 2–15 locales, cocina casual de volumen y pedidos para llevar**. Las tratamos como posibles compradores: no afirmamos que todas pierdan llamadas. El argumento de inclusión es uso del teléfono para pedidos, llamadas dentro de un puesto que también atiende clientes o un rol telefónico explícito, con contexto para validar una necesidad. Picos publicados, tareas compartidas, esperas y restricciones de pedidos aumentan el interés; una dificultad telefónica explícita eleva la prioridad. No se midió el volumen de llamadas.
@@ -185,15 +204,15 @@ Seleccionamos **30 cadenas de Estados Unidos, con 2–15 locales, cocina casual 
 
 **IA y automatización.** La IA propuso candidatos, ayudó a investigar y a estructurar señales. En el ensayo sin presupuesto, las respuestas de extracción/clasificación se simularon y sus citas se validaron contra texto guardado. La entrega integra además fichas de investigación previa con enlaces: si el texto no está en la captura, se declara pendiente de recaptura. Python une los registros, aplica una fórmula explícita a indicadores revisados, ordena y genera el CSV y las fichas. La persona definió el objetivo, dirigió las decisiones y debe validar el criterio comercial. Las reglas, los componentes de cada puntaje y cómo regenerar la entrega están en LISTA-EXPLICADA.md y README.md. El puntaje expresa prioridad de contacto, no probabilidad de compra ni ganancia esperada.
 """
-(ROOT/'CRITERIO.md').write_text(criterion)
+(LEGACY_OUT/'CRITERIO.md').write_text(criterion)
 
 if __name__ == '__main__':
-    with (ROOT/'gtm-lista.csv').open(newline='',encoding='utf-8') as f:
+    with (LEGACY_OUT/'gtm-lista.csv').open(newline='',encoding='utf-8') as f:
         reader=csv.DictReader(f);actual=list(reader);assert reader.fieldnames==columns
     assert len(actual)==N and len({r['company_name'] for r in actual})==N
     scores=[int(r['priority_score']) for r in actual]
     assert scores==sorted(scores,reverse=True)
-    md=(ROOT/'LISTA-EXPLICADA.md').read_text()
+    md=(LEGACY_OUT/'LISTA-EXPLICADA.md').read_text()
     for row,e in zip(actual,export):
         assert int(row['priority_score']) == score_final(e['indicators'])['score']
         for key in columns:

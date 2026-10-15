@@ -1,0 +1,12 @@
+{
+  "only_trusted_input": "locales.csv",
+  "sha256": "cb804b282325a9aa8d4b08814a8e0988463dc53af98ba32560658cdd005df7b3",
+  "excluded": [
+    "data/evidencia_locales.csv",
+    "data/simulacion_conversacion",
+    "interno",
+    "gtm-lista.csv",
+    "CLAIMS del simulador"
+  ],
+  "llm_execution": "Codex en conversación; respuestas nuevas separadas del código; sin OpenAI API"
+}

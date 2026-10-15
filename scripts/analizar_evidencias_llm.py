@@ -18,6 +18,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from load_local_env import load_local_env
+from llm_archivos import load_responses, save_requests, validate
 
 load_local_env()
 
@@ -28,7 +29,7 @@ OUT_DEFAULT = ROOT / "data"
 PROMPT_PATH = ROOT / "prompts/clasificar_evidencias.md"
 API_URL = "https://api.openai.com/v1/responses"
 MAX_TEXT_PER_EVIDENCE = 5000
-TOPICS = ["phone_service_issue", "demand_peak", "phone_order_channel", "shared_staff_workload", "wait_or_capacity", "multi_location_context", "other", "none"]
+TOPICS = ["phone_service_issue", "demand_peak", "phone_order_channel", "phone_inquiry_channel", "shared_staff_workload", "wait_or_capacity", "multi_location_context", "other", "none"]
 STRENGTHS = ["direct", "indirect", "context", "none"]
 SENTIMENTS = ["negative", "positive", "mixed", "neutral", "unclear"]
 ATTRIBUTIONS = ["this_location", "company_wide", "other_location", "unclear"]
@@ -61,7 +62,7 @@ INDICATOR_FIELDS = [
     "distinct_sources_count",
     "phone_problem_mentions", "direct_phone_problem_mentions", "phone_problem_locations",
     "phone_problem_locations_count", "indirect_phone_problem_locations_count", "peak_demand_mentions", "peak_demand_locations_count",
-    "phone_order_channel_mentions", "shared_workload_mentions", "wait_or_capacity_mentions",
+    "phone_order_channel_mentions", "phone_inquiry_channel_mentions", "shared_workload_mentions", "wait_or_capacity_mentions",
     "evidence_locations_count", "locations_with_any_evidence", "cross_location_phone_problem_pattern",
     "first_evidence_date", "latest_evidence_date", "evidence_readiness", "input_sha256", "model", "prompt_version",
     "prompt_sha256", "input_tokens", "output_tokens", "cached_chunks", "api_chunks",
@@ -208,6 +209,8 @@ def api_call(api_key, model, company, items, prompt, timeout):
     source_by_id = {item["evidence_id"]: item["content"] for item in items}
     for label in labels:
         quote = label.get("verbatim_quote", "")
+        if label['strength'] in {'direct','indirect'} and label['topic'] != 'none' and not quote:
+            raise ValueError('Una señal directa o indirecta requiere una cita no vacía')
         if quote and quote not in source_by_id[label["evidence_id"]]:
             raise ValueError("La clasificación devolvió una cita que no aparece literalmente en su evidencia")
     usage = result.get("usage", {})
@@ -219,7 +222,7 @@ def make_chunks(items, chunk_size):
     return [items[i:i + chunk_size] for i in range(0, len(items), chunk_size)]
 
 
-def classify(companies, evidence_by_company, out_dir, model, prompt, prompt_hash, run_enabled, max_companies, offset, chunk_size, timeout, delay):
+def classify(companies, evidence_by_company, out_dir, model, prompt, prompt_hash, run_enabled, max_companies, offset, chunk_size, timeout, delay, external=None, request_records=None):
     selected = list(companies.items())[offset:offset + max_companies]
     cache_dir = out_dir / ".pipeline" / "classification_cache"
     labels_by_company, usage_by_company, cache_stats, errors = {}, {}, {}, {}
@@ -233,9 +236,27 @@ def classify(companies, evidence_by_company, out_dir, model, prompt, prompt_hash
         company_labels, total_usage, cached_count, api_count = [], {"input_tokens": 0, "output_tokens": 0}, 0, 0
         for chunk_index, chunk in enumerate(make_chunks(items, chunk_size)):
             fingerprint = stable_hash({"model": model, "prompt": prompt_hash, "company": company["company_name"], "items": chunk})
+            if request_records is not None:
+                request_records.append({'request_id': fingerprint, 'company_id': cid, 'company_name': company['company_name'], 'chunk': chunk_index,
+                    'input': {'company': {'name': company['company_name'], 'locations': list(company['locations'].values()), 'apollo_profile': company['profile']},
+                              'evidence': [{k: item[k] for k in ('evidence_id','location_id','location_label','source_type','source_url','published_at','content_kind','content','provenance_note')} for item in chunk]}})
             safe_cid = re.sub(r"[^A-Za-z0-9_-]", "_", cid)
             cache_path = cache_dir / f"{safe_cid}_{chunk_index}_{fingerprint[:16]}.json"
-            if cache_path.exists():
+            if external is not None:
+                if fingerprint not in external:
+                    raise ValueError(f'Falta respuesta Codex para {cid}, bloque {chunk_index}')
+                response = external[fingerprint]
+                validate(response, LABEL_SCHEMA)
+                labels, usage = response['labels'], {}
+                expected = {item['evidence_id']: item['content'] for item in chunk}
+                if len(labels) != len(expected) or {r['evidence_id'] for r in labels} != set(expected):
+                    raise ValueError('Codex debe clasificar cada evidence_id exactamente una vez')
+                for label in labels:
+                    if label['strength'] in {'direct','indirect'} and label['topic'] != 'none' and not label['verbatim_quote']:
+                        raise ValueError('Una señal directa o indirecta requiere una cita no vacía')
+                    if label['verbatim_quote'] and label['verbatim_quote'] not in expected[label['evidence_id']]:
+                        raise ValueError('Cita Codex no encontrada en su evidencia')
+            elif cache_path.exists():
                 cached = json.loads(cache_path.read_text(encoding="utf-8"))
                 labels, usage = cached["labels"], cached["usage"]
                 cached_count += 1
@@ -298,6 +319,7 @@ def build_outputs(companies, evidence_by_company, selected, labels_by_company, u
         peak = [(i, l) for i, l in unique_rows if l["topic"] == "demand_peak" and l["strength"] != "none"]
         peak_locs = {i["location_id"] for i, l in peak if i.get("location_id") and l["attribution"] == "this_location"}
         phone_orders = [x for x in unique_rows if x[1]["topic"] == "phone_order_channel" and x[1]["strength"] != "none"]
+        phone_inquiries = [x for x in unique_rows if x[1]['topic'] == 'phone_inquiry_channel' and x[1]['strength'] != 'none']
         workload = [x for x in unique_rows if x[1]["topic"] == "shared_staff_workload" and x[1]["strength"] != "none"]
         capacity = [x for x in unique_rows if x[1]["topic"] == "wait_or_capacity" and x[1]["strength"] != "none"]
         evidence_locs = {i["location_id"] for i, _ in matched if i.get("location_id")}
@@ -308,7 +330,7 @@ def build_outputs(companies, evidence_by_company, selected, labels_by_company, u
             readiness = "analysis_incomplete" if cid in selected_ids else "not_processed"
         elif direct_phone:
             readiness = "direct_phone_issue_signal"
-        elif phone or peak or phone_orders or workload or capacity:
+        elif phone or peak or phone_orders or phone_inquiries or workload or capacity:
             readiness = "operational_context_only"
         else:
             readiness = "no_relevant_public_signal"
@@ -329,7 +351,7 @@ def build_outputs(companies, evidence_by_company, selected, labels_by_company, u
             "phone_problem_locations": "|".join(sorted(phone_locs)), "phone_problem_locations_count": len(phone_locs),
             "indirect_phone_problem_locations_count": len(indirect_phone_locs),
             "peak_demand_mentions": len(peak), "peak_demand_locations_count": len(peak_locs),
-            "phone_order_channel_mentions": len(phone_orders), "shared_workload_mentions": len(workload),
+            "phone_order_channel_mentions": len(phone_orders), "phone_inquiry_channel_mentions": len(phone_inquiries), "shared_workload_mentions": len(workload),
             "wait_or_capacity_mentions": len(capacity), "evidence_locations_count": len(evidence_locs),
             "locations_with_any_evidence": "|".join(sorted(evidence_locs)),
             "cross_location_phone_problem_pattern": repeated, "first_evidence_date": dates[0] if dates else "",
@@ -375,7 +397,13 @@ def main():
     parser.add_argument("--timeout", type=int, default=120)
     parser.add_argument("--delay", type=float, default=0.2)
     parser.add_argument("--run", action="store_true", help="Ejecuta llamadas al API. Sin esta opción solo hace dry-run y lee la caché.")
+    parser.add_argument('--responses', type=Path, help='Respuestas JSON nuevas de Codex; no llama API.')
+    parser.add_argument('--requests', type=Path, help='Exporta prompts y entradas exactas para Codex.')
     args = parser.parse_args()
+    if args.run and args.responses:
+        raise SystemExit('Elegir API o respuestas de archivos, no ambos.')
+    external = load_responses(args.responses) if args.responses else None
+    request_records = []
     if args.max_companies < 1 or args.offset < 0 or not 1 <= args.chunk_size <= 100:
         raise SystemExit("Revisá --max-companies, --offset y --chunk-size (1 a 100).")
     company_rows, evidence_rows = read_csv(args.companies), read_csv(args.evidence)
@@ -396,13 +424,29 @@ def main():
     analyzable_count = sum(sum(item["content_kind"] in {"source_text", "verified_extraction"} for item in evidence_by_company.get(cid, [])) for cid, _ in selected_companies)
     chunks = sum((sum(item["content_kind"] in {"source_text", "verified_extraction"} for item in evidence_by_company.get(cid, [])) + args.chunk_size - 1) // args.chunk_size for cid, _ in selected_companies)
     print(f"Empresas: {len(companies)}; lote: {selected_count}; registros de evidencia: {evidence_count}; evidencias analizables: {analyzable_count}; bloques estimados: {chunks}")
-    if args.run:
+    if args.responses:
+        print('CODEX POR ARCHIVOS: validación de respuestas nuevas guardadas; sin llamadas API.')
+    elif args.run:
         print(f"OpenAI API habilitada; modelo={model}. Se guardará caché para reanudar sin repetir llamadas.")
     else:
         print("DRY-RUN: sin llamadas ni consumo de API. Agregación para entradas en caché y estado pendiente para el resto.")
     selected, labels, usage, stats, errors, prompt_version = classify(companies, evidence_by_company, args.out_dir,
-        model, prompt, prompt_hash, args.run, args.max_companies, args.offset, args.chunk_size, args.timeout, args.delay)
+        model, prompt, prompt_hash, args.run, args.max_companies, args.offset, args.chunk_size, args.timeout, args.delay, external, request_records)
     build_outputs(companies, evidence_by_company, selected, labels, usage, stats, errors, model, prompt_version, prompt_hash, args.out_dir)
+    # Una extracción completada sin afirmaciones no equivale a falta de texto.
+    extraction_status = args.out_dir / '.pipeline' / 'estado_extraccion_llm.csv'
+    if extraction_status.exists():
+        reviewed_empty = {r['company_id'] for r in read_csv(extraction_status)
+            if r.get('model') == model and r.get('extraction_status') in {
+                'sin_evidencia_relevante_con_codex', 'sin_evidencia_relevante', 'sin_evidencia_relevante_en_cache'}}
+        result_path = args.out_dir / 'resultados_evidencia_llm.csv'
+        result_rows = read_csv(result_path)
+        for row in result_rows:
+            if row['company_id'] in reviewed_empty and row['analysis_status'] == 'awaiting_source_text':
+                row['analysis_status'] = 'complete'
+                row['evidence_readiness'] = 'no_relevant_public_signal'
+        write_csv(result_path, INDICATOR_FIELDS + ['error'], result_rows)
+    save_requests(args.requests, prompt, LABEL_SCHEMA, request_records)
 
 
 if __name__ == "__main__":

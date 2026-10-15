@@ -1,10 +1,15 @@
 # Notas locales y respaldos regenerables.
 PLAN.md
 interno/*.tar.gz
-data/.pipeline/
+**/.pipeline/
 .DS_Store
 .env
+.env.*
+!.env.example
 
 # Archivos regenerables de Python
 __pycache__/
 *.py[cod]
+
+# Logs locales de ejecución; se regeneran al correr la comprobación
+comprobacion_codex/*.log

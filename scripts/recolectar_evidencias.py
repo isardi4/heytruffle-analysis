@@ -20,6 +20,8 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode, urlparse
+from urllib.parse import urljoin, urldefrag
+from concurrent.futures import ThreadPoolExecutor
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -44,8 +46,11 @@ class TextExtractor(HTMLParser):
         self.skip = 0
         self.title = False
         self.title_parts = []
+        self.links = []
 
     def handle_starttag(self, tag, attrs):
+        if tag == 'a':
+            self.links.extend(value for key, value in attrs if key == 'href' and value)
         if tag in {"script", "style", "noscript", "svg"}:
             self.skip += 1
         if tag == "title":
@@ -154,7 +159,7 @@ def build_plan(locations, evidence):
     return tasks
 
 
-def fetch_page(url, timeout):
+def fetch_document(url, timeout):
     parsed = urlparse(url)
     if parsed.scheme not in {"http", "https"} or not parsed.netloc:
         raise ValueError("URL debe comenzar con http:// o https://")
@@ -164,12 +169,96 @@ def fetch_page(url, timeout):
         body = response.read(5_000_000)
         charset = response.headers.get_content_charset() or "utf-8"
     if "html" not in content_type and "text/plain" not in content_type:
-        return "", f"Tipo de contenido no textual: {content_type}"
+        return "", f"Tipo de contenido no textual: {content_type}", []
     parser = TextExtractor()
     parser.feed(body.decode(charset, errors="replace"))
     title = " ".join(parser.title_parts).strip()
     text = html.unescape(" ".join(parser.parts))
-    return (title + "\n" + text).strip(), ""
+    links = list(dict.fromkeys(urldefrag(urljoin(url, href))[0] for href in parser.links))
+    return (title + "\n" + text).strip(), "", links
+
+
+def fetch_page(url, timeout):
+    text, note, _ = fetch_document(url, timeout)
+    return text, note
+
+
+def focus_passages(text, limit=3500):
+    """Selección de pasajes literales; no genera afirmaciones ni etiquetas."""
+    if len(text) <= limit:
+        return text
+    spans = [(0, min(550, len(text)))]
+    pattern = r'phone|call|busiest|busy|peak|rush|host|cashier|take.?out|to.?go|wait|capacity|locations|pizza|barbecue|taco'
+    for match in re.finditer(pattern, text, re.I):
+        start, end = max(0, match.start()-100), min(len(text), match.end()+240)
+        if spans and start <= spans[-1][1]:
+            spans[-1] = (spans[-1][0], max(end, spans[-1][1]))
+        else:
+            spans.append((start, end))
+    output = ''
+    for start, end in spans:
+        room = limit - len(output) - 7
+        if room <= 0:
+            break
+        output += ('\n[...]\n' if output else '') + text[start:min(end,start+room)]
+    return output
+
+
+def source_family(url):
+    host = urlparse(url).netloc.lower().removeprefix('www.')
+    return 'plataforma_pedidos_tercera' if any(host == d or host.endswith('.'+d) for d in ('doordash.com','ubereats.com','grubhub.com')) else 'sitio_oficial'
+
+
+def collect_official(locations, output_dir, timeout, max_pages, workers):
+    """Arranca SOLO de Website de locales y sigue enlaces explícitos del sitio."""
+    def one(loc):
+        cid = loc.get('project_company_id') or loc.get('company_id')
+        lid = loc.get('project_location_id') or loc.get('location_id')
+        name = loc.get('project_company_name') or loc.get('company_name') or loc.get('Company Name')
+        website = (loc.get('Website') or loc.get('website') or '').strip()
+        if website and not website.startswith(('http://','https://')):
+            website = 'https://' + website
+        pending, seen, results = ([website] if website else []), set(), []
+        while pending and len(results) < max_pages:
+            url = pending.pop(0)
+            if url in seen:
+                continue
+            seen.add(url)
+            qid = stable_id(cid, lid, 'sitio_oficial', url)
+            text, links, error = '', [], ''
+            try:
+                text, error, links = fetch_document(url, timeout)
+                status = 'capturado' if text else 'sin_texto'
+            except (OSError, ValueError) as exc:
+                status, error = 'fallo_descarga', str(exc)
+            if text:
+                raw = output_dir / 'textos_originales' / (qid + '.txt')
+                raw.parent.mkdir(parents=True, exist_ok=True)
+                raw.write_text(text, encoding='utf-8')
+            results.append({'query_id': qid, 'evidence_id': qid, 'company_id': cid, 'location_id': lid,
+                'company_name': name, 'location_label': loc.get('project_location_label') or loc.get('location_label',''),
+                'source_type': source_family(url), 'source_url': url,
+                'captured_at': datetime.now(timezone.utc).isoformat(timespec='seconds'),
+                'published_at': '', 'author': '', 'location_match': 'sucursal_o_cadena_por_confirmar',
+                'matched_address': '', 'document_title': text.split('\n')[0] if text else '',
+                'search_query': website, 'search_snippet': '', 'source_text': focus_passages(text),
+                'collection_status': status,
+                'notes': 'Adquisición nueva desde Website del único archivo de entrada. Pasajes literales seleccionados por palabras clave (máximo 3500 caracteres); texto completo en textos_originales/'+qid+'.txt. Cobertura parcial, no ausencia de problemas. '+error})
+            host = urlparse(website).netloc.lower().removeprefix('www.')
+            candidates = []
+            for link in links:
+                parsed = urlparse(link)
+                if parsed.scheme not in {'http','https'} or parsed.netloc.lower().removeprefix('www.') != host or link in seen:
+                    continue
+                path = parsed.path.lower()
+                score = 100 if re.search(r'faq|frequent|important.info',path) else 80 if re.search(r'career|jobs|employment',path) else 60 if re.search(r'contact|order|location',path) else 0
+                if score and not re.search(r'\.(pdf|jpg|png|zip)$',path):
+                    candidates.append((-score, link))
+            pending = list(dict.fromkeys([link for _,link in sorted(candidates)] + pending))
+        print(f'{name}: {len(results)} páginas; {sum(bool(r["source_text"]) for r in results)} con texto', flush=True)
+        return results
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        return [row for group in pool.map(one, locations) for row in group]
 
 
 def collect_results(tasks, results, timeout, delay):
@@ -235,8 +324,12 @@ def main():
     parser.add_argument("--start-at", type=int, default=0, help="Índice inicial de tarea pendiente Brave para procesar en lotes.")
     parser.add_argument("--timeout", type=int, default=20)
     parser.add_argument("--delay", type=float, default=0.5)
+    parser.add_argument('--discover-official', action='store_true', help='Descubre páginas desde Website, sin API de búsqueda ni fuentes heredadas.')
+    parser.add_argument('--max-pages', type=int, default=3)
+    parser.add_argument('--workers', type=int, default=6)
     args = parser.parse_args()
-    locations, evidence = read_csv(args.locations), read_csv(args.evidence)
+    locations = read_csv(args.locations)
+    evidence = read_csv(args.evidence) if args.evidence.exists() else []
     if locations and not locations[0].get("project_location_id"):
         if locations[0].get("location_id"):
             locations = [{**row,
@@ -276,6 +369,10 @@ def main():
     write_csv(args.evidence, OUTPUT_FIELDS, manifest)
     print(f"Plan actualizado en {args.evidence} ({len(manifest)} tareas). No se realizaron búsquedas externas.")
     collected = []
+    if args.discover_official:
+        if args.max_pages < 1 or args.workers < 1:
+            raise SystemExit('max-pages y workers deben ser positivos')
+        collected.extend(collect_official(locations, args.output_dir, args.timeout, args.max_pages, args.workers))
     if args.results:
         results = read_csv(args.results)
         collected.extend(collect_results(plan, results, args.timeout, args.delay))

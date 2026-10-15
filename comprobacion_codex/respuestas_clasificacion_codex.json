@@ -1,0 +1,714 @@
+[
+  {
+    "request_id": "0a9331d3c7cc7fd605e69568db1a53f89b30c582a167e4906d5c3935fee761de",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_90913bb43788f7",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "CHICAGO 773-327-1512 2207 N Clybourn Ave, Chicago, IL 60614",
+          "rationale": "Identifica una sucursal y un teléfono; no demuestra pedidos ni saturación."
+        },
+        {
+          "evidence_id": "evi_7e55f0a2bbab8a",
+          "topic": "demand_peak",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Our busiest day is Saturday, and our peak hours are typically the dinner rush between 6-8PM.",
+          "rationale": "Publica momentos concretos de mayor actividad; no son llamadas perdidas."
+        },
+        {
+          "evidence_id": "evi_bd698b4d77a050",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "You can place orders for Take-out and Delivery in advance by calling the restaurant or ordering online at order.pequodspizza.com.",
+          "rationale": "Confirma anticipación de pedidos por teléfono además del canal online."
+        },
+        {
+          "evidence_id": "evi_6d5d9a41ece57d",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "On short notice, you can call the restaurant for current availability.",
+          "rationale": "Confirma llamadas para consultar disponibilidad de mesas."
+        },
+        {
+          "evidence_id": "evi_959a000ccb7e14",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "In Chicago, Take-out orders are available for pick up at the host stand.",
+          "rationale": "El retiro en host stand no prueba que el mismo empleado atienda llamadas simultáneamente."
+        },
+        {
+          "evidence_id": "evi_f071d25512cd16",
+          "topic": "shared_staff_workload",
+          "strength": "indirect",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Wait Staff Kitchen Busser Host / Phone Deliver Driver Manager",
+          "rationale": "El nombre combinado Host / Phone sugiere funciones compartidas; no describe tareas ni saturación real."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b64576a84640deca3b920e8f3476d6507db8cc58118b94594b7903564a18741c",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_e5264243c08ff3",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "All pick up orders can be placed by calling Pappy's directly at (314) 535-4340 .",
+          "rationale": "Ofrece explícitamente el teléfono de St. Louis para pedidos de retiro."
+        },
+        {
+          "evidence_id": "evi_da2205aca65c6d",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "Please call if later in the day, as we may sell out early.",
+          "rationale": "Invita a consultar por disponibilidad de productos; no atribuir la instrucción a una sucursal sin contexto suficiente."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b690caf034b04b4fceecc9fc9c6cec7ccff1786976d64fcab8fe5fb2ccce8a0a",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_14ba4447d7f80f",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Walk in, or call ahead to order.",
+          "rationale": "Invita explícitamente a llamar para pedir; no es una queja."
+        },
+        {
+          "evidence_id": "evi_b98a2e9665f2bb",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "Midvale 835 East Fort Union Order Online Through Slice Call to Order 801-561-2171",
+          "rationale": "El selector ofrece Call to Order para Midvale."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "087a727c1567ed3be814f383b6928a5b7029ada47861f1c146e90f0b2767f913",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_f05dcf51c36aa9",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "All orders must be made by phone or in-person.",
+          "rationale": "Instrucción explícita de pedir por teléfono o presencialmente."
+        },
+        {
+          "evidence_id": "evi_57d12c77ff001f",
+          "topic": "phone_service_issue",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "If you are calling to place an order and the phones are busy, please call back.",
+          "rationale": "Describe líneas ocupadas y reintentos. No cuantifica frecuencia, abandono ni causa."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "5fe7fe95a149e4e01660f6ca591d94145a0ba285b13e519d99dfdc5bc27f07ea",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_0ab062edb84998",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "other_location",
+          "verbatim_quote": "You can place your takeout order easily online on our ordering page .",
+          "rationale": "Takeout online de Austin; no trasladarlo a Lockhart ni inferir teléfono."
+        },
+        {
+          "evidence_id": "evi_8c145d4d2e2dca",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "You can place your takeout order online on our ordering page .",
+          "rationale": "Confirma pedido online en Lockhart; no confirma ni descarta pedidos por teléfono."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "9ac6fd72e32c073031de04ec205490aa5f452630c4377139f4a53a43261526df",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_351a113d38c6ad",
+          "topic": "shared_staff_workload",
+          "strength": "indirect",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "Phones/Counter",
+          "rationale": "El título Phones/Counter vincula funciones, pero el formulario no detalla tareas ni sucursal."
+        },
+        {
+          "evidence_id": "evi_85c7e42a05c095",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "For immediate issues, please phone the store directly.",
+          "rationale": "Indica llamar para asuntos urgentes; puede incluir soporte de pedidos."
+        },
+        {
+          "evidence_id": "evi_b1f992df4668f3",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "E-mail may not be checked quickly enough to facilitate a change of order or deal with other urgent issues.",
+          "rationale": "Describe una limitación del correo electrónico, no una falla del teléfono."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "eac96595ecf16d4401511cd4de9cf47a83181c8c04f0a6fd4c7856727857c03e",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_621836f38edf79",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "We've got nine neighborhood Pizza Lucé locations in the Twin Cities and Duluth.",
+          "rationale": "Declara nueve locales, sin describir problemas de atención."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "f29604979890ee29646213b7bb654c74feae1ab5097de3add53522adbad5a6b6",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_4c2b78dfc8f914",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Spartanburg and Inman are separate locations with separate ordering systems",
+          "rationale": "Sistemas separados por ubicación, no una falla telefónica."
+        },
+        {
+          "evidence_id": "evi_d4522ae0318245",
+          "topic": "shared_staff_workload",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "Front of House Counter, phone orders, packaging. Friendly to regulars, fast on a busy Friday.",
+          "rationale": "El mismo rol combina mostrador, pedidos telefónicos y empaquetado. No determina sucursal ni falla."
+        },
+        {
+          "evidence_id": "evi_921c6d59a5b723",
+          "topic": "demand_peak",
+          "strength": "indirect",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "fast on a busy Friday.",
+          "rationale": "La referencia laboral a un viernes concurrido es una señal indirecta, no una medición de demanda."
+        },
+        {
+          "evidence_id": "evi_21ca15686c845f",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "Do you take orders over the phone? Yes, but online ordering (Toast) is usually faster during busy hours.",
+          "rationale": "Confirma teléfono para pedidos; la comparación con Toast no demuestra llamadas perdidas."
+        },
+        {
+          "evidence_id": "evi_02d015aa8dd4e0",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "No — we are counter-service only. Walk-ins, dine-in or takeout.",
+          "rationale": "Modelo de mostrador y retiro; no implica saturación."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "7005f4671fd3e185a00aa58d4a9708242885be44eef08838e3bdcd4bcc01dab1",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_63e908b06d3c81",
+          "topic": "multi_location_context",
+          "strength": "context",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "NEW SHOPS COMING SOON",
+          "rationale": "Son aperturas anunciadas; no deben contarse como establecimientos activos."
+        },
+        {
+          "evidence_id": "evi_9320eda47dc6f1",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "SEND US AN EMAIL OR CALL US AT ANY OF OUR LOCATIONS",
+          "rationale": "Invita a llamar para contacto general; no especifica pedidos de comida."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "bc8a1cd3ace65290bcfec4efff3d032ba8976b7f6637e489dc0d16ae340c5291",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_90c16a4c5fc73d",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Serving up the best authentic Jersey-style pizza, right here in the heart of Wisconsin!",
+          "rationale": "Describe el tipo de comida, sin señal telefónica."
+        },
+        {
+          "evidence_id": "evi_ebe5c1f612a425",
+          "topic": "shared_staff_workload",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "Helping team members by answering phones, greeting and seating guests, and assisting in orders",
+          "rationale": "El puesto comparte llamadas, recepción de comensales y pedidos; sucursal no indicada."
+        },
+        {
+          "evidence_id": "evi_c9891194b3805f",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Calls come through during hours of operation only, when we are closed calls are automatically forwarded to voicemail",
+          "rationale": "Desvío a buzón fuera de horario es una política operativa, no una falla en el pico de servicio."
+        },
+        {
+          "evidence_id": "evi_74022bf411a373",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Looking to reach us directly or need an urgent response? Please give us a call*!",
+          "rationale": "Ofrece teléfono para respuestas directas o urgentes."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "c7ede26f00058751752aba6955cfc729f92b03e1ed4b1421dec9133c6c73cb9a",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_a8d9b318019742",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "After 4 pm we are only able to accept take-out orders over the phone.",
+          "rationale": "Confirma pedidos telefónicos de takeout después de las 16."
+        },
+        {
+          "evidence_id": "evi_057aeb9d07319b",
+          "topic": "wait_or_capacity",
+          "strength": "context",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Allow 30-40 minutes for Stuffed Pizzas.",
+          "rationale": "Tiempo normal de preparación de una pizza stuffed; no demuestra exceso de demanda ni falla."
+        },
+        {
+          "evidence_id": "evi_23f351e7d978c8",
+          "topic": "shared_staff_workload",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Order taking- over the phone and at the counter Cashiering Salad making Bussing tables",
+          "rationale": "Describe explícitamente pedidos por teléfono y mostrador junto con cobro, ensaladas y mesas."
+        },
+        {
+          "evidence_id": "evi_6e0d19f57a275e",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Today, we proudly serve the East Bay with six locations:",
+          "rationale": "Declara seis locales."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "05569dcaa7542652ac3c8b6108576f1f2e3d654cfab98cd62351717f190e294a",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_a9cd1748628cf3",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "At V Pizza, we make authentic pizza Napoletana",
+          "rationale": "Describe el producto, sin un problema operativo."
+        },
+        {
+          "evidence_id": "evi_c9938677e570eb",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "we’ve grown to 12 locations, with two more under construction",
+          "rationale": "Distingue doce locales de dos obras. Contrasta con el conteo de entrada; validar vigencia antes de escalar."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "841d0e09e416c15055edd09dfb48080a7abf2be7771d587b9182f38aaa735b32",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_7f7c171e1d61ec",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "Richardson, Texas 75080 972-235-7746 HOURS Sun-Sat: 11am-9pm",
+          "rationale": "Identifica Richardson; publicar un teléfono no prueba su uso para pedidos."
+        },
+        {
+          "evidence_id": "evi_9c9137c48bf2db",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "other_location",
+          "verbatim_quote": "For more information, or answers to your questions: (816) 741-7746 or catering@spinpizza.com",
+          "rationale": "El contacto de catering es Burlington Creek; no se atribuye a Richardson."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "a4141fda7b9e7e7e288ac11d24b72de9b4e3ead1f9b4f6f85fea05ab2355685f",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_eedb25ca75af66",
+          "topic": "other",
+          "strength": "context",
+          "sentiment": "neutral",
+          "attribution": "other_location",
+          "verbatim_quote": "takeout and delivery only",
+          "rationale": "El formato takeout corresponde a Mission District; el candidato es Palo Alto."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "e9f8cdca8656c621d36e09f9c684fd675bb08b0a833b0e02b502e9acef2f49e4",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_fa520c73e28ad5",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "TAKE OUT ONLY. PHONE AHEAD, ORDER IN PERSON, OR ORDER FOR DELIVERY.",
+          "rationale": "La empresa ofrece pedir llamando por adelantado y opera takeout; no afirma llamadas perdidas."
+        },
+        {
+          "evidence_id": "evi_f5bd22d09afc9d",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Currently, we are takeaway only.",
+          "rationale": "Formato takeaway, no dificultad de atención."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "75a2d9cf78736446cd213d6c213364ff157689c36f787fe869441a169626e8bd",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_96e226b988141b",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Visit us for Chicago’s original tavern-style pizza",
+          "rationale": "Oferta de pizza, sin dificultad telefónica."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "620f0b407f16adaf65566cfa6555df89b8654045a137309b9a95f894fc48d009",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_19603cf394d90a",
+          "topic": "phone_order_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "we just need to control order times a little more accurately over the phones & have our online ordering temporarily deactivated.",
+          "rationale": "Describe uso del teléfono para administrar pedidos cuando el canal online se desactiva."
+        },
+        {
+          "evidence_id": "evi_48f88efbfc3dd0",
+          "topic": "other",
+          "strength": "context",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "If our online ordering site says we're closed (or that you’re out of our zone and you know you’re not)",
+          "rationale": "Política del canal online; no es una falla del teléfono ni una queja independiente."
+        },
+        {
+          "evidence_id": "evi_574b29aa81fa76",
+          "topic": "demand_peak",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "our busiest times are evenings and weekends",
+          "rationale": "Identifica noches y fines de semana como momentos de mayor actividad."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "d95ae2d61398083ccdc3f00fe0c4a37f25decf8378f2b675c6fe89d14e124772",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_ac435779c9d138",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Crushed Red serves fresh chopped salads, soups, Folded Flats, Chop Pockets, shareables, and artisan pizzas",
+          "rationale": "Menú y productos; no demuestra demanda telefónica."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "ab53e032d7a8e6b89dd78a825332ccb5dc960a24d4bf248ad769295596d8e69a",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_6235ddf74557ee",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "please call the restaurant host desk any day between 10am & 10pm at 314-984-8000",
+          "rationale": "Las consultas y reservas se dirigen al host desk de Kirkwood, sin pedidos de comida confirmados."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "92c93422f975c3a3020b0ae0db777deeb351e6bd01f608ce9162dc4bea28603c",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_031f868c55c110",
+          "topic": "demand_peak",
+          "strength": "context",
+          "sentiment": "neutral",
+          "attribution": "unclear",
+          "verbatim_quote": "Applicants must have a desire to work in a busy environment",
+          "rationale": "Busy environment es un requisito laboral genérico, no prueba de picos específicos ni volumen."
+        },
+        {
+          "evidence_id": "evi_f43259683e6804",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Visit us at our Yorkville or Manlius bakery and deli",
+          "rationale": "Identifica dos localidades con bakery y deli."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "1a6ce4253ab62e9fe057bb676d0e105462767dd360954b8c7a9c27e84fc4fdc1",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_9aa1736e803b75",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "other_location",
+          "verbatim_quote": "Birria LES - Brooklyn 170 Bedford Ave",
+          "rationale": "La dirección citada es Brooklyn, no la sucursal candidata de Astoria."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "454f0f3cd3ad73336a2a04a60dc56a259b836d72fb7789fa2f547082a501f898",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_3e5603e6cb4831",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "this_location",
+          "verbatim_quote": "Florin / Franklin 7131 Franklin Blvd, Sacramento, CA 95823 (916) 469-9104",
+          "rationale": "Dirección y teléfono del local; sin prueba de pedidos por ese canal."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "3dd2927b0118184ad3a27e022cc4a936d20487a7bf27d52d6fb44a16578099c5",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_09ef113e531239",
+          "topic": "phone_inquiry_channel",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Reach out via phone, email, or visit one of our locations.",
+          "rationale": "El teléfono es un canal de ayuda explícito; no confirma pedidos telefónicos."
+        },
+        {
+          "evidence_id": "evi_174af20d983abb",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Little Chef has been serving fresh, made-to-order Chinese takeout in San Diego.",
+          "rationale": "Confirma formato chino para llevar, sin señalar dificultades."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "525b9d5d2036d8c9f7d15ad73b2ebec8623161044d3760da2ce561105e9e33bf",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_1159736cfa7c40",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "across our six Lowcountry locations.",
+          "rationale": "Escala publicada; no afirma volumen telefónico."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "63e8e6ad5d3b148add6b33a034612c066bb35fe3502f95e3817315c39611ad3e",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_7117c6346b0ff4",
+          "topic": "multi_location_context",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "13 locations.",
+          "rationale": "Escala publicada; no afirma fallas."
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "f10d4f2cffdf5c32d57c027e8ce9e4387813bd0af87539ed05103e563ec283dd",
+    "provenance": "Clasificación nueva de Codex en conversación, sin API; etiquetas no heredadas",
+    "response": {
+      "labels": [
+        {
+          "evidence_id": "evi_a554949acc338b",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "OPEN DAILY for Take Out, Delivery & Dining.",
+          "rationale": "Oferta de retiro, delivery y salón, sin describir el canal de pedidos."
+        },
+        {
+          "evidence_id": "evi_040be8b39d91d8",
+          "topic": "other",
+          "strength": "direct",
+          "sentiment": "neutral",
+          "attribution": "company_wide",
+          "verbatim_quote": "Non-tipped positions include Phone Operator, Host, Bartender, Barista, Dishwasher, Line Cook, Prep Cook, and Takeout Packing",
+          "rationale": "Existe un rol Phone Operator; puede representar cobertura ya resuelta. No prueba pedidos telefónicos ni fallas."
+        }
+      ]
+    }
+  }
+]

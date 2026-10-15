@@ -10,3 +10,5 @@ Estos documentos conservan el detalle de investigaciones anteriores. No son paso
 Para continuar el proyecto, empezá por [README.md](../README.md) y [DEFINICION-PROYECTO.md](../DEFINICION-PROYECTO.md).
 
 - [Revisión Apollo](APOLLO-REVISION.md): revisión de las 25 cuentas exportadas y decisiones de inclusión.
+
+- [Entrega inicial](entrega_inicial/README.md): CSV y fichas del discovery, conservados como respaldo; no son la entrega oficial actual.

@@ -16,6 +16,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from load_local_env import load_local_env
+from llm_archivos import load_responses, save_requests, validate
 
 load_local_env()
 
@@ -26,7 +27,7 @@ OUT_DEFAULT = ROOT / "data"
 PROMPT_PATH = ROOT / "prompts/extraer_evidencias.md"
 CHUNK_SIZE = 14000
 CHUNK_OVERLAP = 500
-TOPICS = ["phone_service_issue", "demand_peak", "phone_order_channel", "shared_staff_workload", "wait_or_capacity", "order_operations", "location_structure", "other"]
+TOPICS = ["phone_service_issue", "demand_peak", "phone_order_channel", "phone_inquiry_channel", "shared_staff_workload", "wait_or_capacity", "order_operations", "location_structure", "other"]
 SCOPES = ["this_location", "company_wide", "unclear"]
 SCHEMA = {"type": "object", "additionalProperties": False, "required": ["claims"], "properties": {
     "claims": {"type": "array", "items": {"type": "object", "additionalProperties": False,
@@ -134,7 +135,13 @@ def main():
     parser.add_argument("--timeout", type=int, default=120)
     parser.add_argument("--delay", type=float, default=0.2)
     parser.add_argument("--run", action="store_true", help="Habilita llamadas pagas a OpenAI; por defecto es dry-run.")
+    parser.add_argument('--responses', type=Path, help='Respuestas JSON nuevas de Codex, separadas del código; no llama API.')
+    parser.add_argument('--requests', type=Path, help='Exporta prompts/entradas exactas para interpretar con Codex.')
     args = parser.parse_args()
+    if args.run and args.responses:
+        raise SystemExit('Elegir API o respuestas de archivos, no ambos.')
+    external = load_responses(args.responses)
+    request_records = []
     if args.max_documents < 1 or args.offset < 0:
         raise SystemExit("--max-documents debe ser positivo y --offset no puede ser negativo")
     documents = read_csv(args.documents) + (read_csv(args.reviews) if args.reviews.exists() else [])
@@ -161,7 +168,8 @@ def main():
     without_text = [doc for doc in normalized if not doc["source_text"]]
     processable = [doc for doc in normalized if doc["source_text"]]
     batch = processable[args.offset:args.offset + args.max_documents]
-    print(f"Documentos en entrada: {len(normalized)}; con texto fuente: {len(processable)}; lote LLM: {len(batch)}; dry-run={not args.run}")
+    mode = 'Codex por archivos' if args.responses else ('API' if args.run else 'dry-run')
+    print(f"Documentos en entrada: {len(normalized)}; con texto fuente: {len(processable)}; lote LLM: {len(batch)}; modo={mode}")
     cache_dir = args.out_dir / ".pipeline" / "extraction_cache"
     all_claim_rows, status_rows = [], []
     for doc in batch:
@@ -175,8 +183,19 @@ def main():
             status = "pendiente_dry_run" if not args.run else "complete"
             for chunk_no, (start, chunk_text) in enumerate(chunks(text)):
                 fingerprint = digest({"model": model, "prompt": prompt_hash, "document": doc, "start": start, "text": chunk_text})
+                request_records.append({'request_id': fingerprint, 'company_id': doc['company_id'], 'location_id': doc['location_id'],
+                    'company_name': doc['company_name'], 'chunk': chunk_no, 'input': {**{k: doc[k] for k in ('document_id','company_name','location_label','source_type','source_url','published_at')}, 'source_text': chunk_text}})
                 cache_path = cache_dir / f"{doc_id}_{chunk_no}_{fingerprint[:14]}.json"
-                if cache_path.exists():
+                if args.responses:
+                    if fingerprint not in external:
+                        raise ValueError(f'Falta respuesta Codex para {doc_id}, bloque {chunk_no}')
+                    response = external[fingerprint]
+                    validate(response, SCHEMA)
+                    claims, usage = response['claims'], {}
+                    for claim in claims:
+                        if not claim['source_quote'] or claim['source_quote'] not in chunk_text:
+                            raise ValueError(f'Cita Codex no encontrada en el texto: {doc_id}')
+                elif cache_path.exists():
                     cached = json.loads(cache_path.read_text(encoding="utf-8"))
                     claims, usage = cached["claims"], cached["usage"]
                     cache_hits += 1
@@ -201,6 +220,8 @@ def main():
             for claim in doc_claims:
                 unique_claims[(claim["source_quote"], claim["evidence_description"].casefold())] = claim
             doc_claims = list(unique_claims.values())
+            if args.responses:
+                status = 'evidencia_extraida_con_codex' if doc_claims else 'sin_evidencia_relevante_con_codex'
             if not args.run and cache_hits:
                 status = "evidencia_extraida_en_cache" if doc_claims else "sin_evidencia_relevante_en_cache"
             if args.run and status == "complete" and not doc_claims:
@@ -246,6 +267,7 @@ def main():
                     and row.get("document_id") not in batch_ids]
     write_csv(output_path, OUTPUT_FIELDS, prior_claims + all_claim_rows)
     write_csv(status_path, STATUS_FIELDS, prior_status + status_rows)
+    save_requests(args.requests, prompt, SCHEMA, request_records)
     print(f"Salida: {output_path} ({len(merged_claims)} evidencias acumuladas); estado técnico en .pipeline/")
 
 

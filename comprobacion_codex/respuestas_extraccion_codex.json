@@ -1,0 +1,1045 @@
+[
+  {
+    "request_id": "176ad90c36dffa9dd432933909c0f676c3e58a29e5c7ee25dd887632c7ce0e5a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página identifica la ubicación de Chicago y su teléfono.",
+          "source_quote": "CHICAGO 773-327-1512 2207 N Clybourn Ave, Chicago, IL 60614",
+          "topic": "location_structure",
+          "scope": "this_location",
+          "location_label": "Chicago · 2207 N Clybourn"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "bf13af9647ab1dac9aa41b0b8f5604f446ee94f4677587730c48620411a5a8ac",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Los pedidos de retiro pueden hacerse llamando al teléfono publicado de St. Louis.",
+          "source_quote": "All pick up orders can be placed by calling Pappy's directly at (314) 535-4340 .",
+          "topic": "phone_order_channel",
+          "scope": "this_location",
+          "location_label": "St. Louis · 3106 Olive St"
+        },
+        {
+          "evidence_description": "Pide llamar si se visita tarde porque puede agotar sus productos antes del cierre.",
+          "source_quote": "Please call if later in the day, as we may sell out early.",
+          "topic": "phone_inquiry_channel",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "0029ad92543a1a7c28413af84f476bd1a81687c8992712c38722dac526229f3e",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El sitio invita a pedir por teléfono con anticipación.",
+          "source_quote": "Walk in, or call ahead to order.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "5802487fa5609eaf604852c6e2dd63ab69ab52e67d9395776850d72d3a18f52f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "d3f7cc9e83228cab464d92466ab7abd46c3bbbbf72998d835fb74eba2051da7f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "3f94b51255860983132b2348c63d783aa21c25b496a1cdbff6a7f3323474a31f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "f7b2854fdcfcc2f11cbe77f7cac22ba5f9058b06e029c8640fe58c3e169b6d75",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Pizza Lucé declara nueve sucursales.",
+          "source_quote": "We've got nine neighborhood Pizza Lucé locations in the Twin Cities and Duluth.",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "d6cffcd03bc1bcd658ce34b9f6a646ab9a016ba68c32e5547e8c106ead2776b1",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Spartanburg e Inman usan sistemas de pedido separados.",
+          "source_quote": "Spartanburg and Inman are separate locations with separate ordering systems",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "c0be9037ff878ad91af0259b8aa1a45075b76d73c66e7b8aaa400366213ae4de",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "00703625f01eefce6b712faa9d2bbb05366f81cb1cdab5d23ab1500171797df5",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página anuncia nuevas aperturas; no confirma que ya estén operativas.",
+          "source_quote": "NEW SHOPS COMING SOON",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "2b439e9095914e6548627a5df09d0d99ce5a3d72106dae0b3fc21ca39f194c6d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El restaurante presenta su oferta como pizza de estilo Jersey en Wisconsin.",
+          "source_quote": "Serving up the best authentic Jersey-style pizza, right here in the heart of Wisconsin!",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "93d27765a9e881874232a315d77bcf973c31bd6ed597c1816042ab412bc4ed66",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "047ecffba856b7555efb2ca0c9fab80a63ac8669d6b8ed9f7ea91ed86700ae9f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "V Pizza describe su producto como pizza napolitana.",
+          "source_quote": "At V Pizza, we make authentic pizza Napoletana",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b4dea39c810aae9e0e4a7e9a108b1545be08b104fce43692bcdd4e48df5d6ffb",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página identifica la sucursal de Richardson con teléfono y horarios.",
+          "source_quote": "Richardson, Texas 75080 972-235-7746 HOURS Sun-Sat: 11am-9pm",
+          "topic": "location_structure",
+          "scope": "this_location",
+          "location_label": "Richardson · 348 W Campbell Rd"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b0d4e0888228a810d46b236f4861244fc4c702ced80613e8d8577dd784cf61e6",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "b0ee3983e03f5b5dd8ac90c868ac6a311aa1e92845f3dc531342766ee1a4cb54",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La ficha de Mission District describe un formato exclusivo de retiro y delivery; no corresponde a Palo Alto.",
+          "source_quote": "takeout and delivery only",
+          "topic": "order_operations",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "5913e63b194119dd772eefebbb956d3f193964cdd13a839ce7120781b501f58c",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Golden Boy opera solo para llevar y ofrece llamar por adelantado, pedir presencialmente o delivery.",
+          "source_quote": "TAKE OUT ONLY. PHONE AHEAD, ORDER IN PERSON, OR ORDER FOR DELIVERY.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "eefa2f561ad80cc05cfddfa46da0740cac45ee79e426c0146c49975910b60805",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La empresa describe su oferta de restaurantes como pizza estilo tavern de Chicago.",
+          "source_quote": "Visit us for Chicago’s original tavern-style pizza",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "963d32f76a8ce67315a1e73c384de34dde8183dc0d44c95b22f289a5638f851b",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "HOTLIPS usa el teléfono para controlar los tiempos cuando desactiva temporalmente los pedidos online.",
+          "source_quote": "we just need to control order times a little more accurately over the phones & have our online ordering temporarily deactivated.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "La página contempla que el sistema online pueda mostrar cierre o fuera de zona, en el contexto de su política de desactivación temporal.",
+          "source_quote": "If our online ordering site says we're closed (or that you’re out of our zone and you know you’re not)",
+          "topic": "order_operations",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "077ef283828dca2d7149388024325331baec61c4dfec72da0ab5effc2eee7dbd",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Crushed Red ofrece ensaladas, sopas y pizzas, entre otros productos.",
+          "source_quote": "Crushed Red serves fresh chopped salads, soups, Folded Flats, Chop Pockets, shareables, and artisan pizzas",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "9a1a9aca0598b97a8856e433c44e055b81e2f87f8078fbc675f3d052c5a0698e",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "388553a9fe2323d63894678a2d49cfd5fcce5f7f2cc82e08769bebcc1c97486d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "bdc900a1184ecf9e6ca4a4eddf58e6db60697cbbf62e9b693c5120278376f7f1",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La plataforma muestra una ubicación de Birria LES en Brooklyn; no demuestra operación telefónica.",
+          "source_quote": "Birria LES - Brooklyn 170 Bedford Ave",
+          "topic": "location_structure",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b524f9def06df6db1fe8831ae16668781810faea131da6e1cd9df9d46ffaff0d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El sitio identifica la sucursal Florin/Franklin con dirección y teléfono.",
+          "source_quote": "Florin / Franklin 7131 Franklin Blvd, Sacramento, CA 95823 (916) 469-9104",
+          "topic": "location_structure",
+          "scope": "this_location",
+          "location_label": "Franklin · 7131 Franklin Blvd"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "94226be15d0857617244ff09b9c514e9167717343e49c94b82bf5382fc4c33c0",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El sitio invita a contactar por teléfono, correo o presencialmente para recibir ayuda.",
+          "source_quote": "Reach out via phone, email, or visit one of our locations.",
+          "topic": "phone_inquiry_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "Little Chef describe su oferta como comida china para llevar preparada al momento.",
+          "source_quote": "Little Chef has been serving fresh, made-to-order Chinese takeout in San Diego.",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "6d35db414cfbf62d7c4b2dcf38ffb2589ca6308a710b8fe56350ef9f3d1c967d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Kickin’ Chicken declara seis ubicaciones en Lowcountry.",
+          "source_quote": "across our six Lowcountry locations.",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b507e4ebe4848b85aa01a721e6214c9446b2923422fbdd48c7ff3058f7618f06",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Sickies declara trece ubicaciones.",
+          "source_quote": "13 locations.",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "c28e32f80ecaf307f8a4412afa5a486690b5a391a3da4b3179865e825e38ffe3",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Dallas BBQ ofrece retiro, delivery y consumo en salón todos los días.",
+          "source_quote": "OPEN DAILY for Take Out, Delivery & Dining.",
+          "topic": "order_operations",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "0c59a6199992b6d8dd12f22361f7e08b701dd73da278ddce29ac030faacdd630",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Pequod’s identifica el sábado y la cena de 18 a 20 como sus momentos de mayor demanda.",
+          "source_quote": "Our busiest day is Saturday, and our peak hours are typically the dinner rush between 6-8PM.",
+          "topic": "demand_peak",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "Pequod’s permite anticipar pedidos por teléfono o por internet.",
+          "source_quote": "You can place orders for Take-out and Delivery in advance by calling the restaurant or ordering online at order.pequodspizza.com.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "Pequod’s invita a consultar por teléfono la disponibilidad de mesas a corto plazo.",
+          "source_quote": "On short notice, you can call the restaurant for current availability.",
+          "topic": "phone_inquiry_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "En Chicago, el retiro de takeout se realiza en el puesto del host, con cambios por horario descritos en la FAQ.",
+          "source_quote": "In Chicago, Take-out orders are available for pick up at the host stand.",
+          "topic": "order_operations",
+          "scope": "this_location",
+          "location_label": "Chicago · 2207 N Clybourn"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "3c47046a480706b6f0cce4adc46d7ec482b07a1ada3e39035cb703d16c7548ff",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El formulario incluye un puesto llamado Host / Phone entre las posiciones disponibles para solicitar.",
+          "source_quote": "Wait Staff Kitchen Busser Host / Phone Deliver Driver Manager",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "ba15ab1fd4e2233f65da5c1d8dc2cbdd0d8ccfa6713b39c47de76b1371bc209d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Contenido duplicado de la captura de Pappy’s; se evita duplicar afirmaciones.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "4940b91cb18c9bf2ac05a961527c3d6f173fcc810b437ccc7087e7602107a75c",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Contenido duplicado de la captura de Pappy’s; se evita duplicar afirmaciones.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "3653705d9e645d318631d46cc74d7a6dc5dac5be0a0bd0944487803dfeec3123",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El selector ofrece llamar para pedir a Midvale, además de Slice.",
+          "source_quote": "Midvale 835 East Fort Union Order Online Through Slice Call to Order 801-561-2171",
+          "topic": "phone_order_channel",
+          "scope": "this_location",
+          "location_label": "835 East Fort Union Boulevard"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "3d1be1cf61470feecf545b1d50bcfc61bab35e421f9a08a815cba16c566b7be0",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "29127d429ec9a9d1b53ea9a6fde2634005ef53c46fb90556da0921e66e000dac",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página indica pedidos por teléfono o en persona.",
+          "source_quote": "All orders must be made by phone or in-person.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "La empresa pide volver a llamar cuando sus teléfonos están ocupados al intentar pedir.",
+          "source_quote": "If you are calling to place an order and the phones are busy, please call back.",
+          "topic": "phone_service_issue",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "bc37c3b913e71303bbb2c954e44ce9f622293e5263455ee11576398704e9e82a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La FAQ de Austin ofrece pedidos de retiro por internet; no confirma que entren por teléfono.",
+          "source_quote": "You can place your takeout order easily online on our ordering page .",
+          "topic": "order_operations",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "3362db5eccbda2ef83f2c99320d4649b79d0e8e69af692abdb8724ce6bbf3119",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La FAQ de Lockhart ofrece pedidos de retiro por internet.",
+          "source_quote": "You can place your takeout order online on our ordering page .",
+          "topic": "order_operations",
+          "scope": "this_location",
+          "location_label": "215 N Main St"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "25701178aa13eddfc3a69f1fce0c9c21d37705babcd189f590c2985d16d57a72",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El formulario de empleo incluye un puesto denominado Phones/Counter, sin detallar sus tareas.",
+          "source_quote": "Phones/Counter",
+          "topic": "shared_staff_workload",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "a17f04a2667a02f3f221236da7764ac46ec3e13b7f62f0187e45dcc3edf48c67",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Glass Nickel indica llamar directamente al local por problemas que necesitan atención inmediata.",
+          "source_quote": "For immediate issues, please phone the store directly.",
+          "topic": "phone_inquiry_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "El sitio explica que el correo puede no leerse a tiempo para cambios de pedidos o asuntos urgentes.",
+          "source_quote": "E-mail may not be checked quickly enough to facilitate a change of order or deal with other urgent issues.",
+          "topic": "order_operations",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "d87da79dbcc51de218a2bb55bf6ce18fe05847433a3c0326b25e00bf9c30ec45",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "e5ccbec6ab6cd56c520a8d8e4f7b46d2f321f88a8e17ec6a724bbdcbc90260ca",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "619cddd77b7a3e75428c449362ad14e0b1dad00e7a8747495288afeaad7e8f4a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El puesto Front of House combina mostrador, pedidos telefónicos y empaquetado.",
+          "source_quote": "Front of House Counter, phone orders, packaging. Friendly to regulars, fast on a busy Friday.",
+          "topic": "shared_staff_workload",
+          "scope": "unclear",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "La descripción del puesto menciona trabajar rápido un viernes concurrido.",
+          "source_quote": "fast on a busy Friday.",
+          "topic": "demand_peak",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "1a3e69574ba6ff9d3d83e282e656d4d546dd1d085af296725a8bdf1c57cae24d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Spartanburg acepta pedidos telefónicos e indica que Toast suele ser más rápido en horas concurridas.",
+          "source_quote": "Do you take orders over the phone? Yes, but online ordering (Toast) is usually faster during busy hours.",
+          "topic": "phone_order_channel",
+          "scope": "this_location",
+          "location_label": "156 Magnolia St"
+        },
+        {
+          "evidence_description": "La página describe servicio de mostrador, consumo en salón y retiro.",
+          "source_quote": "No — we are counter-service only. Walk-ins, dine-in or takeout.",
+          "topic": "order_operations",
+          "scope": "this_location",
+          "location_label": "156 Magnolia St"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "bd35c7d02edb8641ab0199e66c0822779fb593636bd1f0de4763f17a943e0a2a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "e344fab5801ecc02da014c7b7794efd0781d4478a03eb710ad2eda0df1968ad4",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "00ab92aca3d268800626219e4bec4b40fdffcc2055e386fd6162def33d97c910",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "fa2e9d4006843b5286aa4e181adecc4cda33ec12044c5c6ba19f1c8bd99b5217",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Prime Pizza invita a contactar por correo o llamando a sus sucursales.",
+          "source_quote": "SEND US AN EMAIL OR CALL US AT ANY OF OUR LOCATIONS",
+          "topic": "phone_inquiry_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b8a66861a571ac3d754ae8c4b7490b0df0be182d1c6c63af5d9e32b256515555",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El puesto combina responder llamadas, recibir y sentar clientes y ayudar con pedidos.",
+          "source_quote": "Helping team members by answering phones, greeting and seating guests, and assisting in orders",
+          "topic": "shared_staff_workload",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "086a462123854cce13e8f2dd5d3775ebe06154aba93072e3dcb9451af1e8246d",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Salvatore’s indica que fuera de horario las llamadas pasan automáticamente al buzón de voz.",
+          "source_quote": "Calls come through during hours of operation only, when we are closed calls are automatically forwarded to voicemail",
+          "topic": "order_operations",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "Salvatore’s ofrece el teléfono para contacto directo o respuestas urgentes.",
+          "source_quote": "Looking to reach us directly or need an urgent response? Please give us a call*!",
+          "topic": "phone_inquiry_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "eefe200324486940ff993233e659e6445a02e0e535c8a385bf3bafffd255b8ab",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Después de las 16, Zachary’s limita los pedidos telefónicos a takeout.",
+          "source_quote": "After 4 pm we are only able to accept take-out orders over the phone.",
+          "topic": "phone_order_channel",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "La FAQ indica un tiempo de preparación de 30–40 minutos para pizzas stuffed; no es una queja de servicio.",
+          "source_quote": "Allow 30-40 minutes for Stuffed Pizzas.",
+          "topic": "wait_or_capacity",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "1a5b56b1294d96cd803794df64a1c8f713256c80784dc51a0698fbb9d710a77c",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Las tareas del host incluyen pedidos por teléfono y mostrador, cobro, ensaladas y levantar mesas.",
+          "source_quote": "Order taking- over the phone and at the counter Cashiering Salad making Bussing tables",
+          "topic": "shared_staff_workload",
+          "scope": "company_wide",
+          "location_label": ""
+        },
+        {
+          "evidence_description": "Zachary’s declara seis sucursales en East Bay.",
+          "source_quote": "Today, we proudly serve the East Bay with six locations:",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "6c8eebeacdf29d6e33a052651f49caadcfbbc4bf4a3b22f36b72ab9787379c4f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página de empleo de V Pizza declara doce locales y dos en construcción; las obras no se cuentan como sedes activas.",
+          "source_quote": "we’ve grown to 12 locations, with two more under construction",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "1090d7adb97ca0a60fee1ea6fb2d5a462e2b6a5d3943c0879cffcbb05e4a2c9f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "2ff40e9f9e93abd692fde16c717f8ec7e961f1e664892b90116a7c3ec33d8ae5",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "abff53ffb4887b095719e9e244c3679f1e7dc2a49da6f52dd8821461698c49b6",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página de Burlington Creek ofrece teléfono y correo para información de catering; no corresponde a Richardson.",
+          "source_quote": "For more information, or answers to your questions: (816) 741-7746 or catering@spinpizza.com",
+          "topic": "phone_inquiry_channel",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "1214fa7fe18756c1721d990dc01af14dc36c9222bd7d005f3246d4463e57ecac",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "b311098a70b6ccbc1266facc8f895f6bb0fd39223f873e201aaaa61776f372ef",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "c6b06811d53e998e3449a5c65221b63eed200f89a2997e270fdb086881a44e75",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La FAQ de Golden Boy confirma que actualmente opera solo para llevar.",
+          "source_quote": "Currently, we are takeaway only.",
+          "topic": "order_operations",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "293e0c7496037dd68674aee84333a320cfb53d48aad89648ac8a6f98e9f2b3d4",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "7814d4909fe178ea76e9e852bfa6ff15a76e70287d5775d891a8115f7352ce6a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "3691aa79666d46c4cb2815e5a3a1a67cc9bbfb18480f983f2cff2109e24e1152",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La página laboral de HOTLIPS identifica noches y fines de semana como sus períodos de mayor actividad.",
+          "source_quote": "our busiest times are evenings and weekends",
+          "topic": "demand_peak",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "4f2cd70d85b1b5ef8da2a27193f06621c37dbd583d5ac542e83f07d4bda2cb9f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "130dcff5284f193d1b05e0ff27e464c6eec5007bcb6116f230d8f9f09b7703f3",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "5570e2231e4e88c20a04a4af7548d8d2780f7ebadea5440ffc551d7741f63577",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "591874c37cea10e60331fc5de1e32297c85cc631937208e8d08fdbdf0c0368b2",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "ad3c6e5bf8fceb57908b367dcccb29bb222c9259868fbe9d111b018ae873c62c",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Billy G’s dirige las consultas urgentes y de reservas al host desk por teléfono de 10 a 22.",
+          "source_quote": "please call the restaurant host desk any day between 10am & 10pm at 314-984-8000",
+          "topic": "phone_inquiry_channel",
+          "scope": "this_location",
+          "location_label": "Kirkwood · 131 W Argonne Dr"
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "b3a6125eacfde0c3fe4a7885a2e47f6a44e8cee8c4367d4dac31522e24645d7c",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "La publicación laboral de Holland Farms describe un entorno de trabajo ocupado, sin cuantificar demanda.",
+          "source_quote": "Applicants must have a desire to work in a busy environment",
+          "topic": "demand_peak",
+          "scope": "unclear",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "6d34ebb46b4d161f103c87b67a05538da254213bf464cff57357998d51e456f0",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "El sitio identifica establecimientos de panadería y deli en Yorkville y Manlius.",
+          "source_quote": "Visit us at our Yorkville or Manlius bakery and deli",
+          "topic": "location_structure",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "586acea5f541dc61effaac1fce33471ffccda1017a72282a5391340dad7c2d9b",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "089b97b21da9f22b7db39602135cb6500e6909b4217be5578c940a05b7541dc0",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "f00dc325f754e88f80b12743cb7c8d4165ae3722570be1f5004a2bd8ed5bf14a",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "b740eddb25686f0fe20b1ac2c358373d91cba4bfa342b48a65563f41024e435f",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "c0bbf810029bb7c97be7460d74c0b1f42da873a89d4fdc8979d9d843d9462ad5",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "29a2cb945d72ffeb660bf92b8b4559a6e7146387d2cab5ef230d14a220bbd98b",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  },
+  {
+    "request_id": "2effdf901000341ef8b37d9238f60be358be3d77539dc7dd215c3f04fd6a4957",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": [
+        {
+          "evidence_description": "Dallas BBQ publica el puesto Phone Operator, separado de Host y Takeout Packing.",
+          "source_quote": "Non-tipped positions include Phone Operator, Host, Bartender, Barista, Dishwasher, Line Cook, Prep Cook, and Takeout Packing",
+          "topic": "other",
+          "scope": "company_wide",
+          "location_label": ""
+        }
+      ]
+    }
+  },
+  {
+    "request_id": "54ace243d0eac3ac927888f76ceac3fb85768b4f5ba36b61ff864cb9ee84e4be",
+    "provenance": "Interpretación nueva de Codex en esta conversación; no API ni CLAIMS previos",
+    "review_note": "Hechos seleccionados de los pasajes disponibles; no implica revisión exhaustiva del sitio.",
+    "response": {
+      "claims": []
+    }
+  }
+]
