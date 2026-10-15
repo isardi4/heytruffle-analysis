@@ -29,7 +29,7 @@ Se distinguieron comentarios de los últimos 12 meses (14/10/2025–14/10/2026),
 
 ## Los quince incorporados
 
-Las fichas de [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) reproducen las 13 columnas exactas del CSV y añaden por qué se elige cada caso, qué podría necesitar y qué preguntar.
+Las fichas de [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md) reproducen las 13 columnas exactas del CSV y añaden por qué se elige cada caso, qué podría necesitar y qué preguntar.
 
 | Empresa | Respaldo y límite principal |
 | --- | --- |

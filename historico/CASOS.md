@@ -270,7 +270,7 @@ Siete tienen una dificultad de comunicación publicada, una franja de actividad 
 
 ## Las ocho incorporaciones
 
-Las fichas completas, en el mismo orden y con los mismos valores que el CSV, están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md). Las decisiones por tanda están en [TANDAS.md](TANDAS.md).
+Las fichas completas, en el mismo orden y con los mismos valores que el CSV, están en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md). Las decisiones por tanda están en [TANDAS.md](TANDAS.md).
 
 ### Mama's Pizza Omaha
 
@@ -438,7 +438,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** Cuando desactivan pedidos online, ¿quién responde las llamadas? ¿Necesitan atender consultas o la cocina ya no puede aceptar pedidos?
 
-**Perfil:** [Contacto y sedes](https://www.hotlipspizza.com/pearl). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://www.hotlipspizza.com/pearl). Datos completos en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ### Crushed Red
 
@@ -460,7 +460,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Kirkwood, ¿quién cubre el teléfono cuando el Wine Tender lleva bebidas a las mesas?
 
-**Perfil:** [Contacto y sedes](https://crushed-red.com/locations/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://crushed-red.com/locations/). Datos completos en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ### Billy G's
 
@@ -482,7 +482,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Kirkwood, ¿quién cubre las llamadas cuando Carryout cobra o entrega un pedido?
 
-**Perfil:** [Contacto y sedes](https://billygskirkwood.com/order/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://billygskirkwood.com/order/). Datos completos en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ### Holland Farms Bakery & Deli
 
@@ -504,7 +504,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Manlius, ¿cuántas llamadas son por comidas del deli y quién atiende mientras el mostrador está ocupado?
 
-**Perfil:** [Contacto y sedes](https://hollandfarms.com/manlius/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://hollandfarms.com/manlius/). Datos completos en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ### Birria LES
 
@@ -526,7 +526,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Astoria, ¿quién responde el teléfono cuando caja está cobrando o empaquetando entregas?
 
-**Perfil:** [Contacto y sedes](https://www.doordash.com/business/birria-les-13501665/). Datos completos en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://www.doordash.com/business/birria-les-13501665/). Datos completos en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ## Incorporaciones de las tandas nueve y diez
 
@@ -550,7 +550,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Franklin, ¿quién cubre el teléfono cuando el servidor está atendiendo mesas o empaquetando retiros?
 
-**Perfil:** [Contacto y sedes](https://www.supertacomex.com/). Las 13 columnas están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://www.supertacomex.com/). Las 13 columnas están en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ### Little Chef Chinese
 
@@ -572,7 +572,7 @@ Las fichas completas, en el mismo orden y con los mismos valores que el CSV, est
 
 **Qué preguntar:** En Ocean Beach, ¿quién responde las llamadas cuando caja cobra o ayuda con preparaciones en cocina?
 
-**Perfil:** [Contacto y sedes](https://littlechefcatering.us/). Las 13 columnas están en [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md).
+**Perfil:** [Contacto y sedes](https://littlechefcatering.us/). Las 13 columnas están en [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md).
 
 ## Los 17 de la lista secundaria
 

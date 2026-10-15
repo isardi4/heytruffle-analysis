@@ -1,4 +1,10 @@
-# Notas internas de trabajo. No forman parte de la entrega.
+# Notas locales y respaldos regenerables.
 PLAN.md
-interno/
+interno/*.tar.gz
+data/.pipeline/
 .DS_Store
+.env
+
+# Archivos regenerables de Python
+__pycache__/
+*.py[cod]

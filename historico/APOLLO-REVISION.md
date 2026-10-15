@@ -1,0 +1,39 @@
+# Revisión del export de Apollo — 14/10/2026
+
+Se revisaron los **25 registros**: **3 incorporados** a la lista y **22 descartados** para este ejercicio. La lista queda en **30 casos**, diez menos que la meta de 40.
+
+Origen: exportación web de Apollo aportada por el usuario. Esta revisión no requirió búsquedas de Apollo ni consumió créditos. Sí se usaron fuentes públicas para verificar identidad, sedes y señales. No se obtuvieron contactos personales.
+
+La decisión de incorporar requiere perfil de 2–15 locales en EE. UU., cocina casual, señal de teléfono/pedidos y una segunda señal operativa útil para conversar. No implica que se hayan medido llamadas perdidas. Se contaron los 27 casos previos por separado; ninguno se reemplazó.
+
+| Empresa | Decisión | Revisión y fuentes |
+|---|---|---|
+| Romeo's Pizza Columbus | descartado | La descripción del propio export declara más de 40 sedes de Romeo’s. La filial/local no se toma como cadena independiente. No se verificó total actual. Export de Apollo. |
+| Sickies Garage Burgers & Brews | incorporado | Sitio oficial confirma 13 locales y local activo en Las Vegas. Aviso de Host asigna contestar teléfono, tomar to-go si hace falta, recibir clientes y cobrar; el aviso no confirma que los pedidos to-go entren por teléfono. Hipótesis útil para validar cobertura, sin llamadas perdidas demostradas. [Fuente 1](https://sickiesburgers.com/locations/) [Fuente 2](https://sickiesburgers.com/locations/las-vegas/) [Fuente 3](https://www.indeed.com/viewjob?jk=156af54be52f371c) |
+| Tito's Burritos & Wings | descartado | Cerró sus tres locales el 01/03/2026 según noticia local publicada antes de la fecha de revisión. No está activo para prospectar. [Fuente 1](https://villagegreennj.com/business/titos-burritos-wings-to-close-all-locations-including-its-downtown-south-orange-restaurant/) |
+| Kogi BBQ | descartado | El sitio oficial opera camiones itinerantes con horarios/sitios variables y pedidos por apps; no es una cadena de locales fijos comparable al perfil. [Fuente 1](https://kogibbq.com/) [Fuente 2](https://kogibbq.com/orderonline/) |
+| Jerry's Subs & Pizza | descartado | 21 locales según export: fuera de 2–15; no se afirma conteo actual verificado. Export de Apollo. |
+| Tony's Pizza & Pasta | descartado | Una sede según export; dominio wetumpkateaparty.com ajeno al restaurante de Dallas. Identidad/contacto insuficientes. Export de Apollo. |
+| Corky's BBQ | descartado | El directorio propio muestra siete restaurantes. Hay teléfono público, pero la evidencia localizada de pedidos telefónicos pertenece al e-commerce corporativo, no a pedidos para las sucursales. No hay segunda señal local atribuible. [Fuente 1](https://www.corkysbbq.com/eat-at-corkys) [Fuente 2](https://www.corkysbbq.com/careers/) [Fuente 3](https://www.simplyhired.com/job/JAJxlqh00ve6lF9zGC81GCjeG2rn1Bie2IZ-eAxM7hJkVIajU1pkXw) |
+| Fresh Brothers | descartado | 25 locales según export: fuera del máximo. No se verificó total actual. Export de Apollo. |
+| Dallas BBQ | incorporado | Carreras oficiales publica 12 locales, takeout/delivery, un rol Phone Operator y otro Takeout Packing dentro de un entorno fast-paced. Buena cuenta para validar pedidos y distribución de llamadas; no demuestra pérdida de llamadas. [Fuente 1](https://www.dallasbbq.com/careers) [Fuente 2](https://www.dallasbbq.com/times-square) |
+| Pizza Expo | descartado | El export describe una feria y conferencia, no un operador de restaurantes. Export de Apollo. |
+| UNO by Real Madrid | descartado | El export describe la marca y sus aperturas en México; no se encontró operación en Estados Unidos. No confundir con UNO Pizzeria & Grill. [Fuente 1](https://www.reservasunobyrealmadrid.com/) [Fuente 2](https://unos.com/locations/) |
+| Killer Burger | descartado | 26 en campo de locales y 20 en descripción: ambos superan quince. No se fija un total actual. Export de Apollo. |
+| Papa Kelseys Pizza and Subs | descartado | Una sede según export y descripción empresarial mal clasificada. No se suma una marca homónima. Export de Apollo. |
+| Terry Black's Barbecue | descartado | FAQ oficial leída: pedidos to-go exclusivamente online y no acepta pedidos por teléfono. No cumple el canal de esta hipótesis. [Fuente 1](https://terryblacksbbq.com/faq) |
+| The Kickin' Chicken | incorporado | Sitio oficial publica seis sedes en Charleston y enlaza West Ashley. Aviso de Host de esa sucursal combina pedidos to-go, teléfono, turnos de alta energía y ritmo rápido. Encaja con la hipótesis; no demuestra llamadas perdidas ni fecha vigente del aviso. [Fuente 1](https://kickinchicken.com/) [Fuente 2](https://kickinchickensamrittenberg.com/) [Fuente 3](https://www.indeed.com/viewjob?jk=900e178cb8264cb4) |
+| Big City Wings | descartado | La FAQ oficial confirma 13 locales. Takeout está disponible, pero ni el puesto Host/Cashier ni la fuente oficial confirman pedidos de comida por teléfono; falta la señal central. [Fuente 1](https://bigcitywings.com/faqs/) [Fuente 2](https://www.indeed.com/viewjob?jk=e519b24697523ed8) |
+| Rusty Taco | descartado | 38 locales según export; descripción 35–38, ambos fuera del máximo. Export de Apollo. |
+| Alondra Hot Wings | descartado | La marca cambió a AWSOM; la web actual muestra dos restaurantes AWSOM, no la cadena Alondra del registro. No confirma pedidos telefónicos ni tareas asociadas. [Fuente 1](https://www.awsomfood.com/location/montebello) [Fuente 2](https://www.awsomfood.com/menu/dine-in) |
+| Boston Burger Company | descartado | Sitio actual ofrece pickup/delivery online; no se localizó señal verificable de pedidos por teléfono ni una segunda señal operativa vinculada. No basta el teléfono de contacto de directorio. [Fuente 1](https://www.bostonburgrcompany.com/) |
+| Chester's Chicken | descartado | Campo de locales=2 contradice descripción de más de 1.300 puntos de la marca. No se interpreta personal corporativo como cadena pequeña. Export de Apollo. |
+| Betos Mexican Food, Pizza & Burgers | descartado | Una sede según export; sin segunda sede ni teléfono en registro. Export de Apollo. |
+| Sardella's Pizza & Wings | descartado | La página oficial confirma Call to Order en tres sucursales activas. No se encontró una segunda señal vigente y atribuible: comentarios laborales disponibles son antiguos y no describen carga telefónica. [Fuente 1](https://sardellaspizza.com/locations/) [Fuente 2](https://www.indeed.com/cmp/Sardella%27s-Pizza) |
+| Oath Pizza | descartado | El localizador oficial actual muestra dos franquicias (Poulsbo y Wellesley), no las diez de Apollo. Las fichas ofrecen pedidos online/carryout, pero no evidencia de pedidos telefónicos ni una segunda señal. [Fuente 1](https://www.oathpizza.com/locations?location=oath-pizza-nantucket) [Fuente 2](https://www.realoathpizza.com/) |
+| Five Star Pizza Hunters Creek | descartado | El directorio oficial de Five Star Pizza enumera 24 ubicaciones en Florida, fuera del máximo de 15; la cuenta local de Apollo no representa la cadena completa. [Fuente 1](https://fivestarpizza.com/locations/) |
+| Naugles Corp | descartado | La web oficial identifica un único restaurante activo en Fountain Valley. La mención de nuevas ubicaciones no confirma locales abiertos; el requisito de 2–15 activas no se cumple. [Fuente 1](https://nauglestacos.com/) |
+
+Las tres incorporaciones son **The Kickin’ Chicken**, **Sickies Garage Burgers & Brews** y **Dallas BBQ**. Para Sickies, el aviso junta “responder teléfono” y “tomar pedidos to-go”, aunque no especifica si esos pedidos llegan por teléfono. Dallas publica un rol Phone Operator y un rol Takeout Packing; su sitio declara 12 ubicaciones, pero el menú enlaza diez sedes y una apertura nueva. Ambos sirven para validar la operación en una conversación; ninguno demuestra llamadas perdidas.
+
+El CSV contiene 30 filas. Quedan **10** para llegar a 40; no se agregan los descartes solo para completar la cantidad.

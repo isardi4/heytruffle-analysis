@@ -1,0 +1,31 @@
+company_id,location_id,company_name,source_url,source_type,captured_at,source_text_chars,simulation_status,evidence_count,api_calls,model
+cmp_c26757fbfb86,loc_8a4bd4f5a8f8,Pequod's Pizza,https://pequodspizza.com/faqs/,sitio_oficial,2026-10-15T03:45:35+00:00,5631,evidence_extracted_manually,5,0,simulacion_chatgpt_no_api
+cmp_dfc9c678b805,loc_8e3b6462fd9c,Pappy's Smokehouse,https://www.pappyssmokehouse.com/contact,sitio_oficial,2026-10-15T04:02:31+00:00,3656,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_fdd50f35f0f9,loc_2edc2a7e12e0,Litza's Pizza,https://www.litzaspizza.com/blog/midvale-family-pizza/,sitio_oficial,2026-10-15T04:02:32+00:00,1558,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_5836d4091646,loc_1ffe9dfd024d,Joe's Kansas City Bar-B-Que,https://www.joeskc.com/pages/contact-us,sitio_oficial,2026-10-15T04:02:33+00:00,4088,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_3fdcfe4b995e,loc_a533832c0834,Black's Barbecue,https://www.blacksbbq.com/locations/lockhart/pick-up-delivery,sitio_oficial,2026-10-15T04:02:35+00:00,2022,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_6e12ba4645d0,loc_4ab655b5c397,Downtown Pizza,https://downtownpizzasc.com/contact,sitio_oficial,2026-10-15T04:02:36+00:00,2217,evidence_extracted_manually,3,0,simulacion_chatgpt_no_api
+cmp_fadac0d063a2,loc_7a7a49c80708,Salvatore's Tomato Pies,https://www.salvatorestomatopies.com/careers/,sitio_oficial,2026-10-15T04:02:36+00:00,16744,evidence_extracted_manually,3,0,simulacion_chatgpt_no_api
+cmp_8d425e3430e6,loc_797501c77a34,Zachary's Chicago Pizza,https://zacharys.com/frequently-asked-questions/,sitio_oficial,2026-10-15T04:02:39+00:00,6620,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_8d425e3430e6,loc_797501c77a34,Zachary's Chicago Pizza,https://zacharys.com/locations/pleasant-hill/,sitio_oficial,2026-10-15T04:02:40+00:00,9578,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_02e717ecc99f,loc_50b87a94ccae,V Pizza,https://www.vpizza.com/jobs/cashier-and-food-runner/,sitio_oficial,2026-10-15T04:02:41+00:00,6164,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_8a60830645de,loc_2406eac4b74e,Katie's Pizza & Pasta Osteria,https://katies.com/pages/important-info,sitio_oficial,2026-10-15T04:02:42+00:00,3438,evidence_extracted_manually,3,0,simulacion_chatgpt_no_api
+cmp_9b2c8442e745,loc_1331fa8e5595,Pizzeria Delfina,https://www.pizzeriadelfina.com/catering/,sitio_oficial,2026-10-15T04:02:42+00:00,3303,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_96ed78605e9f,loc_8380d100f857,Golden Boy Pizza,https://www.goldenboypizza.com/,sitio_oficial,2026-10-15T04:02:43+00:00,725,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_f2f7871f497e,loc_315cff662bb8,HOTLIPS Pizza,https://www.hotlipspizza.com/,sitio_oficial,2026-10-15T04:02:44+00:00,4505,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_f2f7871f497e,loc_315cff662bb8,HOTLIPS Pizza,https://www.hotlipspizza.com/jobs,sitio_oficial,2026-10-15T04:02:46+00:00,2788,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_24c31bc1d29c,loc_0f7509707f9b,Holland Farms Bakery & Deli,https://hollandfarms.com/manlius/,sitio_oficial,2026-10-15T04:02:47+00:00,3690,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_de9a7bb56de3,loc_e8894deab987,Dallas BBQ,https://www.dallasbbq.com/careers,sitio_oficial,2026-10-15T04:02:49+00:00,5280,evidence_extracted_manually,2,0,simulacion_chatgpt_no_api
+cmp_700ab6112a46,loc_5c7be23dde48,Glass Nickel Pizza,https://www.glassnickelpizza.com/location-overview/,sitio_oficial,2026-10-15T04:03:24+00:00,1784,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_200e0f515e8e,loc_16a83ba6471e,Pizza Luce,https://pizzaluce.com/locations,sitio_oficial,2026-10-15T04:03:25+00:00,1016,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_d248a3aa19fd,loc_9eb24cc9beae,NY Pie Nashville,https://www.nypienashville.com/,sitio_oficial,2026-10-15T04:03:26+00:00,8020,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_9a0f16f5d97a,loc_8336610fe746,Prime Pizza,https://primepizza.com/,sitio_oficial,2026-10-15T04:03:28+00:00,2519,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_23fe6a977190,loc_860ce4e482d4,SPIN! Pizza,https://www.spinpizza.com/,sitio_oficial,2026-10-15T04:03:31+00:00,3413,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_03655fbc58cc,loc_76475f23c1e4,Home Run Inn,https://www.homeruninnpizza.com/,sitio_oficial,2026-10-15T04:03:33+00:00,3009,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_87714c0ba4bc,loc_1da6c57a6de6,Crushed Red,https://crushed-red.com/,sitio_oficial,2026-10-15T04:03:35+00:00,4439,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_f30a5e10b983,loc_a1a1b29bee04,Billy G's,https://billygskirkwood.com/,sitio_oficial,2026-10-15T04:03:36+00:00,1665,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_0df925298fdc,loc_4948252e26fe,Birria LES,https://www.doordash.com/business/birria-les-13501665/,plataforma_pedidos_tercera,2026-10-15T04:03:38+00:00,3612,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_925a0936e02e,loc_6ec75f9c3229,Super Taco Mexican Restaurants,https://www.supertacomex.com/,sitio_oficial,2026-10-15T04:03:39+00:00,3164,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_655113192055,loc_c7774a9d4d8c,Little Chef Chinese,https://littlechefcatering.us/,sitio_oficial,2026-10-15T04:03:40+00:00,7569,reviewed_no_relevant_claim,0,0,simulacion_chatgpt_no_api
+cmp_a1335b228666,loc_da328d61e783,The Kickin' Chicken,http://www.kickinchicken.com,sitio_oficial,2026-10-15T04:03:42+00:00,3216,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api
+cmp_791db6f10989,loc_1fba46b3404d,Sickies Garage Burgers & Brews,http://www.sickiesburgers.com,sitio_oficial,2026-10-15T04:03:45+00:00,4461,evidence_extracted_manually,1,0,simulacion_chatgpt_no_api

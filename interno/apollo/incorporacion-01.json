@@ -1,0 +1,107 @@
+[
+  {
+    "company_name": "The Kickin' Chicken",
+    "city": "Charleston",
+    "state": "SC",
+    "locations_count": 6,
+    "cuisine": "Pollo frito, alitas y comida casual",
+    "phone": "8437665292",
+    "website": "https://kickinchicken.com/",
+    "branch": "West Ashley · 1179 Sam Rittenberg Blvd",
+    "profile_source": "https://kickinchicken.com/",
+    "signal_1": "El aviso de Host de West Ashley incluye manejar pedidos to-go y responder el teléfono.",
+    "source_url": "https://www.indeed.com/viewjob?jk=900e178cb8264cb4",
+    "signal_2": "El mismo puesto describe turnos de alta energía, ritmo rápido y apoyo donde se necesite.",
+    "signal_2_url": "https://www.indeed.com/viewjob?jk=900e178cb8264cb4",
+    "points": [
+      20,
+      20,
+      0
+    ],
+    "priority_score": 40,
+    "consulted": "2026-10-14",
+    "selected_for_working_list": true,
+    "comment_age_group": "sin_comentario_pertinente_verificado",
+    "has_recent_comment": false,
+    "latest_relevant_comment_date": null,
+    "arguments": [
+      "The Kickin' Chicken",
+      "Validar cobertura de teléfono durante el servicio",
+      "El aviso de Host de West Ashley combina pedidos para llevar y respuesta telefónica en una operación que describe como rápida y de alta energía.",
+      "La coincidencia de tareas se ajusta al problema que buscamos validar; el aviso no demuestra llamadas perdidas ni insuficiencia de personal.",
+      "En West Ashley, ¿quién atiende el teléfono cuando el host gestiona pedidos para llevar y recibe a los clientes? ¿Se acumulan llamadas en los turnos rápidos?",
+      "El aviso no tiene fecha comprobable; sirve como evidencia de las tareas descritas, no como contratación vigente.",
+      "El sitio oficial cuenta seis locales en Charleston y enlaza West Ashley. Teléfono del local obtenido de su página oficial. Las dos señales provienen del mismo aviso; no se interpreta “ritmo rápido” como una llamada perdida. Sin contacto comercial realizado."
+    ]
+  },
+  {
+    "company_name": "Sickies Garage Burgers & Brews",
+    "city": "Las Vegas",
+    "state": "NV",
+    "locations_count": 13,
+    "cuisine": "Hamburguesas, alitas y casual dining",
+    "phone": "7257355400",
+    "website": "https://sickiesburgers.com/",
+    "branch": "Las Vegas · 6629 S Las Vegas Blvd, Bldg J, Ste B120",
+    "profile_source": "https://sickiesburgers.com/locations/",
+    "signal_1": "El aviso de Host de Las Vegas asigna responder el teléfono y tomar pedidos to-go cuando hace falta.",
+    "source_url": "https://www.indeed.com/viewjob?jk=156af54be52f371c",
+    "signal_2": "Ese puesto también recibe, sienta y maneja pagos de comensales; pide manejar varias prioridades.",
+    "signal_2_url": "https://www.indeed.com/viewjob?jk=156af54be52f371c",
+    "points": [
+      20,
+      20,
+      0
+    ],
+    "priority_score": 40,
+    "consulted": "2026-10-14",
+    "selected_for_working_list": true,
+    "comment_age_group": "sin_comentario_pertinente_verificado",
+    "has_recent_comment": false,
+    "latest_relevant_comment_date": null,
+    "arguments": [
+      "Sickies Garage Burgers & Brews",
+      "Validar cobertura del teléfono en el turno del host",
+      "El aviso de Host de Las Vegas combina teléfono y pedidos para llevar dentro de sus responsabilidades.",
+      "El mismo puesto recibe y sienta clientes, cobra y debe manejar varias prioridades; eso permite preguntar cómo cubren el teléfono cuando coinciden tareas.",
+      "En Las Vegas, ¿quién atiende las llamadas cuando el host gestiona los pedidos para llevar y recibe a los clientes? ¿Se acumulan llamadas en esos momentos?",
+      "No hay fecha de publicación comprobable; el aviso describe tareas, no vacante vigente ni urgencia actual.",
+      "El directorio oficial publica 13 sedes y confirma que Las Vegas está abierta. El aviso menciona responder teléfono y tomar to-go, pero no especifica si los pedidos llegan por teléfono; confirmar en conversación. No demuestra llamadas perdidas ni falta de personal."
+    ]
+  },
+  {
+    "company_name": "Dallas BBQ",
+    "city": "New York",
+    "state": "NY",
+    "locations_count": 12,
+    "cuisine": "Barbacoa, pollo y casual dining",
+    "phone": "2122219000",
+    "website": "https://www.dallasbbq.com/",
+    "branch": "Times Square · 241 W 42nd Street",
+    "profile_source": "https://www.dallasbbq.com/careers",
+    "signal_1": "La empresa publica el puesto Phone Operator, mantiene teléfono para Times Square y ofrece takeout y delivery diarios.",
+    "source_url": "https://www.dallasbbq.com/careers",
+    "signal_2": "El equipo se describe como fast-paced; enumera por separado Phone Operator y Takeout Packing.",
+    "signal_2_url": "https://www.dallasbbq.com/careers",
+    "points": [
+      20,
+      20,
+      0
+    ],
+    "priority_score": 40,
+    "consulted": "2026-10-14",
+    "selected_for_working_list": true,
+    "comment_age_group": "sin_comentario_pertinente_verificado",
+    "has_recent_comment": false,
+    "latest_relevant_comment_date": null,
+    "arguments": [
+      "Dallas BBQ",
+      "Validar el volumen y cobertura de pedidos telefónicos",
+      "La empresa publica un rol específico de Phone Operator y ofrece takeout y delivery en sus locales.",
+      "También enumera por separado Phone Operator, Host y Takeout Packing en un ambiente fast-paced; es una operación donde vale la pena validar cómo se reparte la demanda.",
+      "En Times Square, ¿el puesto Phone Operator toma pedidos de comida? ¿Qué pasa con las llamadas en los picos y cómo se coordina con takeout packing?",
+      "La página de empleo y menú está activa al corte, pero no publica fecha de contratación ni medida de llamadas.",
+      "La página oficial afirma 12 locales; el menú enlaza diez sedes existentes y una nueva de Secaucus, por lo que el total puede estar cambiando. El teléfono y dirección de Times Square están en su ficha oficial. Tener un Phone Operator puede significar que ya resolvieron cobertura; no se afirma una falla."
+    ]
+  }
+]

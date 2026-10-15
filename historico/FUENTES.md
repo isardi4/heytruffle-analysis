@@ -8,7 +8,7 @@ Con la evidencia registrada se conservan 27 casos en preselección provisional y
 
 ## De dónde salieron los nombres, antes de verificar fuentes
 
-Los primeros nombres de candidatos fueron propuestos por la IA a partir del conocimiento previo del modelo, antes de verificar fuentes en este trabajo: posibles cadenas regionales de pizza, alitas y comida china. No se obtuvo primero un listado completo de restaurantes desde un directorio. La secuencia fue proponer nombres y después buscarlos; las sucursales se obtuvieron de las páginas oficiales. Luego se buscaron los nombres y sus directorios oficiales para filtrar el perfil. No salió de una base comprada ni de una exportación completa de Google Maps. La propuesta de nombres fue una ayuda para descubrir candidatos; las webs, avisos y reseñas respaldan los datos aceptados. [README.md](README.md) muestra las consultas de ejemplo, las etapas y quién hizo cada tarea. No es posible identificar el dato de entrenamiento que originó cada sugerencia. No se atribuye una página de descubrimiento a nombres que ya estaban en la propuesta del modelo.
+Los primeros nombres de candidatos fueron propuestos por la IA a partir del conocimiento previo del modelo, antes de verificar fuentes en este trabajo: posibles cadenas regionales de pizza, alitas y comida china. No se obtuvo primero un listado completo de restaurantes desde un directorio. La secuencia fue proponer nombres y después buscarlos; las sucursales se obtuvieron de las páginas oficiales. Luego se buscaron los nombres y sus directorios oficiales para filtrar el perfil. No salió de una base comprada ni de una exportación completa de Google Maps. La propuesta de nombres fue una ayuda para descubrir candidatos; las webs, avisos y reseñas respaldan los datos aceptados. [README.md](../README.md) muestra las consultas de ejemplo, las etapas y quién hizo cada tarea. No es posible identificar el dato de entrenamiento que originó cada sugerencia. No se atribuye una página de descubrimiento a nombres que ya estaban en la propuesta del modelo.
 
 ## Fuentes que usamos
 
@@ -108,7 +108,7 @@ Esto es una revisión pública con fuentes accesibles, no una lectura exhaustiva
 
 ## Fuentes de las ocho incorporaciones
 
-La ampliación revisó seis grupos de diez candidatos. [TANDAS.md](TANDAS.md) muestra la decisión y fuente o pista de cada uno. [LISTA-EXPLICADA.md](LISTA-EXPLICADA.md) y [CASOS.md](CASOS.md) incluyen los dos hechos aceptados, sus enlaces y los límites de cada alta.
+La ampliación revisó seis grupos de diez candidatos. [TANDAS.md](TANDAS.md) muestra la decisión y fuente o pista de cada uno. [LISTA-EXPLICADA.md](../LISTA-EXPLICADA.md) y [CASOS.md](CASOS.md) incluyen los dos hechos aceptados, sus enlaces y los límites de cada alta.
 
 Se usaron páginas oficiales para el teléfono, la cantidad de sedes y políticas de Mama’s, Zachary’s, Katie’s y Golden Boy. En V Pizza se usó la descripción oficial de caja. En SPIN! se pudo leer el aviso original de Indeed. En Home Run Inn se siguió Careers hasta el portal Paylocity del empleador y se leyó el HTML original; en Delfina se leyó el anuncio original de Craigslist y la página oficial de catering, incluidos los datos de Palo Alto que el lector no mostraba completos. Los datos estructurados ayudan a leer un original; no son otra fuente independiente.
 
@@ -147,4 +147,4 @@ Los nombres aparecieron en búsquedas de tareas telefónicas en avisos y resulta
 
 ## Herramientas que todavía no son fuente de esta entrega
 
-Apollo.io queda por evaluar como fuente externa de candidatos. No se consultó su base para esta versión y ningún dato de los 27 casos se atribuye a Apollo. La documentación de una herramienta describe funciones; no equivale a recuperar ni verificar empresas dentro de ella.
+Apollo.io aportó posteriormente un export web de 25 candidatos, revisado en [APOLLO-REVISION.md](APOLLO-REVISION.md): 22 descartados y tres incorporaciones (The Kickin’ Chicken, Sickies Garage Burgers & Brews y Dallas BBQ). Ningún dato de los 27 casos originales se atribuye a Apollo. La documentación de una herramienta describe funciones; no equivale a recuperar ni verificar empresas dentro de ella.

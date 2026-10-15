@@ -1,0 +1,72 @@
+[
+  {
+    "company_name": "Super Taco Mexican Restaurants",
+    "city": "Sacramento",
+    "state": "CA",
+    "locations_count": 4,
+    "cuisine": "Mexicana, tacos y burritos",
+    "phone": "9164699104",
+    "website": "https://www.supertacomex.com/",
+    "branch": "Franklin · 7131 Franklin Blvd",
+    "profile_source": "https://www.supertacomex.com/",
+    "signal_1": "El aviso original de Server de Franklin incluye tomar pedidos de comida por teléfono.",
+    "source_url": "https://www.snagajob.com/jobs/1303458429",
+    "signal_2": "El mismo puesto cobra, empaqueta pedidos para retirar y ayuda a servir y limpiar mesas.",
+    "signal_2_url": "https://www.snagajob.com/jobs/1303458429",
+    "points": [
+      20,
+      0,
+      0
+    ],
+    "priority_score": 20,
+    "consulted": "2026-10-14",
+    "selected_for_working_list": true,
+    "comment_age_group": "sin_comentario_pertinente_verificado",
+    "has_recent_comment": false,
+    "latest_relevant_comment_date": null,
+    "arguments": [
+      "Super Taco Mexican Restaurants",
+      "Validar reparto de tareas en la sucursal",
+      "El aviso del empleador vincula llamadas y atención de mesas en Franklin, una sede identificada.",
+      "Las llamadas podrían coincidir con el servicio de mesas; el aviso no demuestra que queden sin atender.",
+      "En Franklin, ¿quién cubre el teléfono cuando el servidor está atendiendo mesas o empaquetando retiros?",
+      "Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución.",
+      "Dos hechos del mismo aviso, no dos fuentes independientes. La fecha relativa Today y Urgently hiring no se convierten en fecha absoluta ni en falta de personal. Cuatro sedes con horario publicado: Franklin, Grant Line, Calvine y Laguna. Mack Road está marcado REMODELING y queda fuera del conteo activo, aunque figure en el pie de página. Hay pedidos online. Uber Eats muestra opiniones favorables antiguas de 2022–enero de 2025, sin comentario reciente aceptado ni falla telefónica. No se usan copias de Google en Wanderlog como originales."
+    ]
+  },
+  {
+    "company_name": "Little Chef Chinese",
+    "city": "San Diego",
+    "state": "CA",
+    "locations_count": 2,
+    "cuisine": "China para llevar",
+    "phone": "6192226627",
+    "website": "https://littlechefcatering.us/",
+    "branch": "Ocean Beach · 4910 Newport Ave",
+    "profile_source": "https://littlechefcatering.us/",
+    "signal_1": "El aviso original de cajero de Ocean Beach incluye pedidos telefónicos, presenciales y de plataformas.",
+    "source_url": "https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320",
+    "signal_2": "El mismo puesto cobra, mantiene el área de clientes y ayuda con empaquetado y preparación simple en cocina.",
+    "signal_2_url": "https://www.indeed.com/viewjob?jk=1ba99e6d1b3b1320",
+    "points": [
+      20,
+      0,
+      0
+    ],
+    "priority_score": 20,
+    "consulted": "2026-10-14",
+    "selected_for_working_list": true,
+    "comment_age_group": "sin_comentario_pertinente_verificado",
+    "has_recent_comment": true,
+    "latest_relevant_comment_date": null,
+    "arguments": [
+      "Little Chef Chinese",
+      "Validar reparto de tareas en la sucursal",
+      "El puesto identifica Ocean Beach y combina llamadas, caja y apoyo de cocina y mostrador.",
+      "El teléfono podría competir con caja o preparación. El encaje es teléfono más mostrador; no se atribuye servicio de salón completo.",
+      "En Ocean Beach, ¿quién responde las llamadas cuando caja cobra o ayuda con preparaciones en cocina?",
+      "Sin fecha absoluta comprobada del aviso. Confirmar que estas tareas describan la operación actual antes de ofrecer una solución.",
+      "Las dos señales provienen del mismo puesto. Sin fecha absoluta comprobada, sin puntos por ambiente rápido ni vacante. Dos direcciones oficiales: Ocean Beach y Sorrento Valley. Operación centrada en takeout, con encaje parcial respecto de la hipótesis de personal en salón. En Uber Eats, Jeremy R. (21/06/2026) y Sarah H. (23/06/2026) elogian la comida: algún comentario reciente sí, dificultad telefónica no. TripAdvisor tiene experiencias antiguas; no se acepta como reciente el año 2026 del título ni testimonios copiados sin fecha en la web."
+    ]
+  }
+]
